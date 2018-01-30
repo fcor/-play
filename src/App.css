@@ -43,13 +43,14 @@ li{
 }
 
 .contenido{
-  border: 1px solid brown;
-  height: 200px;
+  /* border: 1px solid brown; */
+  height: 3000px;
   overflow: hidden;
 }
 
 .gifs{
   position: relative;
+  height: 2000px;
 }
 
 .gif{
@@ -68,4 +69,11 @@ li{
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 250ms ease-in;
+}
+
+.footer{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

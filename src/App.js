@@ -5,6 +5,7 @@ import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
 import Proyect from './components/Proyect'
+import palma from './images/palma.png'
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
               </TransitionGroup>
             }/>
           </div>
+          <Footer />
         </div>
       </Router>
     );
@@ -37,6 +39,11 @@ class App extends Component {
 const About = () =>
   <div>
     About component
+  </div>
+
+const Footer = () =>
+  <div className="footer">
+    <img src={palma} alt="footer" width="62"/>
   </div>
 
 export default App;
