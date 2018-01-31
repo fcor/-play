@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Proyect = () =>
+const Proyect = ({ param }) =>
   <div>
-    Proyect component
+    Proyect component for {param}
   </div>
 
 export default Proyect

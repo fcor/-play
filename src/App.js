@@ -23,6 +23,7 @@ class App extends Component {
                       <Route path="/installation" render={() => <Gifs param="installation"/>}/>
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
+                      <Route path="/mundo" render={() => <Proyect param="mundo"/>}/>
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
                 </CSSTransition>
