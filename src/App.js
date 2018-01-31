@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
-import Proyect from './components/Proyect'
+import Project from './components/Project'
 import palma from './images/palma.png'
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
                       <Route path="/installation" render={() => <Gifs param="installation"/>}/>
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
-                      <Route path="/mundo" render={() => <Proyect param="mundo"/>}/>
+                      <Route path="/mundo" render={() => <Project param="mundo"/>}/>
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
                 </CSSTransition>
