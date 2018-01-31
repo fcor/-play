@@ -24,6 +24,18 @@ class App extends Component {
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
                       <Route path="/mundo" render={() => <Project param="mundo"/>}/>
+                      <Route path="/planoz" render={() => <Project param="planoz"/>}/>
+                      <Route path="/topologias" render={() => <Project param="topologias"/>}/>
+                      <Route path="/moto" render={() => <Project param="moto"/>}/>
+                      <Route path="/adidas" render={() => <Project param="adidas"/>}/>
+                      <Route path="/uber" render={() => <Project param="uber"/>}/>
+                      <Route path="/nike" render={() => <Project param="nike"/>}/>
+                      <Route path="/coca" render={() => <Project param="coca"/>}/>
+                      <Route path="/cuerpos" render={() => <Project param="cuerpos"/>}/>
+                      <Route path="/redbull" render={() => <Project param="redbull"/>}/>
+                      <Route path="/warm" render={() => <Project param="warm"/>}/>
+                      <Route path="/samsung" render={() => <Project param="samsung"/>}/>
+                      <Route path="/freaky" render={() => <Project param="freaky"/>}/>
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
                 </CSSTransition>
