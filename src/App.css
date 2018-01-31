@@ -57,6 +57,27 @@ li{
   position: absolute;
 }
 
+.gif-box{
+  position: relative;
+  overflow: hidden;
+}
+
+.gif-text{
+  position: absolute;
+  /* right: -100%; */
+  background-color: #000;
+  color: white;
+  opacity: 0;
+  width: 100%;
+  height: calc(100% - 4.5px);
+  transition: .4s;
+}
+
+.gif-box:hover .gif-text{
+  /* right: 0; */
+  opacity: .8
+}
+
 .border{
   border: 1px solid red;
 }
