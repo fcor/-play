@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Chalet Cologne';
+  src: local('Chalet Cologne'), url(./fonts/ChaletComprimeCologneEightyRegular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chalet Milan';
+  src: local('Chalet Milan'), url(./fonts/ChaletComprimeMilanEighty.ttf) format('truetype');
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -5,14 +15,15 @@ body{
 
 a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 26px;
   color: black;
+  letter-spacing: 2px;
   transition: .2s;
 }
 
 li{
   margin-right: 30px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .contenedor{
@@ -27,10 +38,14 @@ li{
   justify-content: center;
   flex-direction: column;
   padding-top: 40px;
+  font-family: 'Chalet Cologne'
 }
 
 .menu p{
   margin: 0 0 16px 0;
+  font-family: 'Chalet Milan';
+  letter-spacing: 6px;
+  font-size: 14px;
 }
 
 .logo-box{

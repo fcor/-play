@@ -12,10 +12,10 @@ const Menu = () =>
    <div className="navbar">
      <ul>
        <li>
-        <NavLink to='/motion'>MOTION</NavLink>
+        <NavLink to='/motion'>Motion</NavLink>
        </li>
        <li>
-         <NavLink to='/installation'>INSTALLATION</NavLink>
+         <NavLink to='/installation'>Installation</NavLink>
        </li>
        <li>
          <NavLink to='/360'>360°|VR</NavLink>
@@ -25,7 +25,7 @@ const Menu = () =>
        </li>
      </ul>
    </div>
-   <p>www.muchomasplay.com</p>
+   <p>WWW.MUCHOMASPLAY.COM</p>
  </div>
 
 export default Menu
