@@ -83,7 +83,7 @@ const gifs = (param) => {
     return{
       img: uber,
       left: "9px",
-      top: "1120px",
+      top: "1150px",
       route: "uber",
       title: "Uber",
       year: "2017",
@@ -92,8 +92,8 @@ const gifs = (param) => {
   } else if (param === 'nike') {
     return{
       img: nike,
-      right: "30px",
-      top: "1450px",
+      right: "10px",
+      top: "1470px",
       route: "nike",
       title: "Nike",
       year: "2017",
@@ -103,7 +103,7 @@ const gifs = (param) => {
     return{
       img: coca,
       left: "70px",
-      top: "1550px",
+      top: "1610px",
       width: "300",
       route: "coca",
       title: "Coca",
@@ -114,7 +114,7 @@ const gifs = (param) => {
     return{
       img: cuerpos,
       right: "60px",
-      top: "1720px",
+      top: "1800px",
       route: "cuerpos",
       title: "Cuerpos de agua",
       year: "2017",
@@ -124,7 +124,7 @@ const gifs = (param) => {
     return{
       img: redbull,
       left: "100px",
-      top: "1910px",
+      top: "1980px",
       route: "redbull",
       title: "Redbull",
       year: "2017",
