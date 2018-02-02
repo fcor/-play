@@ -23,6 +23,7 @@ class App extends Component {
                       <Route path="/installation" render={() => <Gifs param="installation"/>}/>
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
+                      <Route path="/reel" component={Reel}/>
                       <Route path="/mundo" render={() => <Project param="mundo"/>}/>
                       <Route path="/planoz" render={() => <Project param="planoz"/>}/>
                       <Route path="/topologias" render={() => <Project param="topologias"/>}/>
@@ -52,6 +53,11 @@ class App extends Component {
 const About = () =>
   <div>
     About component
+  </div>
+
+const Reel = () =>
+  <div>
+    Reel component
   </div>
 
 const Footer = () =>

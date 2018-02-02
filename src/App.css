@@ -21,6 +21,27 @@ a{
   transition: .2s;
 }
 
+a:hover{
+  color: skyblue;
+}
+
+.selected{
+  color: skyblue;
+  /* stroke: skyblue; */
+}
+
+path{
+  transition: .2s;
+}
+
+.pool-box:hover path{
+  stroke: skyblue;
+}
+
+.selected path{
+  stroke: skyblue;
+}
+
 li{
   margin-right: 30px;
   /* font-weight: bold; */
@@ -41,7 +62,7 @@ li{
   font-family: 'Chalet Cologne'
 }
 
-.menu p{
+.url{
   margin: 0 0 16px 0;
   font-family: 'Chalet Milan';
   letter-spacing: 6px;
@@ -51,10 +72,28 @@ li{
 .logo-box{
 }
 
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar ul{
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+.pool-box{
+  position: relative;
+}
+
+.pool-text{
+  position: absolute;
+  margin: 0;
+  top: -7px;
+  left: 18px;
+  transform: rotate(-23deg) skew(-15deg)
 }
 
 .contenido{
