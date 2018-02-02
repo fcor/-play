@@ -7,6 +7,22 @@ import Gifs from './components/Gifs'
 import Project from './components/Project'
 import palma from './images/palma.png'
 
+const routes = ["mundo",
+                "planoz",
+                "topologias",
+                "moto",
+                "adidas",
+                "sonar",
+                "uber",
+                "nike",
+                "coca",
+                "cuerpos",
+                "redbull",
+                "warm",
+                "samsung",
+                "freaky",
+              ]
+
 class App extends Component {
   render() {
     return (
@@ -24,19 +40,9 @@ class App extends Component {
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>
-                      <Route path="/mundo" render={() => <Project param="mundo"/>}/>
-                      <Route path="/planoz" render={() => <Project param="planoz"/>}/>
-                      <Route path="/topologias" render={() => <Project param="topologias"/>}/>
-                      <Route path="/moto" render={() => <Project param="moto"/>}/>
-                      <Route path="/adidas" render={() => <Project param="adidas"/>}/>
-                      <Route path="/uber" render={() => <Project param="uber"/>}/>
-                      <Route path="/nike" render={() => <Project param="nike"/>}/>
-                      <Route path="/coca" render={() => <Project param="coca"/>}/>
-                      <Route path="/cuerpos" render={() => <Project param="cuerpos"/>}/>
-                      <Route path="/redbull" render={() => <Project param="redbull"/>}/>
-                      <Route path="/warm" render={() => <Project param="warm"/>}/>
-                      <Route path="/samsung" render={() => <Project param="samsung"/>}/>
-                      <Route path="/freaky" render={() => <Project param="freaky"/>}/>
+                      {routes.map((item) =>
+                        <Route path={`/${item}`} render={() => <Project param={item}/>}/>
+                      )}
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
                 </CSSTransition>
