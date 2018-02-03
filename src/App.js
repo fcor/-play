@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
+import VRScene from './components/VRScene'
 import Project from './components/Project'
 import palma from './images/palma.png'
 
@@ -41,7 +42,7 @@ class App extends Component {
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>
                       {routes.map((item) =>
-                        <Route path={`/${item}`} render={() => <Project param={item}/>}/>
+                        <Route key={item} path={`/${item}`} render={() => <Project param={item}/>}/>
                       )}
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
@@ -57,8 +58,9 @@ class App extends Component {
 }
 
 const About = () =>
-  <div>
+  <div className="about-box">
     About component
+    <VRScene />
   </div>
 
 const Reel = () =>

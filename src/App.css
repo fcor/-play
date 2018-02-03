@@ -162,6 +162,15 @@ li{
   transition: opacity 250ms ease-in;
 }
 
+#myEmbeddedScene {
+    width: 600px;
+    height: 300px;
+}
+
+.about-box{
+  height: 700px;
+}
+
 .footer{
   height: 50px;
   display: flex;
