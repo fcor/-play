@@ -162,10 +162,16 @@ li{
   transition: opacity 250ms ease-in;
 }
 
-#myEmbeddedScene {
-    width: 600px;
-    height: 300px;
+.vr-content{
+  height: 300px;
+  width: 600px;
 }
+
+.iframe{
+  display: block;
+  border: 0;
+}
+
 
 .about-box{
   height: 700px;
