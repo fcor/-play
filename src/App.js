@@ -26,19 +26,39 @@ const routes = ["mundo",
               ]
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      lang: 'es',
+    }
+    this.handleLang = this.handleLang.bind(this)
+  }
+
+  handleLang(newLang){
+    this.setState(state => {
+      if (state.lang === newLang) {
+        return null;
+      }
+      return {
+        lang: newLang
+      }
+    })
+  }
+
   render() {
+    const { lang } = this.state
     return (
       <Router>
         <div className="contenedor">
-          <Menu />
+          <Menu changeLang={this.handleLang}/>
           <div className="contenido">
             <Route render={({ location }) =>
               <TransitionGroup>
                 <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
                   <Switch location={location}>
-                      <Route exact path="/" render={() => <Gifs param="home"/>} />
-                      <Route path="/motion" render={() => <Gifs param="motion"/>} />
-                      <Route path="/installation" render={() => <Gifs param="installation"/>}/>
+                      <Route exact path="/" render={() => <Gifs lang={lang} param="home"/>} />
+                      <Route path="/motion" render={() => <Gifs lang={lang} param="motion"/>} />
+                      <Route path="/installation" render={() => <Gifs lang={lang} param="installation"/>}/>
                       <Route path="/360" render={() => <Gifs param="360"/>}/>
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>

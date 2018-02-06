@@ -18,11 +18,11 @@ const params = ["mundo",
                 "freaky",
               ]
 
-const Gifs = ({ param }) =>
+const Gifs = ({ param, lang }) =>
   <div className="gifs">
     {/* Gifs component for {param} */}
     {params.map((item) =>
-      <Gif key={item} gif={gifs(item)}/>
+      <Gif key={item} gif={gifs(item)} lang={lang}/>
     )}
   </div>
 

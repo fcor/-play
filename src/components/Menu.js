@@ -3,8 +3,13 @@ import { NavLink, Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import palma from '../images/palma.png'
 
-const Menu = () =>
+const Menu = ({changeLang}) =>
  <div className="menu">
+   <div className="lang-box">
+     <p className="lang-text" onClick={() => changeLang('en')}>EN</p>
+     <p className="lang-text">|</p>
+     <p className="lang-text" onClick={() => changeLang('es')}>SPA</p>
+   </div>
    <div className="logo-box">
      <Link to="/">
        <img src={logo} alt="+play logo" width="250px"/>

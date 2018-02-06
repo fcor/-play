@@ -58,7 +58,29 @@ li{
   justify-content: center;
   flex-direction: column;
   padding-top: 40px;
-  font-family: 'Chalet Cologne'
+  font-family: 'Chalet Cologne';
+  position: relative;
+}
+
+.lang-box{
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.lang-text{
+  margin: 3px;
+  font-family: 'Chalet Cologne';
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #585858;
+  cursor: pointer;
 }
 
 .url{

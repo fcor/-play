@@ -23,8 +23,10 @@ const gifs = (param) => {
       width: "250",
       route: "mundo",
       title: "Una observación al fin del mundo",
+      titleEn: "Observation to the end of the world",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'planoz') {
     return{
@@ -34,8 +36,10 @@ const gifs = (param) => {
       width: "250",
       route: "planoz",
       title: "Plano Z",
+      titleEn: "Plano Z Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'topologias') {
     return{
@@ -44,8 +48,10 @@ const gifs = (param) => {
       top: "350px",
       route: "topologias",
       title: "Topologías urbanas",
+      titleEn: "Urban topology",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'moto') {
     return{
@@ -55,8 +61,10 @@ const gifs = (param) => {
       width: "250",
       route: "moto",
       title: "Moto",
+      titleEn: "Moto Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'adidas') {
     return{
@@ -65,8 +73,10 @@ const gifs = (param) => {
       top: "720px",
       route: "adidas",
       title: "Adidas",
+      titleEn: "Adidas Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'sonar') {
     return{
@@ -76,8 +86,10 @@ const gifs = (param) => {
       width: "300",
       route: "sonar",
       title: "Sonar",
+      titleEn: "Sonar Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'uber') {
     return{
@@ -86,8 +98,10 @@ const gifs = (param) => {
       top: "1150px",
       route: "uber",
       title: "Uber",
+      titleEn: "Uber Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'nike') {
     return{
@@ -96,8 +110,10 @@ const gifs = (param) => {
       top: "1470px",
       route: "nike",
       title: "Nike",
+      titleEn: "Nike Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'coca') {
     return{
@@ -107,8 +123,10 @@ const gifs = (param) => {
       width: "300",
       route: "coca",
       title: "Coca",
+      titleEn: "Coca Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'cuerpos') {
     return{
@@ -117,8 +135,10 @@ const gifs = (param) => {
       top: "1800px",
       route: "cuerpos",
       title: "Cuerpos de agua",
+      titleEn: "Water",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'redbull') {
     return{
@@ -127,8 +147,10 @@ const gifs = (param) => {
       top: "1980px",
       route: "redbull",
       title: "Redbull",
+      titleEn: "Redbull eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'warm') {
     return{
@@ -137,8 +159,10 @@ const gifs = (param) => {
       top: "2090px",
       route: "warm",
       title: "Sonar warm up",
+      titleEn: "Sonar Warm up eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   } else if (param === 'samsung') {
     return{
@@ -148,8 +172,10 @@ const gifs = (param) => {
       width: "450",
       route: "samsung",
       title: "Samsung",
+      titleEn: "Samsung Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   }  else if (param === 'freaky') {
     return{
@@ -158,8 +184,10 @@ const gifs = (param) => {
       top: "2590px",
       route: "freaky",
       title: "Freaky",
+      titleEn: "Freaky Eng",
       year: "2017",
-      desc: "Acá va la descripción"
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
     }
   }
 }
