@@ -7,6 +7,7 @@ import Gifs from './components/Gifs'
 import VRScene from './components/VRScene'
 import Project from './components/Project'
 import palma from './images/palma.png'
+import city from './images/3.jpg'
 
 const routes = ["mundo",
                 "planoz",
@@ -60,7 +61,7 @@ class App extends Component {
 const About = () =>
   <div className="about-box">
     About component
-    <VRScene />
+    <VRScene img={city} />
   </div>
 
 const Reel = () =>
