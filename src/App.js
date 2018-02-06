@@ -63,7 +63,7 @@ class App extends Component {
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>
                       {routes.map((item) =>
-                        <Route key={item} path={`/${item}`} render={() => <Project param={item}/>}/>
+                        <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
                       )}
                       <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
