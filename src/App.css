@@ -83,6 +83,20 @@ li{
   cursor: pointer;
 }
 
+.lang-text:hover .bar{
+  opacity: 1;
+}
+
+.active .bar{
+  opacity: 1;
+}
+
+.bar{
+  border: 1px solid #585858;
+  opacity: 0;
+  transition: .2s;
+}
+
 .url{
   margin: 0 0 16px 0;
   font-family: 'Chalet Milan';

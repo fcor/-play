@@ -3,12 +3,19 @@ import { NavLink, Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import palma from '../images/palma.png'
 
-const Menu = ({changeLang}) =>
+const Menu = ({changeLang, lang}) =>
  <div className="menu">
    <div className="lang-box">
-     <p className="lang-text" onClick={() => changeLang('en')}>EN</p>
+     <p className={`lang-text ${lang === 'en' ? 'active' : ''}`}
+       onClick={() => changeLang('en')}>
+       EN
+       <div className="bar"></div>
+     </p>
      <p className="lang-text">|</p>
-     <p className="lang-text" onClick={() => changeLang('es')}>SPA</p>
+     <p className={`lang-text ${lang === 'es' ? 'active' : ''}`}
+       onClick={() => changeLang('es')}>
+       SPA
+       <div className="bar"></div></p>
    </div>
    <div className="logo-box">
      <Link to="/">

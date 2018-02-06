@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <Router>
         <div className="contenedor">
-          <Menu changeLang={this.handleLang}/>
+          <Menu changeLang={this.handleLang} lang={lang}/>
           <div className="contenido">
             <Route render={({ location }) =>
               <TransitionGroup>
