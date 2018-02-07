@@ -49,6 +49,9 @@ li{
 .contenedor{
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .menu{
@@ -133,13 +136,14 @@ li{
 
 .contenido{
   /* border: 1px solid brown; */
-  height: 3300px;
+  /* height: 3300px; */
   overflow: hidden;
+  flex: 1 0 auto;
 }
 
 .gifs{
   position: relative;
-  height: 2000px;
+  /* height: 2000px; */
 }
 
 .gif{

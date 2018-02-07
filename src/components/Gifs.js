@@ -40,7 +40,7 @@ const vr = ["redbullP",
             "samsung",
           ]
 
-const Gifs = ({ param, lang }) => {
+const Gifs = ({ param, lang, height }) => {
   let content
   if (param === 'motion') {
     content = motion
@@ -52,9 +52,9 @@ const Gifs = ({ param, lang }) => {
     content = home
   }
   return(
-    <div className="gifs">
+    <div className="gifs" style={{height: height}}>
       {content.map((item) =>
-        <Gif key={item} gif={gifs(item)} lang={lang}/>
+        <Gif param={param} key={item} gif={gifs(item)} lang={lang}/>
       )}
     </div>
   )
