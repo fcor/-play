@@ -48,7 +48,7 @@ li{
 
 .contenedor{
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
 }
 
 .menu{
@@ -133,7 +133,7 @@ li{
 
 .contenido{
   /* border: 1px solid brown; */
-  height: 3000px;
+  height: 3300px;
   overflow: hidden;
 }
 

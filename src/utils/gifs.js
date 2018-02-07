@@ -19,8 +19,8 @@ const gifs = (param) => {
   if (param === 'mundo') {
     return{
       img: mundo,
-      left: "100px",
-      top: "50px",
+      left: "50px",
+      top: "200px",
       width: "250",
       route: "mundo",
       title: "Una observación al fin del mundo",
@@ -32,8 +32,8 @@ const gifs = (param) => {
   } else if (param === 'planoz') {
     return{
       img: planoz,
-      right: "30px",
-      top: "120px",
+      right: "263px",
+      top: "451px",
       width: "250",
       route: "planoz",
       title: "Plano Z",
@@ -45,8 +45,8 @@ const gifs = (param) => {
   } else if (param === 'topologias') {
     return{
       img: topologias,
-      left: "0px",
-      top: "350px",
+      left: "126px",
+      top: "636px",
       route: "topologias",
       title: "Topologías urbanas",
       titleEn: "Urban topology",
@@ -57,8 +57,8 @@ const gifs = (param) => {
   } else if (param === 'moto') {
     return{
       img: moto,
-      right: "50px",
-      top: "540px",
+      right: "132px",
+      top: "859px",
       width: "250",
       route: "moto",
       title: "Moto",
@@ -70,8 +70,8 @@ const gifs = (param) => {
   } else if (param === 'adidas') {
     return{
       img: adidas,
-      left: "60px",
-      top: "720px",
+      left: "76px",
+      top: "1045px",
       route: "adidas",
       title: "Adidas",
       titleEn: "Adidas Eng",
@@ -82,8 +82,8 @@ const gifs = (param) => {
   } else if (param === 'sonar') {
     return{
       img: sonar,
-      right: "50px",
-      top: "920px",
+      right: "244px",
+      top: "1200px",
       width: "300",
       route: "sonar",
       title: "Sonar",
@@ -95,8 +95,8 @@ const gifs = (param) => {
   } else if (param === 'uber') {
     return{
       img: uber,
-      left: "9px",
-      top: "1150px",
+      left: "221px",
+      top: "1492px",
       route: "uber",
       title: "Uber",
       titleEn: "Uber Eng",
@@ -107,8 +107,8 @@ const gifs = (param) => {
   } else if (param === 'nike') {
     return{
       img: nike,
-      right: "10px",
-      top: "1470px",
+      right: "30px",
+      top: "1854px",
       route: "nike",
       title: "Nike",
       titleEn: "Nike Eng",
@@ -119,8 +119,8 @@ const gifs = (param) => {
   } else if (param === 'coca') {
     return{
       img: coca,
-      left: "70px",
-      top: "1610px",
+      left: "175px",
+      top: "2000px",
       width: "300",
       route: "coca",
       title: "Coca",
@@ -132,8 +132,8 @@ const gifs = (param) => {
   } else if (param === 'cuerpos') {
     return{
       img: cuerpos,
-      right: "60px",
-      top: "1800px",
+      right: "208px",
+      top: "2161px",
       route: "cuerpos",
       title: "Cuerpos de agua",
       titleEn: "Water",
@@ -144,8 +144,8 @@ const gifs = (param) => {
   } else if (param === 'redbull') {
     return{
       img: redbull,
-      left: "100px",
-      top: "1980px",
+      left: "202px",
+      top: "2324px",
       route: "redbull",
       title: "Redbull",
       titleEn: "Redbull eng",
@@ -156,8 +156,9 @@ const gifs = (param) => {
   } else if (param === 'redbullP') {
     return{
       img: redbullp,
-      left: "0px",
-      top: "0px",
+      right: "140px",
+      top: "60px",
+      width: "500px",
       route: "redbullP",
       title: "RedbullP",
       titleEn: "RedbullP eng",
@@ -168,8 +169,8 @@ const gifs = (param) => {
   } else if (param === 'warm') {
     return{
       img: warm,
-      right: "90px",
-      top: "2090px",
+      right: "200px",
+      top: "2527px",
       route: "warm",
       title: "Sonar warm up",
       titleEn: "Sonar Warm up eng",
@@ -180,8 +181,8 @@ const gifs = (param) => {
   } else if (param === 'samsung') {
     return{
       img: samsung,
-      left: "30px",
-      top: "2300px",
+      left: "114px",
+      top: "2740px",
       width: "450",
       route: "samsung",
       title: "Samsung",
@@ -193,8 +194,8 @@ const gifs = (param) => {
   }  else if (param === 'freaky') {
     return{
       img: freaky,
-      right: "50px",
-      top: "2590px",
+      right: "240px",
+      top: "3005px",
       route: "freaky",
       title: "Freaky",
       titleEn: "Freaky Eng",

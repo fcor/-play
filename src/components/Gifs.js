@@ -2,7 +2,8 @@ import React from 'react'
 import Gif from './Gif'
 import gifs from '../utils/gifs'
 
-const home = ["mundo",
+const home = [ "redbullP",
+                "mundo",
                 "planoz",
                 "topologias",
                 "moto",
