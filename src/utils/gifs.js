@@ -9,6 +9,7 @@ import nike from '../images/nike.gif'
 import coca from '../images/coca.gif'
 import cuerpos from '../images/cuerpos.gif'
 import redbull from '../images/redbull.gif'
+import redbullp from '../images/redbullp.gif'
 import warm from '../images/warm.gif'
 import freaky from '../images/freaky.gif'
 import samsung from '../images/samsung.jpg'
@@ -148,6 +149,18 @@ const gifs = (param) => {
       route: "redbull",
       title: "Redbull",
       titleEn: "Redbull eng",
+      year: "2017",
+      desc: "Acá va la descripción",
+      descEN: "Here goes the description"
+    }
+  } else if (param === 'redbullP') {
+    return{
+      img: redbullp,
+      left: "0px",
+      top: "0px",
+      route: "redbullP",
+      title: "RedbullP",
+      titleEn: "RedbullP eng",
       year: "2017",
       desc: "Acá va la descripción",
       descEN: "Here goes the description"

@@ -2,7 +2,7 @@ import React from 'react'
 import Gif from './Gif'
 import gifs from '../utils/gifs'
 
-const params = ["mundo",
+const home = ["mundo",
                 "planoz",
                 "topologias",
                 "moto",
@@ -18,13 +18,47 @@ const params = ["mundo",
                 "freaky",
               ]
 
-const Gifs = ({ param, lang }) =>
-  <div className="gifs">
-    {/* Gifs component for {param} */}
-    {params.map((item) =>
-      <Gif key={item} gif={gifs(item)} lang={lang}/>
-    )}
-  </div>
+const motion = ["mundo",
+                "coca",
+                "adidas",
+                "nike",
+              ]
+
+const installation = ["topologias",
+                      "sonar",
+                      "warm",
+                      "moto",
+                    ]
+
+const vr = ["redbullP",
+            "planoz",
+            "cuerpos",
+            "uber",
+            "redbull",
+            "freaky",
+            "samsung",
+          ]
+
+const Gifs = ({ param, lang }) => {
+  let content
+  if (param === 'motion') {
+    content = motion
+  } else if (param === 'installation') {
+    content = installation
+  } else if (param === '360') {
+    content = vr
+  } else if (param === 'home') {
+    content = home
+  }
+  return(
+    <div className="gifs">
+      {content.map((item) =>
+        <Gif key={item} gif={gifs(item)} lang={lang}/>
+      )}
+    </div>
+  )
+}
+
 
 
 export default Gifs
