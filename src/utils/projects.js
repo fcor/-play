@@ -38,6 +38,12 @@ import adidas1 from '../images/adidas/entrada.png'
 import adidas2 from '../images/adidas/adidas_interna1.gif'
 import adidas3 from '../images/adidas/adidas_interna2.gif'
 import adidas4 from '../images/adidas/adidas_interna3.gif'
+import topologias1 from '../images/topologias/1.gif'
+import topologias2 from '../images/topologias/2.gif'
+import topologias3 from '../images/topologias/3.gif'
+import topologias4 from '../images/topologias/4.gif'
+import topologias5 from '../images/topologias/5.gif'
+import topologias6 from '../images/topologias/6.gif'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -172,7 +178,7 @@ const getProjectDetails = (param) => {
       tagEn: 'Mapping | Motion Graphics',
       descEs: `Animación y realización de mapping para el relanzamiento de la tienda Nike en la Calle 82 producido por la agencia Milagros. El mapping se realizó sobre el Swoosh que hay en la fachada del local. Se le dió vida al Swoosh a partir de animaciones texturales y llenas de color que hacían referencia a los valores de la marca.`,
       descEn: `Animation and direction of a mapping for the relaunch of the Nike store located in the 82ndstreet in Bogota, produced by the Milagros agency. The mapping was projected over theSwoosh logo placed on the façade of the store. The Swoosh was given life with texturedanimations filled with several colors and prints, referencing the brands values.`,
-      logos:'',
+      logos: [milagros, nike],
       assets: {
         a1: {
           type: 'img',
@@ -193,6 +199,46 @@ const getProjectDetails = (param) => {
         a5: {
           type: 'video',
           src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+        },
+      }
+    }
+  } else if (param === 'topologias') {
+    return {
+      prev: 'nike',
+      next: 'sonar',
+      titleEs: 'Topologías Urbanas',
+      titleEn: 'Urban Topologies',
+      subtitle: '(Indiebox, Artec)',
+      year: '2017',
+      tagEs: 'Video Instalación | VR',
+      tagEn: 'Video Installation | VR',
+      descEs: `Desarrollo de una experiencia de VR e instalación audiovisual que hace un homenaje aBogotá, a su arquitectura y a su urbanismo. Escaneamos en 3D varios elementos que componen este universo urbano y luego construimos una especie de barrio bogotano digital en el que alterábamos las escalas de los elementos escaneados. \n Realizado en un comienzo para Artec 2015 y expuesto en Indiebox en el Monumento de los Heroes.`,
+      descEn: `Development of a VR experience and an audiovisual installation paying tribute to Bogotá,its architecture and its urbanism. We scanned in 3D several elements which make a partof this urban universe and then we constructed a sort of digital Bogotá neighborhood inwhich we altered the scales of the scanned elements. \n Made initially for 2015 Artec and exhibited in Indiebox at the Heroes Monument.`,
+      logos: [artec, indie],
+      assets: {
+        a1: {
+          type: 'img',
+          src: topologias1
+        },
+        a2: {
+          type: 'gif',
+          src: topologias2
+        },
+        a3: {
+          type: 'gif',
+          src: topologias3
+        },
+        a4: {
+          type: 'gif',
+          src: topologias4
+        },
+        a5: {
+          type: 'gif',
+          src: topologias5
+        },
+        a6: {
+          type: 'gif',
+          src: topologias6
         },
       }
     }

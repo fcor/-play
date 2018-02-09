@@ -272,6 +272,12 @@ li{
   text-align: center;
 }
 
+.title-box h2{
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+}
+
 .project-year{
   margin: 0;
   font-size: 18px;
@@ -299,7 +305,7 @@ li{
 }
 
 .logo{
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .assets{
