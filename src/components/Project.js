@@ -28,6 +28,11 @@ const Project = ({ param, lang }) => {
       {description(lang).split('\n').map( (item, i) =>
         <p className="project-description" key={i}>{item}</p>
       )}
+      <div className="logos">
+        {project.logos.map((item)=>
+          <img className="logo" src={item} key={item} alt="logo" />
+        )}
+      </div>
       <div className="assets">
         { Object.entries(project.assets).map( (item) => {
             if (item[1].type === 'gif' || item[1].type === 'img') {

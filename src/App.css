@@ -290,6 +290,18 @@ li{
   text-align: justify;
 }
 
+.logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.logo{
+  margin: 0 10px;
+}
+
 .assets{
   display: flex;
   align-items: center;
