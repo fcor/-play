@@ -290,6 +290,18 @@ li{
   text-align: justify;
 }
 
+.assets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.asset-box{
+  margin-top: 20px;
+  /* width: 400px; */
+}
+
 .footer{
   height: 50px;
   display: flex;
