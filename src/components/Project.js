@@ -32,19 +32,19 @@ const Project = ({ param, lang }) => {
         { Object.entries(project.assets).map( (item) => {
             if (item[1].type === 'gif' || item[1].type === 'img') {
               return(
-                <div className="asset-box">
+                <div key={item} className="asset-box">
                   <img src={item[1].src} alt="+play" width="600px"/>
                 </div>
               )
             } else if (item[1].type === 'video') {
               return(
-                <div className="asset-box">
+                <div key={item} className="asset-box">
                   <div dangerouslySetInnerHTML={{__html:item[1].src}} />
                 </div>
               )
             } else if (item[1].type === '360') {
               return(
-                <div className="asset-box">
+                <div key={item} className="asset-box">
                   <VRScene img={item[1].src}/>
                 </div>
               )
