@@ -8,6 +8,11 @@
   src: local('Chalet Milan'), url(./fonts/ChaletComprimeMilanEighty.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Letter Gothic';
+  src: local('Letter Gothic'), url(./fonts/LetterGothic.otf) format('truetype');
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -22,11 +27,11 @@ a{
 }
 
 a:hover{
-  color: skyblue;
+  color: #00EBF2;
 }
 
 .selected{
-  color: skyblue;
+  color: #00EBF2;
 }
 
 path{
@@ -34,15 +39,15 @@ path{
 }
 
 .pool-box:hover path{
-  stroke: skyblue;
+  stroke: #00EBF2;
 }
 
 .selected path{
-  stroke: skyblue;
+  stroke: #00EBF2;
 }
 
 li{
-  margin-right: 30px;
+  margin-right: 40px;
   /* font-weight: bold; */
 }
 
@@ -82,7 +87,7 @@ li{
   /* font-weight: bold; */
   letter-spacing: 1px;
   font-size: 15px;
-  color: #585858;
+  color: #4C4C4C;
   cursor: pointer;
 }
 
@@ -95,7 +100,7 @@ li{
 }
 
 .bar{
-  border: 1px solid #585858;
+  border: 1px solid #4C4C4C;
   opacity: 0;
   transition: .2s;
 }
@@ -212,9 +217,77 @@ li{
   border: 0;
 }
 
-
 .about-box{
   /* height: 700px; */
+}
+
+.project-content{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+
+.navigate{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-button{
+  margin: 0;
+  font-family: 'Chalet Cologne';
+  font-size: 14px;
+  color: #D1D3D4;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.left::before{
+  content: '< ';
+}
+
+.right::after{
+  content: ' >';
+}
+
+.title-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Chalet Cologne';
+}
+
+.title-box h1{
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin: 15px 0;
+  width: 300px;
+  text-align: center;
+}
+
+.project-year{
+  margin: 0;
+  font-size: 18px;
+  color: #4C4C4C;
+}
+
+.project-tag{
+  font-size: 18px;
+  margin: 15px 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.project-description{
+  font-family: 'Letter Gothic';
+  font-size: 13px;
+  text-align: justify;
 }
 
 .footer{

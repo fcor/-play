@@ -19,7 +19,7 @@ const Menu = ({changeLang, lang}) =>
    </div>
    <div className="logo-box">
      <Link to="/">
-       <img src={logo} alt="+play logo" width="250px"/>
+       <img src={logo} alt="+play logo" width="180px"/>
      </Link>
    </div>
    <div className="navbar">
