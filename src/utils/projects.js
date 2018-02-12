@@ -44,6 +44,15 @@ import topologias3 from '../images/topologias/3.gif'
 import topologias4 from '../images/topologias/4.gif'
 import topologias5 from '../images/topologias/5.gif'
 import topologias6 from '../images/topologias/6.gif'
+import sonar1 from '../images/sonar/1.png'
+import sonar2 from '../images/sonar/2.gif'
+import sonar3 from '../images/sonar/3.gif'
+import sonar4 from '../images/sonar/4.gif'
+import sonar5 from '../images/sonar/5.gif'
+import warm1 from '../images/warm/1.gif'
+import warm2 from '../images/warm/2.gif'
+import warm3 from '../images/warm/3.gif'
+import warm4 from '../images/warm/4.gif'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -239,6 +248,80 @@ const getProjectDetails = (param) => {
         a6: {
           type: 'gif',
           src: topologias6
+        },
+      }
+    }
+  }  else if (param === 'sonar') {
+    return {
+      prev: 'topologias',
+      next: 'warm',
+      titleEs: 'Sonar AV Experience',
+      titleEn: 'Sonar AV Experience',
+      subtitle: '',
+      year: '2017',
+      tagEs: 'Video Instalación',
+      tagEn: 'Video Installation',
+      descEs: `Realización de una instalación audiovisual que busca reinterpretar los espacios físicos y alterar la manera como los percibimos. La obra consiste de un espacio completamente  oscuro, que a partir de humo, crea un lienzo de tres dimensiones. Una proyección  va llevando al espectador por varios espacios físicos-efímeros, modelados a travez de la luz. La musica compuesta por Juan Mattos termina de darle vida a estos espacios de luz.
+               Habitat:
+               1. lugar de condiciones apropiadas para que viva un organismo, especie o comunidad animal o vegetal.
+               2. Ambiente particularmente adecuado a los gustos y necesidades personales de alguien.
+               3. Espacio construido en el que vive el hombre.
+               Expuesta en el Sónar AV Experience de Bogotá y la feria DAT.`,
+      descEn: `Production and direction of an audiovisual installation which attempted to reinterpret physical spaces and the way we perceive them. The piece consisted of a pitch-black space, which by the means of light and smoke, creates a three dimensional canvas. A projection takes the spectator through several physical-ephemeral spaces, modeled through light. The music, composed by Juan Mattos, completes the process of giving these light spaces life.
+               Habitat:
+               1. The natural home or environment of an animal, plant, or other organism.
+               2. A person's usual or preferred surroundings.
+               3. Constructed space in which man lives.
+               Exhibited in the Sónar AV Experience in Bogotá y the DAT fair.`,
+      logos: [s2017, dat ],
+      assets: {
+        a1: {
+          type: 'img',
+          src: sonar1
+        },
+        a2: {
+          type: 'gif',
+          src: sonar2
+        },
+        a3: {
+          type: 'gif',
+          src: sonar3
+        },
+        a4: {
+          type: 'gif',
+          src: sonar4
+        },
+      }
+    }
+  } else if (param === 'warm') {
+    return {
+      prev: 'sonar',
+      next: 'moto',
+      titleEs: 'Sonar Warm Up',
+      titleEn: 'Sonar Warm Up',
+      subtitle: '',
+      year: '2015',
+      tagEs: 'Mapping | Instalación',
+      tagEn: 'Mapping | Installation',
+      descEs: `Desarrollo de experiencias audiovisuales para el lanzamiento de la primera versión del Festival Sónar en Bogotá realizado en la Universidad de los Andes y en el Planetario de Bogotá.`,
+      descEn: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.`,
+      logos: [s2015],
+      assets: {
+        a1: {
+          type: 'img',
+          src: warm1
+        },
+        a2: {
+          type: 'gif',
+          src: warm2
+        },
+        a3: {
+          type: 'gif',
+          src: warm3
+        },
+        a4: {
+          type: 'gif',
+          src: warm4
         },
       }
     }
