@@ -54,7 +54,7 @@ class App extends Component {
           <Menu changeLang={this.handleLang} lang={lang}/>
           <div className="contenido">
             <Route render={({ location }) =>
-              <TransitionGroup>
+              <TransitionGroup exit={false}>
                 <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
                   <Switch location={location}>
                       <Route exact path="/" render={() => <Gifs height={'3300px'} lang={lang} param="home"/>} />
