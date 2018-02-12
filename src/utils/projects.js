@@ -352,6 +352,10 @@ const getProjectDetails = (param) => {
           type: 'gif',
           src: sonar4
         },
+        a5: {
+          type: 'gif',
+          src: sonar5
+        },
       }
     }
   } else if (param === 'warm') {
