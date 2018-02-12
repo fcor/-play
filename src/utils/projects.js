@@ -84,6 +84,12 @@ import planoz10 from '../images/planoz/10.jpg'
 import planoz11 from '../images/planoz/11.jpg'
 import planoz12 from '../images/planoz/12.jpg'
 import planoz13 from '../images/planoz/13.jpg'
+import cuerpos1 from '../images/cuerpos/1.gif'
+import cuerpos2 from '../images/cuerpos/2.jpg'
+import cuerpos3 from '../images/cuerpos/3.jpg'
+import cuerpos4 from '../images/cuerpos/4.jpg'
+import cuerpos5 from '../images/cuerpos/5.jpg'
+import cuerpos6 from '../images/cuerpos/6.jpg'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -476,14 +482,16 @@ const getProjectDetails = (param) => {
     return {
       prev: 'redbullP',
       next: 'cuerpos',
-      titleEs: '',
-      titleEn: '',
+      titleEs: 'Moto Z | Plano Z',
+      titleEn: 'Moto Z | Plain Z',
       subtitle: '',
       year: '2016',
       tagEs: 'Video 360º | Tour VIrtual',
       tagEn: '360º Video | Virtual Tour',
-      descEs: ``,
-      descEn: ``,
+      descEs: `En el marco de lanzamiento de su celular Moto Z, la marca Motorola de mano de la agencia Milagros co-produjeron una obra de teatro dirigida por Laura Villegas, dentro de la casa patrimonial El Muro Antiguo. Una obra de teatro dirigida a un público exclusivo de 60 personas en la cual se resaltaría las características del nuevo celular, junto con sus diferentes accesorios que potencian sus capacidades tecnológicas.
+              Para impulsar el alcance de su lanzamiento, +PLAY registró el recorrido de la obra y lo resumió en un tour virtual para 360º. Así, cualquier persona puede disfrutar la obra desde su celular y experimentar lo que solo pocos tuvieron el privilegio de vivir.`,
+      descEn: `Amidst the launch of their Moto Z cell phone, Motorola and the Milagros agency coproduced a play directed by Laura Villegas, inside the heritage Muro Antiguo house. A play for an exclusive 60 people audience, in which the characteristics of the new cell phone would be highlighted, along with its various accessories which enhance its technological capacity.
+              To impulse the reach of the its launch, +PLAY registered the play’s course and summarized it in a 360º virtual tour. That way, anyone can enjoy the play from their cell phone and experience what a few privileged were able to in person.`,
       logos: [moto, planoz, milagros],
       assets: {
         a1: {
@@ -538,6 +546,51 @@ const getProjectDetails = (param) => {
           type: 'img',
           src: planoz13
         }
+      }
+    }
+  } else if (param === 'cuerpos') {
+    return {
+      prev: 'planoz',
+      next: 'uber',
+      titleEs: 'Cuerpos de Agua',
+      titleEn: 'Water Bodies',
+      subtitle: '',
+      year: '2015',
+      tagEs: ' Cortometraje 360º',
+      tagEn: '360º Short Film',
+      descEs: `Tumaco es un pequeño pueblo en la frontera entre Colombia y Ecuador, uno de los rincones mas apartados del país lo cual lo convierte en lugar estratégico para la exportación de cocaina. Ahi viven  “Don Alvaro” y “Don Segundo”, dos nativos que por circunstancias distintas se encuentran incapacitados pero que aseguran que el mar es su segunda casa. Alvaro recibió un disparo en la parte baja de la columna, sufrió una lesión grave en su espalda lo cual le impidió caminar por varios años. Segundo, por otro lado tuvo un accidente en el campo cuando trataba de casar su almuerzo con un arma hechiza, dejándolo ciego. Segundo y Alvaro salen todos los días a buscar  su alimento en el mar.`,
+      descEn: `Tumaco is a small rural town in the border between Colombia and Ecuador. Being one of the most secluded corners in the country, it has become a strategic place for cocaine export. There live“Don Alvaro” and “Don Segundo”, two locals who for different circumstances find themselves disabled, but assure the sea is their second home. Alvaro was shot in his lower back, precluding him from walking for several years. Segundo, on the other hand, had an accident in the field as he was trying to hunt his lunch with a make-shift gun, leaving him blind. Segundo and Alvaro go out every day to fetch their meals in the sea.
+      Short film selected in the first Virtual Reality producers encounter of Ventana Sur Buenos Aires.`,
+      logos: [vs],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: cuerpos1
+        },
+        a2: {
+          type: 'img',
+          src: cuerpos2
+        },
+        a3: {
+          type: 'img',
+          src: cuerpos3
+        },
+        a4: {
+          type: 'img',
+          src: cuerpos4
+        },
+        a5: {
+          type: 'img',
+          src: cuerpos5
+        },
+        a6: {
+          type: '360',
+          src: cuerpos6
+        },
+        // a7: {
+        //   type: '360',
+        //   src: cuerpos7
+        // },
       }
     }
   }
