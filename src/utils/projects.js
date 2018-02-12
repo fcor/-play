@@ -58,6 +58,20 @@ import moto2 from '../images/moto/2.gif'
 import moto3 from '../images/moto/3.gif'
 import moto4 from '../images/moto/4.gif'
 import moto5 from '../images/moto/5.gif'
+import rbp1 from '../images/rbp/1.gif'
+import rbp2 from '../images/rbp/2.gif'
+import rbp3 from '../images/rbp/3.gif'
+import rbp4 from '../images/rbp/4.jpg'
+import rbp5 from '../images/rbp/5.jpg'
+// import rbp6 from '../images/rbp/6.jpg'
+// import rbp7 from '../images/rbp/7.jpg'
+// import rbp8 from '../images/rbp/8.jpg'
+// import rbp9 from '../images/rbp/9.jpg'
+// import rbp10 from '../images/rbp/10.jpg'
+// import rbp11 from '../images/rbp/11.jpg'
+// import rbp12 from '../images/rbp/12.jpg'
+// import rbp13 from '../images/rbp/13.jpg'
+// import rbp14 from '../images/rbp/14.jpg'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -370,6 +384,80 @@ const getProjectDetails = (param) => {
           type: 'video',
           src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/ixi5oW_iJM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
+      }
+    }
+  } else if (param === 'redbullP') {
+    return {
+      prev: 'moto',
+      next: 'planoz',
+      titleEs: 'Redbull Parapenta',
+      titleEn: 'Redbull Paragliding',
+      subtitle: '',
+      year: '2017',
+      tagEs: 'Video 360º',
+      tagEn: '360º Video',
+      descEs: `Un grupo conformado por tres parapentistas expertos de RedBull, un equipo de grabación 360º con mas de 32 cámaras, indigenas nativos y montañistas del mas alto nivel se juntaron para romper el récord mundial de planeo mas largo en parapente. Fueron siete días subiendo la Sierra Nevada de Santa Marta para lograr el objetivo y documentarlo en una experiencia de realidad virtual.
+              Productora: 1500 Episodios`,
+      descEn: `A group made up of three professional Red Bull paragliders, a 360º recording team with over 32 cameras, native indigenous locals and top level hikers joined forces to be able to break the world record for the longest paragliding flight. It took seven days climbing Santa Marta’s Sierra Nevada to achieve it as well as document it in a virtual reality experience.
+              Producer: 1500 Episodios`,
+      logos: [rb],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: rbp1
+        },
+        a2: {
+          type: 'gif',
+          src: rbp2
+        },
+        a3: {
+          type: 'gif',
+          src: rbp3
+        },
+        a4: {
+          type: 'gif',
+          src: rbp4
+        },
+        a5: {
+          type: '360',
+          src: rbp5
+        },
+        // a6: {
+        //   type: '360',
+        //   src: rbp6
+        // },
+        // a7: {
+        //   type: '360',
+        //   src: rbp7
+        // },
+        // a8: {
+        //   type: '360',
+        //   src: rbp8
+        // },
+        // a9: {
+        //   type: 'img',
+        //   src: rbp9
+        // }
+        // a10: {
+        //   type: 'img',
+        //   src: rbp10
+        // }
+        // a11: {
+        //   type: 'img',
+        //   src: rbp11
+        // }
+        // a12: {
+        //   type: 'img',
+        //   src: rbp12
+        // }
+        // a13: {
+        //   type: 'img',
+        //   src: rbp13
+        // }
+        // a14: {
+        //   type: 'img',
+        //   src: rbp14
+        // }
       }
     }
   }
