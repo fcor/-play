@@ -3,53 +3,113 @@ import { NavLink, Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import palma from '../images/palma.png'
 
-const Menu = ({changeLang, lang}) =>
- <div className="menu">
-   <div className="lang-box">
-     <p className={`lang-text ${lang === 'en' ? 'active' : ''}`}
-       onClick={() => changeLang('en')}>
-       EN
-       <div className="bar"></div>
-     </p>
-     <p className="lang-text">|</p>
-     <p className={`lang-text ${lang === 'es' ? 'active' : ''}`}
-       onClick={() => changeLang('es')}>
-       SPA
-       <div className="bar"></div></p>
-   </div>
-   <div className="logo-box">
-     <Link to="/">
-       <img src={logo} alt="+play logo" width="180px"/>
-     </Link>
-   </div>
-   <div className="navbar">
-     <ul>
-       <li>
-        <NavLink activeClassName="selected" to='/motion'>Motion</NavLink>
-       </li>
-       <li>
-         <NavLink activeClassName="selected" to='/installation'>Installation</NavLink>
-       </li>
-       <li>
-         <NavLink activeClassName="selected" to='/360'>360°|VR</NavLink>
-       </li>
-       <li>
-         <img src={palma} alt="palma" width="50px"/>
-       </li>
-       <li>
-         <NavLink activeClassName="selected" to='/reel'>
-           <PoolNav>REEL</PoolNav>
-         </NavLink>
-       </li>
-       <li>
-         <NavLink activeClassName="selected" to='/about'>
-           <PoolNav>ABOUT</PoolNav>
-         </NavLink>
-       </li>
-     </ul>
-   </div>
-   <p className="url">WWW.MUCHOMASPLAY.COM</p>
- </div>
+const Menu = ({changeLang, lang}) =>{
+  const motion = ["mundo",
+                  "coca",
+                  "adidas",
+                  "nike",
+                ]
+
+  const installation = ["topologias",
+                        "sonar",
+                        "warm",
+                        "moto",
+                      ]
+
+  const vr = ["redbullP",
+              "planoz",
+              "cuerpos",
+              "uber",
+              "redbull",
+              "freaky",
+              "samsung",
+            ]
+
+  const motionMatch = (match, location) => {
+    if (match) {
+      return true
+    } else {
+      const url = location.pathname.slice(1)
+      return motion.includes(url)
+    }
+  }
+  const installationMatch = (match, location) => {
+    if (match) {
+      return true
+    } else {
+      const url = location.pathname.slice(1)
+      return installation.includes(url)
+    }
+  }
+  const vrMatch = (match, location) => {
+    if (match) {
+      return true
+    } else {
+      const url = location.pathname.slice(1)
+      return vr.includes(url)
+    }
+  }
+  return(
+    <div className="menu">
+      <div className="lang-box">
+        <p className={`lang-text ${lang === 'en' ? 'active' : ''}`}
+          onClick={() => changeLang('en')}>
+          EN
+          <div className="bar"></div>
+        </p>
+        <p className="lang-text">|</p>
+        <p className={`lang-text ${lang === 'es' ? 'active' : ''}`}
+          onClick={() => changeLang('es')}>
+          SPA
+          <div className="bar"></div></p>
+        </div>
+        <div className="logo-box">
+          <Link to="/">
+          <img src={logo} alt="+play logo" width="180px"/>
+        </Link>
+      </div>
+      <div className="navbar">
+        <ul>
+          <li>
+            <NavLink activeClassName="selected"
+                     to='/motion'
+                     isActive={motionMatch}>
+              Motion
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="selected"
+                     to='/installation'
+                     isActive={installationMatch}>
+              Installation
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="selected"
+                     to='/360'
+                     isActive={vrMatch}>
+              360°|VR
+            </NavLink>
+          </li>
+          <li>
+            <img src={palma} alt="palma" width="50px"/>
+          </li>
+          <li>
+            <NavLink activeClassName="selected" to='/reel'>
+            <PoolNav>REEL</PoolNav>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="selected" to='/about'>
+          <PoolNav>ABOUT</PoolNav>
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  <p className="url">WWW.MUCHOMASPLAY.COM</p>
+</div>
+  )
+}
 
  const PoolNav = ({children}) =>
  <div className="pool-box">

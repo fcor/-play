@@ -436,7 +436,7 @@ const getProjectDetails = (param) => {
     return {
       prev: 'moto',
       next: 'planoz',
-      titleEs: 'Redbull Parapenta',
+      titleEs: 'Redbull Parapente',
       titleEn: 'Redbull Paragliding',
       subtitle: '',
       year: '2017',

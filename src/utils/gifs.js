@@ -184,7 +184,7 @@ const gifs = (param) => {
       topR: "40px",
       width: "500px",
       route: "redbullP",
-      title: "Redbull Parapenta",
+      title: "Redbull Parapente",
       titleEn: "Redbull Paragliding",
       year: "2017",
       desc: "Acá va la descripción",
