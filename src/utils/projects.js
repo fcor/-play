@@ -105,6 +105,12 @@ import rbd7 from '../images/rbd/7.gif'
 import rbd8 from '../images/rbd/8.gif'
 import rbd9 from '../images/rbd/9.jpg'
 import rbd10 from '../images/rbd/10.jpg'
+import freaky1 from '../images/freaky/11.gif'
+import freaky2 from '../images/freaky/2.gif'
+import freaky3 from '../images/freaky/3.gif'
+import freaky4 from '../images/freaky/4.jpg'
+import freaky5 from '../images/freaky/5.jpg'
+
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -697,6 +703,46 @@ const getProjectDetails = (param) => {
         a10: {
           type: '360',
           src: rbd10
+        },
+      }
+    }
+  } else if (param === 'freaky') {
+    return {
+      prev: 'redbull',
+      next: 'samsung',
+      titleEs: 'El Freaky ft. Mr Lexx & Cybertronics',
+      titleEn: 'El Freaky ft. Mr Lexx & Cybertronics',
+      subtitle: '',
+      year: '2015',
+      tagEs: 'Video 360º',
+      tagEn: '360º Video',
+      descEs: `Producción del primer videoclip en 360 hecho en Colombia junto al Freaky Colectivo, LaPost y 1500 Episodios.`,
+      descEn: `Production for the first 360 music video made in Colombia with the Freaky Collective, LaPost y 1500 Episodios.`,
+      logos: [lapost, mil],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: freaky1
+        },
+        a2: {
+          type: 'gif',
+          src: freaky2
+        },
+        a3: {
+          type: 'gif',
+          src: freaky3
+        },
+        a4: {
+          type: '360',
+          src: freaky4
+        },
+        a5: {
+          type: '360',
+          src: freaky5
+        },
+        a6: {
+          type: 'video',
+          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/xBVVJ1aCOks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
       }
     }
