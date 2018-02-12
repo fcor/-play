@@ -110,6 +110,9 @@ import freaky2 from '../images/freaky/2.gif'
 import freaky3 from '../images/freaky/3.gif'
 import freaky4 from '../images/freaky/4.jpg'
 import freaky5 from '../images/freaky/5.jpg'
+import samsung1 from '../images/samsung/1.png'
+import samsung2 from '../images/samsung/2.png'
+import samsung3 from '../images/samsung/3.jpg'
 
 
 const getProjectDetails = (param) => {
@@ -743,6 +746,42 @@ const getProjectDetails = (param) => {
         a6: {
           type: 'video',
           src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/xBVVJ1aCOks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+        },
+      }
+    }
+  } else if (param === 'samsung') {
+    return {
+      prev: 'freaky',
+      next: 'mundo',
+      titleEs: 'El Regalo del Mar | Samsung',
+      titleEn: 'The Gift of the Sea | Samsung',
+      subtitle: '',
+      year: '2015',
+      tagEs: 'Video 360º',
+      tagEn: '360º Video',
+      descEs: `Realización de video 360º para un caso realizado por Samsung Colombia. Katherine no puede viajar al mar por problemas de salud. Samsung, a través del Gear VR  permite que Katherine se lleve una sorpresa al tener un día en la playa. El video del caso supero las cuatro millones de reproducciones en youtube.
+                Cliente: Samsung Colombia
+                Productora: Rhayuela.`,
+      descEn: `Production and direction of a 360º video for a case made by Samsung Colombia, Katherine can’t travel to the sea due to health issues. Samsung, through VR Gear gives Katherine a surprise and gives her a day at the beach. The video reached four million views on Youtube.
+              Client: Samsung Colombia
+              Producer: Rhayuela.`,
+      logos: [samsung, rayuela],
+      assets: {
+        a1: {
+          type: 'img',
+          src: samsung1
+        },
+        a2: {
+          type: 'img',
+          src: samsung2
+        },
+        a3: {
+          type: '360',
+          src: samsung3
+        },
+        a4: {
+          type: 'video',
+          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/h2Fp9ZzIAUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
       }
     }
