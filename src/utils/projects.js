@@ -90,6 +90,11 @@ import cuerpos3 from '../images/cuerpos/3.jpg'
 import cuerpos4 from '../images/cuerpos/4.jpg'
 import cuerpos5 from '../images/cuerpos/5.jpg'
 import cuerpos6 from '../images/cuerpos/6.jpg'
+import uber1 from '../images/uber/1.gif'
+import uber2 from '../images/uber/2.gif'
+import uber3 from '../images/uber/3.gif'
+import uber4 from '../images/uber/6.jpg'
+import uber5 from '../images/uber/5.jpg'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -591,6 +596,42 @@ const getProjectDetails = (param) => {
         //   type: '360',
         //   src: cuerpos7
         // },
+      }
+    }
+  } else if (param === 'uber') {
+    return {
+      prev: 'cuerpos',
+      next: 'redbull',
+      titleEs: 'UberPool',
+      titleEn: 'UberPool',
+      subtitle: '',
+      year: '2015',
+      tagEs: 'Video 360º',
+      tagEn: '360º Video',
+      descEs: `Realización de video 360 para UberPool, la nueva plataforma de servicios de Uber. En esta plataforma varios usuarios utilizan un solo automóvil para realizar su recorrido. El video 360º se viralizó en redes sociales y podía ser visto en dispositivos de VR. Los usuarios observaron los beneficios de este nuevo servicio entre los cuales encontramos una mayor economía, formas de socialización, conservación del medio ambiente y, la experiencia de hacer parte de un innovador y excelente servicio.`,
+      descEn: `Production and direction of a 360º video for UberPool, Uber’s most recent service platform, in which several users share the same car for each of their journeys. The 360º video became viral on social media and could be seen in VR devices. The users witnessed the benefits of UberPool, among them a more economic service, a more social environment, preservation of the environment and the experience of being a part of an innovative and excellent service.`,
+      logos: [uber],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: uber1
+        },
+        a2: {
+          type: 'gif',
+          src: uber2
+        },
+        a3: {
+          type: 'gif',
+          src: uber3
+        },
+        a4: {
+          type: 'img',
+          src: uber4
+        },
+        a5: {
+          type: 'img',
+          src: uber5
+        },
       }
     }
   }
