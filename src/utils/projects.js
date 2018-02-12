@@ -95,6 +95,16 @@ import uber2 from '../images/uber/2.gif'
 import uber3 from '../images/uber/3.gif'
 import uber4 from '../images/uber/6.jpg'
 import uber5 from '../images/uber/5.jpg'
+import rbd1 from '../images/rbd/11.gif'
+import rbd2 from '../images/rbd/2.gif'
+import rbd3 from '../images/rbd/3.gif'
+import rbd4 from '../images/rbd/44.gif'
+import rbd5 from '../images/rbd/5.gif'
+import rbd6 from '../images/rbd/6.gif'
+import rbd7 from '../images/rbd/7.gif'
+import rbd8 from '../images/rbd/8.gif'
+import rbd9 from '../images/rbd/9.jpg'
+import rbd10 from '../images/rbd/10.jpg'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -631,6 +641,62 @@ const getProjectDetails = (param) => {
         a5: {
           type: 'img',
           src: uber5
+        },
+      }
+    }
+  } else if (param === 'redbull') {
+    return {
+      prev: 'uber',
+      next: 'freaky',
+      titleEs: 'Deportistas RedBull',
+      titleEn: 'RedBull Athletes',
+      subtitle: '',
+      year: '2017',
+      tagEs: 'Video 360º',
+      tagEn: '360º Video',
+      descEs: ``,
+      descEn: ``,
+      logos: [rb],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: rbd1
+        },
+        a2: {
+          type: 'gif',
+          src: rbd2
+        },
+        a3: {
+          type: 'gif',
+          src: rbd3
+        },
+        a4: {
+          type: 'gif',
+          src: rbd4
+        },
+        a5: {
+          type: 'gif',
+          src: rbd5
+        },
+        a6: {
+          type: 'gif',
+          src: rbd6
+        },
+        a7: {
+          type: 'gif',
+          src: rbd7
+        },
+        a8: {
+          type: 'gif',
+          src: rbd8
+        },
+        a9: {
+          type: '360',
+          src: rbd9
+        },
+        a10: {
+          type: '360',
+          src: rbd10
         },
       }
     }
