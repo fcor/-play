@@ -53,6 +53,11 @@ import warm1 from '../images/warm/1.gif'
 import warm2 from '../images/warm/2.gif'
 import warm3 from '../images/warm/3.gif'
 import warm4 from '../images/warm/4.gif'
+import moto1 from '../images/moto/1.gif'
+import moto2 from '../images/moto/2.gif'
+import moto3 from '../images/moto/3.gif'
+import moto4 from '../images/moto/4.gif'
+import moto5 from '../images/moto/5.gif'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -322,6 +327,48 @@ const getProjectDetails = (param) => {
         a4: {
           type: 'gif',
           src: warm4
+        },
+      }
+    }
+  } else if (param === 'moto') {
+    return {
+      prev: 'warm',
+      next: 'redbullP',
+      titleEs: 'Moto Z2 Play | Circuito de Arte',
+      titleEn: 'Moto Z2 Play | Art Circuit',
+      subtitle: '',
+      year: '2017',
+      tagEs: 'Video Instalación',
+      tagEn: 'Video Installation',
+      descEs: `Realización de una instalación audiovisual en la galería Liberia, una de las principales galerias de arte contemporáneo en Bogotá. La obra se realizó para el Circuito de Arte Moto Z2 como parte del lanzamiento del último celular de Motorola, el único celular del mercado con Mods® intercambiables.
+              Para la instalación se utilizó el Moto Mod Proyector, con el cual se generaron dos espacios de interacción que fueron recorridos por el público invitado.`,
+      descEn: `Production and direction for an audiovisual installation in the Liberia gallery, one of the main contemporary art galleries in Bogotá. The piece was made for the Moto Art Circuit Z2 as a part of the launch of Motorola’s latest cellphone, the only one in the market with interchangeable Mods®.
+              The Moto Mod Proyector was used for the installation, with which two interaction spaces were created and the invited public was able to course through them.`,
+      logos: [moto, cda, milagros],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: moto1
+        },
+        a2: {
+          type: 'gif',
+          src: moto2
+        },
+        a3: {
+          type: 'gif',
+          src: moto3
+        },
+        a4: {
+          type: 'gif',
+          src: moto4
+        },
+        a5: {
+          type: 'gif',
+          src: moto5
+        },
+        a6: {
+          type: 'video',
+          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/ixi5oW_iJM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
       }
     }
