@@ -72,6 +72,18 @@ import rbp5 from '../images/rbp/5.jpg'
 // import rbp12 from '../images/rbp/12.jpg'
 // import rbp13 from '../images/rbp/13.jpg'
 // import rbp14 from '../images/rbp/14.jpg'
+import planoz1 from '../images/planoz/1.gif'
+import planoz3 from '../images/planoz/3.png'
+import planoz4 from '../images/planoz/4.png'
+import planoz5 from '../images/planoz/5.png'
+import planoz6 from '../images/planoz/6.png'
+import planoz7 from '../images/planoz/7.jpg'
+import planoz8 from '../images/planoz/8.jpg'
+import planoz9 from '../images/planoz/9.jpg'
+import planoz10 from '../images/planoz/10.jpg'
+import planoz11 from '../images/planoz/11.jpg'
+import planoz12 from '../images/planoz/12.jpg'
+import planoz13 from '../images/planoz/13.jpg'
 
 const getProjectDetails = (param) => {
   if (param === 'mundo') {
@@ -458,6 +470,74 @@ const getProjectDetails = (param) => {
         //   type: 'img',
         //   src: rbp14
         // }
+      }
+    }
+  } else if (param === 'planoz') {
+    return {
+      prev: 'redbullP',
+      next: 'cuerpos',
+      titleEs: '',
+      titleEn: '',
+      subtitle: '',
+      year: '2016',
+      tagEs: 'Video 360º | Tour VIrtual',
+      tagEn: '360º Video | Virtual Tour',
+      descEs: ``,
+      descEn: ``,
+      logos: [moto, planoz, milagros],
+      assets: {
+        a1: {
+          type: 'gif',
+          src: planoz1
+        },
+        a2: {
+          type: 'video',
+          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/5E8HBVZWKtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+        },
+        a3: {
+          type: 'img',
+          src: planoz3
+        },
+        a4: {
+          type: '360',
+          src: planoz4
+        },
+        a5: {
+          type: '360',
+          src: planoz5
+        },
+        a6: {
+          type: '360',
+          src: planoz6
+        },
+        a7: {
+          type: '360',
+          src: planoz7
+        },
+        a8: {
+          type: 'img',
+          src: planoz8
+        },
+        a9: {
+          type: 'img',
+          src: planoz9
+        },
+        a10: {
+          type: 'img',
+          src: planoz10
+        },
+        a11: {
+          type: 'img',
+          src: planoz11
+        },
+        a12: {
+          type: 'img',
+          src: planoz12
+        },
+        a13: {
+          type: 'img',
+          src: planoz13
+        }
       }
     }
   }
