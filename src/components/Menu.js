@@ -52,16 +52,21 @@ const Menu = ({changeLang, lang}) =>{
   return(
     <div className="menu">
       <div className="lang-box">
-        <p className={`lang-text ${lang === 'en' ? 'active' : ''}`}
-          onClick={() => changeLang('en')}>
-          EN
-          <div className="bar"></div>
-        </p>
+        <div className="lang">
+          <p className="lang-text"
+            onClick={() => changeLang('en')}>
+            EN
+          </p>
+          <div className={`bar ${lang === 'en' ? 'active' : ''}`}></div>
+        </div>
         <p className="lang-text">|</p>
-        <p className={`lang-text ${lang === 'es' ? 'active' : ''}`}
-          onClick={() => changeLang('es')}>
-          SPA
-          <div className="bar"></div></p>
+        <div className="lang">
+          <p className="lang-text"
+            onClick={() => changeLang('es')}>
+            SPA
+          </p>
+          <div className={`bar ${lang === 'es' ? 'active' : ''}`}></div>
+        </div>
         </div>
         <div className="logo-box">
           <Link to="/">

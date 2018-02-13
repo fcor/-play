@@ -58,6 +58,9 @@ class Project extends React.Component {
                   </div>
                 )
               }
+              else{
+                return null
+              }
             }
           )
           }
