@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import palma from '../images/palma.png'
+import palmaNav from '../images/palmaNav.gif'
 
 const Menu = ({changeLang, lang}) =>{
   const motion = ["mundo",
@@ -97,7 +98,7 @@ const Menu = ({changeLang, lang}) =>{
             </NavLink>
           </li>
           <li>
-            <img src={palma} alt="palma" width="50px"/>
+            <img src={palmaNav} alt="palma" width="25px"/>
           </li>
           <li>
             <NavLink activeClassName="selected" to='/reel'>
