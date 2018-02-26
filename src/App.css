@@ -144,9 +144,9 @@ li{
 .pool-text{
   position: absolute;
   margin: 0;
-  top: -2px;
+  top: -1px;
   left: 20px;
-  transform: rotate(-23deg) skew(-20deg)
+  transform: rotate(-23deg) skew(-20deg);
 }
 
 .contenido{
