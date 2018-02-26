@@ -11,7 +11,7 @@ const Menu = ({changeLang, lang}) =>{
                   "nike",
                 ]
 
-  const installation = ["topologias",
+  const space = ["topologias",
                         "sonar",
                         "warm",
                         "moto",
@@ -39,7 +39,7 @@ const Menu = ({changeLang, lang}) =>{
       return true
     } else {
       const url = location.pathname.slice(1)
-      return installation.includes(url)
+      return space.includes(url)
     }
   }
   const vrMatch = (match, location) => {
@@ -85,9 +85,9 @@ const Menu = ({changeLang, lang}) =>{
           </li>
           <li>
             <NavLink activeClassName="selected"
-                     to='/installation'
+                     to='/space'
                      isActive={installationMatch}>
-              Installation
+              Space
             </NavLink>
           </li>
           <li>
@@ -112,7 +112,6 @@ const Menu = ({changeLang, lang}) =>{
         </li>
       </ul>
     </div>
-  <p className="url">WWW.MUCHOMASPLAY.COM</p>
 </div>
   )
 }

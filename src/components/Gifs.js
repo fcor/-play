@@ -9,14 +9,14 @@ const home = [ "redbullP",
                 "moto",
                 "adidas",
                 "sonar",
-                "uber",
+                // "uber",
                 "nike",
-                // "coca",
+                "coca",
                 "cuerpos",
                 "redbull",
                 // "warm",
-                "samsung",
-                "freaky",
+                // "samsung",
+                // "freaky",
               ]
 
 const motion = ["mundo",
@@ -25,7 +25,7 @@ const motion = ["mundo",
                 "nike",
               ]
 
-const installation = ["topologias",
+const space = ["topologias",
                       "sonar",
                       "warm",
                       "moto",
@@ -44,8 +44,8 @@ const Gifs = ({ param, lang, height }) => {
   let content
   if (param === 'motion') {
     content = motion
-  } else if (param === 'installation') {
-    content = installation
+  } else if (param === 'space') {
+    content = space
   } else if (param === '360') {
     content = vr
   } else if (param === 'home') {

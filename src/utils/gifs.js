@@ -19,8 +19,8 @@ const gifs = (param) => {
   if (param === 'mundo') {
     return{
       img: mundo,
-      left: "50px",
-      top: "200px",
+      left: "63px",
+      top: "100px",
       leftR: "200px",
       topR: "40px",
       width: "250",
@@ -34,11 +34,11 @@ const gifs = (param) => {
   } else if (param === 'planoz') {
     return{
       img: planoz,
-      right: "263px",
-      top: "451px",
+      right: "563px",
+      top: "369px",
       rightR: "263px",
       topR: "251px",
-      width: "250",
+      // width: "250",
       route: "planoz",
       title: "Moto Z | Plano Z",
       titleEn: "Moto Z | Plain Z",
@@ -49,8 +49,8 @@ const gifs = (param) => {
   } else if (param === 'topologias') {
     return{
       img: topologias,
-      left: "126px",
-      top: "636px",
+      left: "0px",
+      top: "450px",
       leftR: "171px",
       topR: "40px",
       route: "topologias",
@@ -63,8 +63,8 @@ const gifs = (param) => {
   } else if (param === 'moto') {
     return{
       img: moto,
-      right: "132px",
-      top: "859px",
+      right: "50px",
+      top: "119px",
       rightR: "200px",
       topR: "330px",
       width: "250",
@@ -78,7 +78,7 @@ const gifs = (param) => {
   } else if (param === 'adidas') {
     return{
       img: adidas,
-      left: "76px",
+      right: "0px",
       top: "1045px",
       leftR: "180px",
       topR: "380px",
@@ -92,11 +92,11 @@ const gifs = (param) => {
   } else if (param === 'sonar') {
     return{
       img: sonar,
-      right: "244px",
-      top: "1200px",
+      right: "60px",
+      top: "425px",
       rightR: "171px",
       topR: "40px",
-      width: "300",
+      // width: "300",
       route: "sonar",
       title: "Sonar AV Experience",
       titleEn: "Sonar AV Experience",
@@ -107,8 +107,8 @@ const gifs = (param) => {
   } else if (param === 'uber') {
     return{
       img: uber,
-      left: "221px",
-      top: "1492px",
+      left: "75px",
+      top: "1074px",
       rightR: "120px",
       topR: "581px",
       route: "uber",
@@ -121,8 +121,8 @@ const gifs = (param) => {
   } else if (param === 'nike') {
     return{
       img: nike,
-      right: "30px",
-      top: "1854px",
+      left: "63px",
+      top: "750px",
       rightR: "171px",
       topR: "380px",
       route: "nike",
@@ -135,8 +135,8 @@ const gifs = (param) => {
   } else if (param === 'coca') {
     return{
       img: coca,
-      left: "175px",
-      top: "2000px",
+      left: "580px",
+      top: "950px",
       rightR: "230px",
       topR: "40px",
       width: "300",
@@ -150,8 +150,8 @@ const gifs = (param) => {
   } else if (param === 'cuerpos') {
     return{
       img: cuerpos,
-      right: "208px",
-      top: "2161px",
+      right: "0px",
+      top: "681px",
       leftR: "208px",
       topR: "431px",
       route: "cuerpos",
@@ -164,8 +164,8 @@ const gifs = (param) => {
   } else if (param === 'redbull') {
     return{
       img: redbull,
-      left: "202px",
-      top: "2324px",
+      left: "533px",
+      top: "770px",
       leftR: "136px",
       topR: "833px",
       route: "redbull",
@@ -178,11 +178,11 @@ const gifs = (param) => {
   } else if (param === 'redbullP') {
     return{
       img: redbullp,
-      right: "140px",
+      left: "458px",
       top: "60px",
       leftR: "40px",
       topR: "40px",
-      width: "500px",
+      // width: "500px",
       route: "redbullP",
       title: "Redbull Parapente",
       titleEn: "Redbull Paragliding",
@@ -193,8 +193,8 @@ const gifs = (param) => {
   } else if (param === 'warm') {
     return{
       img: warm,
-      right: "200px",
-      top: "2527px",
+      right: "100px",
+      top: "1450px",
       leftR: "297px",
       topR: "355px",
       route: "warm",
@@ -207,8 +207,8 @@ const gifs = (param) => {
   } else if (param === 'samsung') {
     return{
       img: samsung,
-      left: "114px",
-      top: "2740px",
+      left: "503px",
+      top: "1239px",
       leftR: "114px",
       topR: "1170px",
       width: "450",
@@ -222,8 +222,8 @@ const gifs = (param) => {
   }  else if (param === 'freaky') {
     return{
       img: freaky,
-      right: "240px",
-      top: "3005px",
+      left: "130px",
+      top: "1405px",
       rightR: "284px",
       topR: "942px",
       route: "freaky",

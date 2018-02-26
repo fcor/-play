@@ -20,7 +20,7 @@ body{
 
 a{
   text-decoration: none;
-  font-size: 26px;
+  font-size: 20px;
   color: black;
   letter-spacing: 2px;
   transition: .2s;
@@ -47,13 +47,13 @@ path{
 }
 
 li{
-  margin-right: 40px;
+  margin-right: 70px;
   /* font-weight: bold; */
 }
 
 .contenedor{
   margin: 0 auto;
-  width: 1200px;
+  width: 1400px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -122,6 +122,7 @@ li{
 }
 
 .logo-box{
+  margin-bottom: 50px;
 }
 
 li{
