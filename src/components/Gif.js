@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 class Gif extends React.Component {
   render() {
+    const title = lang => lang ==='es' ? gif.title : gif.titleEn
     const { gif, lang, param } = this.props
     let styles
     if (param === 'home') {
@@ -15,13 +16,16 @@ class Gif extends React.Component {
         <div className="gif-box">
           <Link to={`/${gif.route}`}>
             <div className="gif-text">
-              <p className="gif-title">{lang ==='es' ? gif.title : gif.titleEn}</p>
-              {/* <p className="gif-year">{gif.year}</p> */}
+              <div className="gif-title-box">
+                {title(lang).split('\n').map( (item, i) =>
+                  <p className="gif-title" key={i}>{item}</p>
+                )}
+              </div>
               <p className="gif-desc">
                 {`${lang==='es' ? gif.desc : gif.descEN}`}
               </p>
             </div>
-            <video preload="auto" loop="loop" autoPlay>
+            <video width={gif.width} preload="auto" loop="loop" autoPlay>
               <source src={gif.img} type="video/mp4" />
             </video>
           </Link>

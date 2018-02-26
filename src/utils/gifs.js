@@ -1,43 +1,43 @@
 import adidas from '../images/gifs/adidas.mp4'
 import moto from '../images/gifs/moto.mp4'
 import mundo from '../images/gifs/mundo.mp4'
-import planoz from '../images/gifs/moto.mp4'
-import sonar from '../images/gifs/moto.mp4'
+import planoz from '../images/gifs/planoz.mp4'
+import sonar from '../images/gifs/sonar.mp4'
 import topologias from '../images/gifs/topologias.mp4'
-import uber from '../images/gifs/moto.mp4'
+import uber from '../images/gifs/uber.mp4'
 import nike from '../images/gifs/nike.mp4'
-import coca from '../images/gifs/moto.mp4'
+import coca from '../images/gifs/coca.mp4'
 import cuerpos from '../images/gifs/cuerpos.mp4'
 import redbull from '../images/gifs/redbull.mp4'
-import redbullp from '../images/gifs/moto.mp4'
+import redbullp from '../images/gifs/redbullP.mp4'
 import warm from '../images/gifs/warm.mp4'
 import freaky from '../images/gifs/freaky.mp4'
-import samsung from '../images/gifs/moto.mp4'
+import samsung from '../images/gifs/samsung.mp4'
 
 const gifs = (param) => {
   if (param === 'mundo') {
     return{
       img: mundo,
       left: "63px",
-      top: "100px",
+      top: "80px",
       leftR: "200px",
       topR: "40px",
-      width: "250",
+      // width: "200",
       route: "mundo",
       title: "Una observación al fin del mundo",
       titleEn: "An Observation of the End of the World",
       year: "2017",
-      desc: "Acá va la descripción",
+      desc: "Acá va la descripción ",
       descEN: "Here goes the description"
     }
   } else if (param === 'planoz') {
     return{
       img: planoz,
       right: "563px",
-      top: "369px",
+      top: "330px",
       rightR: "263px",
       topR: "251px",
-      // width: "250",
+      width: "240",
       route: "planoz",
       title: "Moto Z | Plano Z",
       titleEn: "Moto Z | Plain Z",
@@ -49,12 +49,14 @@ const gifs = (param) => {
     return{
       img: topologias,
       left: "0px",
-      top: "450px",
+      top: "430px",
       leftR: "171px",
       topR: "40px",
       route: "topologias",
-      title: "Topologías urbanas",
-      titleEn: "Urban topologies",
+      title: `Topologías
+              urbanas`,
+      titleEn: `Urban
+                topologies`,
       year: "2017",
       desc: "Acá va la descripción",
       descEN: "Here goes the description"
@@ -62,11 +64,11 @@ const gifs = (param) => {
   } else if (param === 'moto') {
     return{
       img: moto,
-      right: "50px",
+      right: "63px",
       top: "119px",
       rightR: "200px",
       topR: "330px",
-      width: "250",
+      // width: "200",
       route: "moto",
       title: "Moto Z2 Play | Circuito de Arte",
       titleEn: "Moto Z2 Play | Art Circuit",
@@ -77,8 +79,9 @@ const gifs = (param) => {
   } else if (param === 'adidas') {
     return{
       img: adidas,
-      right: "0px",
-      top: "1045px",
+      right: "90px",
+      top: "1032px",
+      width: "230",
       leftR: "180px",
       topR: "380px",
       route: "adidas",
@@ -95,7 +98,7 @@ const gifs = (param) => {
       top: "425px",
       rightR: "171px",
       topR: "40px",
-      // width: "300",
+      width: "300",
       route: "sonar",
       title: "Sonar AV Experience",
       titleEn: "Sonar AV Experience",
@@ -106,8 +109,9 @@ const gifs = (param) => {
   } else if (param === 'uber') {
     return{
       img: uber,
-      left: "75px",
-      top: "1074px",
+      left: "10px",
+      top: "1060px",
+      width: "400px",
       rightR: "120px",
       topR: "581px",
       route: "uber",
@@ -120,8 +124,9 @@ const gifs = (param) => {
   } else if (param === 'nike') {
     return{
       img: nike,
-      left: "63px",
-      top: "750px",
+      left: "20px",
+      top: "780px",
+      width: "350px",
       rightR: "171px",
       topR: "380px",
       route: "nike",
@@ -149,7 +154,7 @@ const gifs = (param) => {
   } else if (param === 'cuerpos') {
     return{
       img: cuerpos,
-      right: "0px",
+      right: "80px",
       top: "681px",
       leftR: "208px",
       topR: "431px",
@@ -163,8 +168,9 @@ const gifs = (param) => {
   } else if (param === 'redbull') {
     return{
       img: redbull,
-      left: "533px",
-      top: "770px",
+      left: "452px",
+      top: "733px",
+      width: "500px",
       leftR: "136px",
       topR: "833px",
       route: "redbull",
@@ -177,11 +183,11 @@ const gifs = (param) => {
   } else if (param === 'redbullP') {
     return{
       img: redbullp,
-      left: "458px",
+      left: "452px",
       top: "60px",
       leftR: "40px",
       topR: "40px",
-      // width: "500px",
+      width: "500px",
       route: "redbullP",
       title: "Redbull Parapenta",
       titleEn: "Redbull Paragliding",
@@ -193,7 +199,7 @@ const gifs = (param) => {
     return{
       img: warm,
       right: "100px",
-      top: "1450px",
+      top: "1380px",
       leftR: "297px",
       topR: "355px",
       route: "warm",
@@ -206,11 +212,11 @@ const gifs = (param) => {
   } else if (param === 'samsung') {
     return{
       img: samsung,
-      left: "503px",
-      top: "1239px",
+      left: "557px",
+      top: "1260px",
+      width: "380px",
       leftR: "114px",
       topR: "1170px",
-      width: "450",
       route: "samsung",
       title: "El Regalo del Mar | Samsung",
       titleEn: "The Gift of the Sea | Samsung",
@@ -223,6 +229,7 @@ const gifs = (param) => {
       img: freaky,
       left: "130px",
       top: "1405px",
+      width: "230px",
       rightR: "284px",
       topR: "942px",
       route: "freaky",
