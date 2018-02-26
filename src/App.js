@@ -57,8 +57,8 @@ class App extends Component {
                 <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
                   <Switch location={location}>
                       <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
-                      <Route path="/motion" render={() => <Gifs height={'550px'}  lang={lang} param="motion"/>} />
-                      <Route path="/space" render={() => <Gifs height={'650px'} lang={lang} param="space"/>}/>
+                      <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
+                      <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
                       <Route path="/360" render={() => <Gifs height={'1500px'} lang={lang} param="360"/>}/>
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>
