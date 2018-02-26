@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import VRScene from './VRScene'
 import getProjectDetails from '../utils/projects'
-import palmaNav from '../images/palmaNav.gif'
+import asoleadora from '../images/asoleadora.gif'
 
 class Project extends React.Component {
   componentDidMount(){
@@ -18,7 +18,7 @@ class Project extends React.Component {
           <Link to={`/${project.prev}`}>
             <p className="nav-button left" style={{marginRight:'10px'}}>Prev</p>
           </Link>
-          <img src={palmaNav} alt="palma" width="20px"/>
+          <img src={asoleadora} alt="palma" width="72px"/>
           <Link to={`/${project.next}`}>
             <p className="nav-button right" style={{marginLeft:'10px'}}>Next</p>
           </Link>
