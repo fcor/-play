@@ -16,13 +16,14 @@ class Gif extends React.Component {
           <Link to={`/${gif.route}`}>
             <div className="gif-text">
               <p className="gif-title">{lang ==='es' ? gif.title : gif.titleEn}</p>
-              <p className="gif-year">{gif.year}</p>
-              <p className="gif-desc">{lang==='es' ? gif.desc : gif.descEN}</p>
+              {/* <p className="gif-year">{gif.year}</p> */}
+              <p className="gif-desc">
+                {`${lang==='es' ? gif.desc : gif.descEN}`}
+              </p>
             </div>
-            <img src={gif.img}
-              alt="gif"
-              width={gif.width}
-            />
+            <video preload="auto" loop="loop" autoPlay>
+              <source src={gif.img} type="video/mp4" />
+            </video>
           </Link>
         </div>
       </div>

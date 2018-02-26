@@ -2,21 +2,21 @@ import React from 'react'
 import Gif from './Gif'
 import gifs from '../utils/gifs'
 
-const home = [ "redbullP",
-                "mundo",
-                "planoz",
+const home = [ //"redbullP",
+               "mundo",
+                // "planoz",
                 "topologias",
                 "moto",
                 "adidas",
-                "sonar",
-                // "uber",
+                // "sonar",
+                "uber",
                 "nike",
-                "coca",
+                // "coca",
                 "cuerpos",
                 "redbull",
-                // "warm",
+                "warm",
                 // "samsung",
-                // "freaky",
+                "freaky",
               ]
 
 const motion = ["mundo",

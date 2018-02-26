@@ -1,19 +1,18 @@
-import adidas from '../images/gifs/adidas.gif'
-import moto from '../images/gifs/moto.gif'
-import mundo from '../images/gifs/mundo.gif'
-import planoz from '../images/gifs/planoz.gif'
-import sonar from '../images/gifs/sonar.gif'
-import topologias from '../images/gifs/topologias.gif'
-import uber from '../images/gifs/uber.gif'
-import nike from '../images/gifs/nike.gif'
-import coca from '../images/gifs/coca.gif'
-import cuerpos from '../images/gifs/cuerpos.gif'
-import redbull from '../images/gifs/redbull.gif'
-import redbullp from '../images/gifs/redbullp.gif'
-import warm from '../images/gifs/warm.gif'
-import freaky from '../images/gifs/freaky.gif'
-import samsung from '../images/gifs/samsung.gif'
-
+import adidas from '../images/gifs/adidas.mp4'
+import moto from '../images/gifs/moto.mp4'
+import mundo from '../images/gifs/mundo.mp4'
+import planoz from '../images/gifs/moto.mp4'
+import sonar from '../images/gifs/moto.mp4'
+import topologias from '../images/gifs/topologias.mp4'
+import uber from '../images/gifs/moto.mp4'
+import nike from '../images/gifs/nike.mp4'
+import coca from '../images/gifs/moto.mp4'
+import cuerpos from '../images/gifs/cuerpos.mp4'
+import redbull from '../images/gifs/redbull.mp4'
+import redbullp from '../images/gifs/moto.mp4'
+import warm from '../images/gifs/warm.mp4'
+import freaky from '../images/gifs/freaky.mp4'
+import samsung from '../images/gifs/moto.mp4'
 
 const gifs = (param) => {
   if (param === 'mundo') {
@@ -184,7 +183,7 @@ const gifs = (param) => {
       topR: "40px",
       // width: "500px",
       route: "redbullP",
-      title: "Redbull Parapente",
+      title: "Redbull Parapenta",
       titleEn: "Redbull Paragliding",
       year: "2017",
       desc: "Acá va la descripción",
