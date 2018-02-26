@@ -17,6 +17,7 @@ import samsung from '../images/gifs/samsung.mp4'
 const gifs = (param) => {
   if (param === 'mundo') {
     return{
+      back: 'white',
       img: mundo,
       left: "63px",
       top: "80px",
@@ -24,29 +25,31 @@ const gifs = (param) => {
       topR: "40px",
       // width: "200",
       route: "mundo",
-      title: "Una observación al fin del mundo",
+      title: "Una Observación al Fin del Mundo",
       titleEn: "An Observation of the End of the World",
       year: "2017",
-      desc: "Acá va la descripción ",
-      descEN: "Here goes the description"
+      desc: "Fulldome Experience",
+      descEN: "Fulldome Experience"
     }
   } else if (param === 'planoz') {
     return{
+      back: 'black',
       img: planoz,
       right: "563px",
       top: "330px",
       rightR: "263px",
       topR: "251px",
-      width: "240",
+      width: "250",
       route: "planoz",
-      title: "Moto Z | Plano Z",
-      titleEn: "Moto Z | Plain Z",
+      title: "Moto Z \n Plano Z",
+      titleEn: "Moto Z \n Plain Z",
       year: "2016",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º | Tour VIrtual",
+      descEN: "360º Video | Virtual Tour"
     }
   } else if (param === 'topologias') {
     return{
+      back: 'white',
       img: topologias,
       left: "0px",
       top: "430px",
@@ -54,15 +57,16 @@ const gifs = (param) => {
       topR: "40px",
       route: "topologias",
       title: `Topologías
-              urbanas`,
+              Urbanas`,
       titleEn: `Urban
-                topologies`,
+                Topologies`,
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video Instalación | VR",
+      descEN: "Video Installation | VR"
     }
   } else if (param === 'moto') {
     return{
+      back: 'black',
       img: moto,
       right: "63px",
       top: "119px",
@@ -70,29 +74,31 @@ const gifs = (param) => {
       topR: "330px",
       // width: "200",
       route: "moto",
-      title: "Moto Z2 Play | Circuito de Arte",
-      titleEn: "Moto Z2 Play | Art Circuit",
+      title: "Moto Z2 Play",
+      titleEn: "Moto Z2 Play",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video Instalación",
+      descEN: "Video Installation"
     }
   } else if (param === 'adidas') {
     return{
+      back: 'black',
       img: adidas,
       right: "90px",
       top: "1032px",
-      width: "230",
+      width: "250",
       leftR: "180px",
       topR: "380px",
       route: "adidas",
-      title: "Adidas Nemeziz",
-      titleEn: "Adidas Nemeziz",
+      title: "Adidas \n Nemeziz",
+      titleEn: "Adidas \n Nemeziz",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Motion Graphics | Diseño",
+      descEN: "Motion Graphics | Design"
     }
   } else if (param === 'sonar') {
     return{
+      back: 'black',
       img: sonar,
       right: "60px",
       top: "425px",
@@ -100,14 +106,15 @@ const gifs = (param) => {
       topR: "40px",
       width: "300",
       route: "sonar",
-      title: "Sonar AV Experience",
-      titleEn: "Sonar AV Experience",
+      title: "Sonar AV \n Experience",
+      titleEn: "Sonar \n AV Experience",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video Instalación",
+      descEN: "Video Installation"
     }
   } else if (param === 'uber') {
     return{
+      back: 'black',
       img: uber,
       left: "10px",
       top: "1060px",
@@ -118,11 +125,12 @@ const gifs = (param) => {
       title: "UberPool",
       titleEn: "UberPool",
       year: "2015",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º",
+      descEN: "360º Video"
     }
   } else if (param === 'nike') {
     return{
+      back: 'white',
       img: nike,
       left: "20px",
       top: "780px",
@@ -130,43 +138,46 @@ const gifs = (param) => {
       rightR: "171px",
       topR: "380px",
       route: "nike",
-      title: "Nike Lanzamiento Air Force",
+      title: "Nike Lanzamiento \n Air Force",
       titleEn: "Nike Air Force Launch",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Mapping | Motion Graphics",
+      descEN: "Mapping | Motion Graphics"
     }
   } else if (param === 'coca') {
     return{
+      back: 'white',
       img: coca,
       left: "580px",
       top: "950px",
       rightR: "230px",
       topR: "40px",
-      width: "300",
+      width: "320",
       route: "coca",
-      title: "De la Coca a la Pimienta",
-      titleEn: "De la Coca a la Pimienta",
+      title: "De la Coca \n a la Pimienta",
+      titleEn: "De la Coca \n a la Pimienta",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Diseño de títulos | Motion Graphics",
+      descEN: "Main Title Design | Motion Graphics"
     }
   } else if (param === 'cuerpos') {
     return{
+      back: 'white',
       img: cuerpos,
       right: "80px",
       top: "681px",
       leftR: "208px",
       topR: "431px",
       route: "cuerpos",
-      title: "Cuerpos de Agua",
+      title: "Cuerpos \n de Agua",
       titleEn: "Water Bodies",
       year: "2015",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Cortometraje 360º",
+      descEN: "360º Short Film"
     }
   } else if (param === 'redbull') {
     return{
+      back: 'black',
       img: redbull,
       left: "452px",
       top: "733px",
@@ -174,14 +185,15 @@ const gifs = (param) => {
       leftR: "136px",
       topR: "833px",
       route: "redbull",
-      title: "Deportistas RedBull",
+      title: "Deportistas Red Bull",
       titleEn: "RedBull Athletes",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º",
+      descEN: "360º Video"
     }
   } else if (param === 'redbullP') {
     return{
+      back: 'black',
       img: redbullp,
       left: "452px",
       top: "60px",
@@ -192,25 +204,27 @@ const gifs = (param) => {
       title: "Redbull Parapenta",
       titleEn: "Redbull Paragliding",
       year: "2017",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º",
+      descEN: "360º Video"
     }
   } else if (param === 'warm') {
     return{
+      back: 'white',
       img: warm,
       right: "100px",
       top: "1380px",
       leftR: "297px",
       topR: "355px",
       route: "warm",
-      title: "Sonar Warm Up",
-      titleEn: "Sonar Warm Up",
+      title: "Sonar \n Warm Up",
+      titleEn: "Sonar \n Warm Up",
       year: "2015",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Mapping | Instalación",
+      descEN: "Mapping | Installation"
     }
   } else if (param === 'samsung') {
     return{
+      back: 'black',
       img: samsung,
       left: "557px",
       top: "1260px",
@@ -218,14 +232,15 @@ const gifs = (param) => {
       leftR: "114px",
       topR: "1170px",
       route: "samsung",
-      title: "El Regalo del Mar | Samsung",
-      titleEn: "The Gift of the Sea | Samsung",
+      title: "El Regalo del Mar \n Samsung",
+      titleEn: "The Gift of the Sea \n Samsung",
       year: "2015",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º",
+      descEN: "360º Video"
     }
   }  else if (param === 'freaky') {
     return{
+      back: 'black',
       img: freaky,
       left: "130px",
       top: "1405px",
@@ -236,8 +251,8 @@ const gifs = (param) => {
       title: "El Freaky ft. Mr Lexx & Cybertronics",
       titleEn: "El Freaky ft. Mr Lexx & Cybertronics",
       year: "2015",
-      desc: "Acá va la descripción",
-      descEN: "Here goes the description"
+      desc: "Video 360º",
+      descEN: "360º Video"
     }
   }
 }

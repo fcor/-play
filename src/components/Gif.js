@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import palmaBlack from '../images/palmaBlack.png'
+import palmaWhite from '../images/palmaWhite.png'
 
 class Gif extends React.Component {
   render() {
@@ -22,7 +24,11 @@ class Gif extends React.Component {
                 )}
               </div>
               <p className="gif-desc">
-                {`${lang==='es' ? gif.desc : gif.descEN}`}
+                {`${lang==='es' ? gif.desc : gif.descEN} `}
+                <span>
+                  <img src={palmaWhite} />
+                </span>
+                {` ${gif.year}`}
               </p>
             </div>
             <video width={gif.width} preload="auto" loop="loop" autoPlay>
