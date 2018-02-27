@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: 'Letter Gothic';
-  src: local('Letter Gothic'), url(./fonts/LetterGothic.otf) format('truetype');
+  font-family: 'Base Medium';
+  src: local('Base Medium'), url(./fonts/Base9Medium.otf) format('truetype');
 }
 
 body{
@@ -46,9 +46,29 @@ path{
   stroke: #00EBF2;
 }
 
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:nth-child(-n + 2){
+  margin-right: 70px;
+}
+
+li:nth-child(3){
   margin-right: 65px;
-  /* font-weight: bold; */
+}
+
+li:nth-child(n + 3){
+  margin-right: 40px;
 }
 
 .contenedor{
@@ -123,18 +143,6 @@ li{
 
 .logo-box{
   margin-bottom: 50px;
-}
-
-li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar ul{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
 }
 
 .pool-box{
@@ -260,7 +268,7 @@ li{
 .nav-button{
   margin: 0;
   font-family: 'Chalet Cologne';
-  font-size: 14px;
+  font-size: 16px;
   color: #D1D3D4;
   font-weight: normal;
   cursor: pointer;
@@ -310,7 +318,7 @@ li{
 }
 
 .project-description{
-  font-family: 'Letter Gothic';
+  font-family: 'Base Medium';
   font-size: 13px;
   text-align: justify;
 }

@@ -14,15 +14,7 @@ class Project extends React.Component {
     const description = (lang) => lang ==='es' ? project.descEs : project.descEn
     return (
       <div className="project-content">
-        <div className="navigate">
-          <Link to={`/${project.prev}`}>
-            <p className="nav-button left" style={{marginRight:'10px'}}>Prev</p>
-          </Link>
-          <img src={asoleadora} alt="palma" width="72px"/>
-          <Link to={`/${project.next}`}>
-            <p className="nav-button right" style={{marginLeft:'10px'}}>Next</p>
-          </Link>
-        </div>
+        <Navigate prev={project.prev} next={project.next} />
         <div className="title-box">
           <h1>{lang ==='es' ? project.titleEs : project.titleEn}</h1>
           {project.subtitle && <h2>{project.subtitle}</h2>}
@@ -69,5 +61,16 @@ class Project extends React.Component {
     )
   }
 }
+
+const Navigate = props =>
+  <div className="navigate">
+    <Link to={`/${props.prev}`}>
+      <p className="nav-button left" style={{marginRight:'10px'}}>Prev</p>
+    </Link>
+    <img src={asoleadora} alt="sol" style={{marginTop:'6px'}} width="55px"/>
+    <Link to={`/${props.next}`}>
+      <p className="nav-button right" style={{marginLeft:'10px'}}>Next</p>
+    </Link>
+  </div>
 
 export default Project
