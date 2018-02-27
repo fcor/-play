@@ -85,7 +85,7 @@ import planoz10 from '../images/planoz/10.jpg'
 import planoz11 from '../images/planoz/11.jpg'
 import planoz12 from '../images/planoz/12.jpg'
 import planoz13 from '../images/planoz/13.jpg'
-import cuerpos1 from '../images/cuerpos/1.gif'
+import cuerpos1 from '../images/cuerpos/1.mp4'
 import cuerpos2 from '../images/cuerpos/2.jpg'
 import cuerpos3 from '../images/cuerpos/3.jpg'
 import cuerpos4 from '../images/cuerpos/4.jpg'
@@ -598,7 +598,7 @@ const getProjectDetails = (param) => {
       assets: {
         a1: {
           type: 'gif',
-          src: cuerpos1
+          src: cuerpos1 
         },
         a2: {
           type: 'img',
