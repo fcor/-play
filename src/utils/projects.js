@@ -22,9 +22,10 @@ import samsung from '../images/logos/samsung.png'
 import uber from '../images/logos/uber.png'
 // import vice from '../images/logos/vice.png'
 import vs from '../images/logos/vs.png'
-import coca1 from '../images/coca/entrada.png'
-import coca2 from '../images/coca/1.gif'
-import coca3 from '../images/coca/2.gif'
+import coca1 from '../images/coca/1.mp4'
+import coca2 from '../images/coca/2.mp4'
+import coca3 from '../images/coca/3.mp4'
+import coca4 from '../images/coca/4.mp4'
 import mundo1 from '../images/mundo/Domo1.gif'
 import mundo2 from '../images/mundo/Domo2.gif'
 import mundo3 from '../images/mundo/Domo3.gif'
@@ -184,7 +185,7 @@ const getProjectDetails = (param) => {
       logos: [crepes],
       assets: {
         a1: {
-          type: 'img',
+          type: 'gif',
           src: coca1
         },
         a2: {
@@ -196,6 +197,10 @@ const getProjectDetails = (param) => {
           src: coca3
         },
         a4: {
+          type: 'gif',
+          src: coca4
+        },
+        a5: {
           type: 'video',
           src: '<iframe width="600" height="300" src="https://www.youtube.com/embed/HyHNuVaZJ-k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
@@ -598,7 +603,7 @@ const getProjectDetails = (param) => {
       assets: {
         a1: {
           type: 'gif',
-          src: cuerpos1 
+          src: cuerpos1
         },
         a2: {
           type: 'img',
