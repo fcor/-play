@@ -38,6 +38,7 @@ import adidas1 from '../images/adidas/entrada.png'
 import adidas2 from '../images/adidas/adidas_interna1.mp4'
 import adidas3 from '../images/adidas/adidas_interna2.mp4'
 import adidas4 from '../images/adidas/adidas_interna3.mp4'
+import adidas5 from '../images/adidas/adidas_interna_nemesis.mp4'
 import topologias1 from '../images/topologias/1.gif'
 import topologias2 from '../images/topologias/2.gif'
 import topologias3 from '../images/topologias/3.gif'
@@ -231,6 +232,10 @@ const getProjectDetails = (param) => {
           src: adidas4
         },
         a5: {
+          type: 'gif',
+          src: adidas5
+        },
+        a6: {
           type: 'video',
           src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
         },
