@@ -394,8 +394,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'warm',
       next: 'redbullP',
-      titleEs: 'Moto Z2 Play | Circuito de Arte',
-      titleEn: 'Moto Z2 Play | Art Circuit',
+      titleEs: 'Moto Z2 Play Circuito de Arte',
+      titleEn: 'Moto Z2 Play Art Circuit',
       subtitle: '',
       year: '2017',
       tagEs: 'Video Instalación',
@@ -436,7 +436,7 @@ const getProjectDetails = (param) => {
     return {
       prev: 'moto',
       next: 'planoz',
-      titleEs: 'Redbull Parapente',
+      titleEs: 'Redbull Parapenta',
       titleEn: 'Redbull Paragliding',
       subtitle: '',
       year: '2017',
@@ -510,11 +510,11 @@ const getProjectDetails = (param) => {
     return {
       prev: 'redbullP',
       next: 'cuerpos',
-      titleEs: 'Moto Z | Plano Z',
-      titleEn: 'Moto Z | Plain Z',
+      titleEs: 'Moto Z Plano Z',
+      titleEn: 'Moto Z Plain Z',
       subtitle: '',
       year: '2016',
-      tagEs: 'Video 360º | Tour VIrtual',
+      tagEs: 'Video 360º | Tour Virtual',
       tagEn: '360º Video | Virtual Tour',
       descEs: `En el marco de lanzamiento de su celular Moto Z, la marca Motorola de mano de la agencia Milagros co-produjeron una obra de teatro dirigida por Laura Villegas, dentro de la casa patrimonial El Muro Antiguo. Una obra de teatro dirigida a un público exclusivo de 60 personas en la cual se resaltaría las características del nuevo celular, junto con sus diferentes accesorios que potencian sus capacidades tecnológicas.
               Para impulsar el alcance de su lanzamiento, +PLAY registró el recorrido de la obra y lo resumió en un tour virtual para 360º. Así, cualquier persona puede disfrutar la obra desde su celular y experimentar lo que solo pocos tuvieron el privilegio de vivir.`,
@@ -757,8 +757,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'freaky',
       next: 'mundo',
-      titleEs: 'El Regalo del Mar | Samsung',
-      titleEn: 'The Gift of the Sea | Samsung',
+      titleEs: 'El Regalo del Mar Samsung',
+      titleEn: 'The Gift of the Sea Samsung',
       subtitle: '',
       year: '2015',
       tagEs: 'Video 360º',
