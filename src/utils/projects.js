@@ -35,9 +35,9 @@ import mundo7 from '../images/mundo/planetario.jpg'
 import mundo8 from '../images/mundo/gif_bogota.gif'
 import mundo9 from '../images/mundo/gif_brasil.gif'
 import adidas1 from '../images/adidas/entrada.png'
-import adidas2 from '../images/adidas/adidas_interna1.gif'
-import adidas3 from '../images/adidas/adidas_interna2.gif'
-import adidas4 from '../images/adidas/adidas_interna3.gif'
+import adidas2 from '../images/adidas/adidas_interna1.mp4'
+import adidas3 from '../images/adidas/adidas_interna2.mp4'
+import adidas4 from '../images/adidas/adidas_interna3.mp4'
 import topologias1 from '../images/topologias/1.gif'
 import topologias2 from '../images/topologias/2.gif'
 import topologias3 from '../images/topologias/3.gif'
@@ -232,7 +232,7 @@ const getProjectDetails = (param) => {
         },
         a5: {
           type: 'video',
-          src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/233831588">Adidas Nemeziz Ocean Storm</a> from <ahref="https://vimeo.com/user43305532">Parche Films</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
+          src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
         },
       }
     }

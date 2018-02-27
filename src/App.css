@@ -278,6 +278,11 @@ li:nth-child(6){
   color: #D1D3D4;
   font-weight: normal;
   cursor: pointer;
+  transition: .4s;
+}
+
+.nav-button:hover{
+  color: #000;
 }
 
 .left::before{

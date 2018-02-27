@@ -73,10 +73,12 @@ const Logos = props =>
 const Assets = props =>
   <div className="assets">
     { Object.entries(props.assets).map( (item) => {
-        if (item[1].type === 'gif' || item[1].type === 'img') {
+        if (item[1].type === 'gif') {
           return(
             <div key={item} className="asset-box">
-              <img src={item[1].src} alt="+play" width="600px"/>
+              <video width="600" preload="auto" loop="loop" autoPlay>
+                <source src={item[1].src} type="video/mp4" />
+              </video>
             </div>
           )
         } else if (item[1].type === 'video') {
@@ -89,6 +91,12 @@ const Assets = props =>
           return(
             <div key={item} className="asset-box">
               <VRScene img={item[1].src}/>
+            </div>
+          )
+        } else if (item[1].type === 'img') {
+          return(
+            <div key={item} className="asset-box">
+              <img src={item[1].src} alt="+play" width="600px"/>
             </div>
           )
         }
