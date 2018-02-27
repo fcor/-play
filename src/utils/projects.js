@@ -107,11 +107,12 @@ import rbd7 from '../images/rbd/7.gif'
 import rbd8 from '../images/rbd/8.gif'
 import rbd9 from '../images/rbd/9.jpg'
 import rbd10 from '../images/rbd/10.jpg'
-import freaky1 from '../images/freaky/11.gif'
-import freaky2 from '../images/freaky/2.gif'
-import freaky3 from '../images/freaky/3.gif'
-import freaky4 from '../images/freaky/4.jpg'
-import freaky5 from '../images/freaky/5.jpg'
+import freaky1 from '../images/freaky/1.mp4'
+import freaky2 from '../images/freaky/2.mp4'
+import freaky3 from '../images/freaky/3.mp4'
+import freaky4 from '../images/freaky/4.mp4'
+import freaky5 from '../images/freaky/5.mp4'
+import freaky6 from '../images/freaky/6.jpg'
 import samsung1 from '../images/samsung/1.png'
 import samsung2 from '../images/samsung/2.png'
 import samsung3 from '../images/samsung/3.jpg'
@@ -750,14 +751,18 @@ const getProjectDetails = (param) => {
           src: freaky3
         },
         a4: {
-          type: '360',
+          type: 'gif',
           src: freaky4
         },
         a5: {
-          type: '360',
+          type: 'gif',
           src: freaky5
         },
         a6: {
+          type: '360',
+          src: freaky6
+        },
+        a7: {
           type: 'video',
           src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/xBVVJ1aCOks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
