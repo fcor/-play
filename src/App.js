@@ -59,7 +59,7 @@ class App extends Component {
                       <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
                       <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
                       <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
-                      <Route path="/360" render={() => <Gifs height={'1500px'} lang={lang} param="360"/>}/>
+                      <Route path="/360" render={() => <Gifs height={'1200px'} lang={lang} param="360"/>}/>
                       <Route path="/about" component={About}/>
                       <Route path="/reel" component={Reel}/>
                       {routes.map((item) =>

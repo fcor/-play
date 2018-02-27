@@ -11,7 +11,11 @@ class Gif extends React.Component {
     if (param === 'home') {
       styles = {top: gif.top, bottom: gif.bottom, left: gif.left, right: gif.right}
     } else {
-      styles = {top: gif.topR, bottom: gif.bottomR, left: gif.leftR, right: gif.rightR}
+      if (param === '360' & gif.route === 'topologias') {
+        styles = {top: '170px', right: '0'}
+      } else {
+        styles = {top: gif.topR, bottom: gif.bottomR, left: gif.leftR, right: gif.rightR}
+      }
     }
     return(
       <div className="gif" style={styles}>

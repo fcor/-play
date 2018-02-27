@@ -38,6 +38,7 @@ const vr = ["redbullP",
             "redbull",
             "freaky",
             "samsung",
+            "topologias",
           ]
 
 const Gifs = ({ param, lang, height }) => {
