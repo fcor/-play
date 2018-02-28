@@ -55,11 +55,12 @@ import warm1 from '../images/warm/1.gif'
 import warm2 from '../images/warm/2.gif'
 import warm3 from '../images/warm/3.gif'
 import warm4 from '../images/warm/4.gif'
-import moto1 from '../images/moto/1.gif'
-import moto2 from '../images/moto/2.gif'
-import moto3 from '../images/moto/3.gif'
-import moto4 from '../images/moto/4.gif'
-import moto5 from '../images/moto/5.gif'
+import moto1 from '../images/moto/1.mp4'
+import moto2 from '../images/moto/2.mp4'
+import moto3 from '../images/moto/3.mp4'
+import moto4 from '../images/moto/4.mp4'
+import moto5 from '../images/moto/5.mp4'
+import moto6 from '../images/moto/6.mp4'
 import rbp1 from '../images/rbp/1.gif'
 import rbp2 from '../images/rbp/2.gif'
 import rbp3 from '../images/rbp/3.gif'
@@ -439,6 +440,10 @@ const getProjectDetails = (param) => {
           src: moto5
         },
         a6: {
+          type: 'gif',
+          src: moto6
+        },
+        a7: {
           type: 'video',
           src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/ixi5oW_iJM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
