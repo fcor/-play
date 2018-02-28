@@ -26,55 +26,66 @@ import coca1 from '../images/coca/1.mp4'
 import coca2 from '../images/coca/2.mp4'
 import coca3 from '../images/coca/3.mp4'
 import coca4 from '../images/coca/4.mp4'
-import mundo1 from '../images/mundo/Domo1.gif'
-import mundo2 from '../images/mundo/Domo2.gif'
-import mundo3 from '../images/mundo/Domo3.gif'
-import mundo4 from '../images/mundo/creating_life.gif'
-import mundo5 from '../images/mundo/creating_life2.gif'
-import mundo6 from '../images/mundo/DomoGirando.gif'
-import mundo7 from '../images/mundo/planetario.jpg'
-import mundo8 from '../images/mundo/gif_bogota.gif'
-import mundo9 from '../images/mundo/gif_brasil.gif'
+import mundo1 from '../images/mundo/1.mp4'
+import mundo2 from '../images/mundo/2.mp4'
+import mundo3 from '../images/mundo/3.mp4'
+import mundo4 from '../images/mundo/4.mp4'
+import mundo5 from '../images/mundo/5.mp4'
+import mundo6 from '../images/mundo/6.mp4'
+import mundo7 from '../images/mundo/7.jpg'
+import mundo8 from '../images/mundo/8.mp4'
+import mundo9 from '../images/mundo/9.mp4'
 import adidas1 from '../images/adidas/entrada.png'
 import adidas2 from '../images/adidas/adidas_interna1.mp4'
 import adidas3 from '../images/adidas/adidas_interna2.mp4'
 import adidas4 from '../images/adidas/adidas_interna3.mp4'
 import adidas5 from '../images/adidas/adidas_interna_nemesis.mp4'
-import topologias1 from '../images/topologias/1.gif'
-import topologias2 from '../images/topologias/2.gif'
-import topologias3 from '../images/topologias/3.gif'
-import topologias4 from '../images/topologias/4.gif'
-import topologias5 from '../images/topologias/5.gif'
-import topologias6 from '../images/topologias/6.gif'
-import sonar1 from '../images/sonar/1.png'
-import sonar2 from '../images/sonar/2.gif'
-import sonar3 from '../images/sonar/3.gif'
-import sonar4 from '../images/sonar/4.gif'
-import sonar5 from '../images/sonar/5.gif'
-import warm1 from '../images/warm/1.gif'
-import warm2 from '../images/warm/2.gif'
-import warm3 from '../images/warm/3.gif'
-import warm4 from '../images/warm/4.gif'
+import topologias1 from '../images/topologias/1.mp4'
+import topologias2 from '../images/topologias/2.mp4'
+import topologias3 from '../images/topologias/3.mp4'
+import topologias4 from '../images/topologias/4.mp4'
+import topologias5 from '../images/topologias/5.mp4'
+import topologias6 from '../images/topologias/6.mp4'
+import topologias7 from '../images/topologias/7.jpg'
+import topologias8 from '../images/topologias/8.jpg'
+import topologias9 from '../images/topologias/9.jpg'
+import sonar1 from '../images/sonar/1.mp4'
+import sonar2 from '../images/sonar/2.mp4'
+import sonar3 from '../images/sonar/3.mp4'
+import sonar4 from '../images/sonar/4.mp4'
+import sonar5 from '../images/sonar/5.png'
+import sonar6 from '../images/sonar/6.mp4'
+import warm1 from '../images/warm/1.mp4'
+import warm2 from '../images/warm/2.mp4'
+import warm3 from '../images/warm/3.mp4'
+import warm4 from '../images/warm/4.mp4'
 import moto1 from '../images/moto/1.mp4'
 import moto2 from '../images/moto/2.mp4'
 import moto3 from '../images/moto/3.mp4'
 import moto4 from '../images/moto/4.mp4'
 import moto5 from '../images/moto/5.mp4'
 import moto6 from '../images/moto/6.mp4'
-import rbp1 from '../images/rbp/1.gif'
-import rbp2 from '../images/rbp/2.gif'
-import rbp3 from '../images/rbp/3.gif'
+import rbp1 from '../images/rbp/1.mp4'
+import rbp2 from '../images/rbp/2.mp4'
+import rbp3 from '../images/rbp/3.mp4'
 import rbp4 from '../images/rbp/4.jpg'
-import rbp5 from '../images/rbp/5.jpg'
-// import rbp6 from '../images/rbp/6.jpg'
-// import rbp7 from '../images/rbp/7.jpg'
-// import rbp8 from '../images/rbp/8.jpg'
-// import rbp9 from '../images/rbp/9.jpg'
-// import rbp10 from '../images/rbp/10.jpg'
-// import rbp11 from '../images/rbp/11.jpg'
-// import rbp12 from '../images/rbp/12.jpg'
-// import rbp13 from '../images/rbp/13.jpg'
-// import rbp14 from '../images/rbp/14.jpg'
+import rbp5 from '../images/rbp/5.mp4'
+import rbp6 from '../images/rbp/6.mp4'
+import rbp7 from '../images/rbp/7.mp4'
+import rbp8 from '../images/rbp/8.mp4'
+import rbp9 from '../images/rbp/9.jpg'
+import rbp10 from '../images/rbp/10.jpg'
+import rbp11 from '../images/rbp/11.jpg'
+import rbp12 from '../images/rbp/12.jpg'
+import rbp13 from '../images/rbp/13.jpg'
+import rbp14 from '../images/rbp/14.jpg'
+import rbp15 from '../images/rbp/15.jpg'
+import rbp16 from '../images/rbp/16.jpg'
+import rbp17 from '../images/rbp/17.jpg'
+import rbp18 from '../images/rbp/18.jpg'
+import rbp19 from '../images/rbp/19.jpg'
+import rbp20 from '../images/rbp/20.mp4'
+import rbp21 from '../images/rbp/21.mp4'
 import planoz1 from '../images/planoz/1.mp4'
 import planoz2 from '../images/planoz/2.jpg'
 import planoz3 from '../images/planoz/3.mp4'
@@ -94,19 +105,19 @@ import cuerpos3 from '../images/cuerpos/3.jpg'
 import cuerpos4 from '../images/cuerpos/4.jpg'
 import cuerpos5 from '../images/cuerpos/5.jpg'
 import cuerpos6 from '../images/cuerpos/6.jpg'
-import uber1 from '../images/uber/1.gif'
-import uber2 from '../images/uber/2.gif'
-import uber3 from '../images/uber/3.gif'
-import uber4 from '../images/uber/6.jpg'
+import uber1 from '../images/uber/1.mp4'
+import uber2 from '../images/uber/2.mp4'
+import uber3 from '../images/uber/3.mp4'
+import uber4 from '../images/uber/4.jpg'
 import uber5 from '../images/uber/5.jpg'
-import rbd1 from '../images/rbd/11.gif'
-import rbd2 from '../images/rbd/2.gif'
-import rbd3 from '../images/rbd/3.gif'
-import rbd4 from '../images/rbd/44.gif'
-import rbd5 from '../images/rbd/5.gif'
-import rbd6 from '../images/rbd/6.gif'
-import rbd7 from '../images/rbd/7.gif'
-import rbd8 from '../images/rbd/8.gif'
+import rbd1 from '../images/rbd/1.mp4'
+import rbd2 from '../images/rbd/2.mp4'
+import rbd3 from '../images/rbd/3.mp4'
+import rbd4 from '../images/rbd/4.mp4'
+import rbd5 from '../images/rbd/5.mp4'
+import rbd6 from '../images/rbd/6.mp4'
+import rbd7 from '../images/rbd/7.mp4'
+import rbd8 from '../images/rbd/8.mp4'
 import rbd9 from '../images/rbd/9.jpg'
 import rbd10 from '../images/rbd/10.jpg'
 import freaky1 from '../images/freaky/1.mp4'
@@ -122,8 +133,10 @@ import nike4 from '../images/nike/4.mp4'
 import nike5 from '../images/nike/5.mp4'
 import nike6 from '../images/nike/6.mp4'
 import samsung1 from '../images/samsung/1.png'
-import samsung2 from '../images/samsung/2.png'
+import samsung2 from '../images/samsung/2.mp4'
 import samsung3 from '../images/samsung/3.jpg'
+import samsung4 from '../images/samsung/4.mp4'
+import samsung5 from '../images/samsung/5.jpg'
 
 
 const getProjectDetails = (param) => {
@@ -310,7 +323,7 @@ const getProjectDetails = (param) => {
       logos: [artec, indie],
       assets: {
         a1: {
-          type: 'img',
+          type: 'gif',
           src: topologias1
         },
         a2: {
@@ -333,6 +346,18 @@ const getProjectDetails = (param) => {
           type: 'gif',
           src: topologias6
         },
+        a7: {
+          type: 'img',
+          src: topologias7
+        },
+        a8: {
+          type: 'img',
+          src: topologias8
+        },
+        a9: {
+          type: 'img',
+          src: topologias9
+        }
       }
     }
   }  else if (param === 'sonar') {
@@ -360,7 +385,7 @@ const getProjectDetails = (param) => {
       logos: [s2017, dat ],
       assets: {
         a1: {
-          type: 'img',
+          type: 'gif',
           src: sonar1
         },
         a2: {
@@ -376,8 +401,12 @@ const getProjectDetails = (param) => {
           src: sonar4
         },
         a5: {
-          type: 'gif',
+          type: 'img',
           src: sonar5
+        },
+        a6: {
+          type: '',
+          src: sonar6
         },
       }
     }
@@ -396,7 +425,7 @@ const getProjectDetails = (param) => {
       logos: [s2015],
       assets: {
         a1: {
-          type: 'img',
+          type: 'gif',
           src: warm1
         },
         a2: {
@@ -487,50 +516,78 @@ const getProjectDetails = (param) => {
           type: 'gif',
           src: rbp3
         },
-        a4: {
+        a20: {
           type: 'gif',
+          src: rbp20
+        },
+        a21: {
+          type: 'gif',
+          src: rbp21
+        },
+        a4: {
+          type: 'img',
           src: rbp4
         },
         a5: {
-          type: '360',
+          type: 'gif',
           src: rbp5
         },
-        // a6: {
-        //   type: '360',
-        //   src: rbp6
-        // },
-        // a7: {
-        //   type: '360',
-        //   src: rbp7
-        // },
-        // a8: {
-        //   type: '360',
-        //   src: rbp8
-        // },
-        // a9: {
-        //   type: 'img',
-        //   src: rbp9
-        // }
-        // a10: {
-        //   type: 'img',
-        //   src: rbp10
-        // }
-        // a11: {
-        //   type: 'img',
-        //   src: rbp11
-        // }
-        // a12: {
-        //   type: 'img',
-        //   src: rbp12
-        // }
-        // a13: {
-        //   type: 'img',
-        //   src: rbp13
-        // }
-        // a14: {
-        //   type: 'img',
-        //   src: rbp14
-        // }
+        a6: {
+          type: 'gif',
+          src: rbp6
+        },
+        a7: {
+          type: 'gif',
+          src: rbp7
+        },
+        a8: {
+          type: 'gif',
+          src: rbp8
+        },
+        a9: {
+          type: 'img',
+          src: rbp9
+        },
+        a10: {
+          type: 'img',
+          src: rbp10
+        },
+        a11: {
+          type: 'img',
+          src: rbp11
+        },
+        a12: {
+          type: 'img',
+          src: rbp12
+        },
+        a13: {
+          type: 'img',
+          src: rbp13
+        },
+        a14: {
+          type: 'img',
+          src: rbp14
+        },
+        a15: {
+          type: 'img',
+          src: rbp15
+        },
+        a16: {
+          type: '360',
+          src: rbp16
+        },
+        a17: {
+          type: 'img',
+          src: rbp17
+        },
+        a18: {
+          type: '360',
+          src: rbp18
+        },
+        a19: {
+          type: '360',
+          src: rbp19
+        },
       }
     }
   } else if (param === 'planoz') {
@@ -698,8 +755,8 @@ const getProjectDetails = (param) => {
       year: '2016',
       tagEs: 'Video 360º',
       tagEn: '360º Video',
-      descEs: ``,
-      descEn: ``,
+      descEs: `Se realizaron una serie de Cápsulas de video 360 para redes sociales con los principales deportistas colombianos embajadores de Red Bull. Entre ellos podemos ver a la campeona olímpica Mariana Pajón, el reconocido  clavadista Orlando Duque y el motociclista Tatán Mejía realizando su rutina de entrenamiento.`,
+      descEn: `A series of 360º video capsules were made for social networks with the main Colombian athlete Red Bull ambassadors. Among them are Olympic champion Mariana Pajón, world renowned diver Orlando Duque and motorcyclist Tatán Mejia performing their routine training.`,
       logos: [rb],
       assets: {
         a1: {
@@ -811,14 +868,22 @@ const getProjectDetails = (param) => {
           src: samsung1
         },
         a2: {
-          type: 'img',
+          type: 'gif',
           src: samsung2
         },
         a3: {
-          type: '360',
+          type: 'img',
           src: samsung3
         },
         a4: {
+          type: 'gif',
+          src: samsung4
+        },
+        a5: {
+          type: '360',
+          src: samsung5
+        },
+        a6: {
           type: 'video',
           src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/h2Fp9ZzIAUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
         },
