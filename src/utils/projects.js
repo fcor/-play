@@ -115,6 +115,12 @@ import freaky3 from '../images/freaky/3.mp4'
 import freaky4 from '../images/freaky/4.mp4'
 import freaky5 from '../images/freaky/5.mp4'
 import freaky6 from '../images/freaky/6.jpg'
+import nike1 from '../images/nike/1.mp4'
+import nike2 from '../images/nike/2.mp4'
+import nike3 from '../images/nike/3.mp4'
+import nike4 from '../images/nike/4.mp4'
+import nike5 from '../images/nike/5.mp4'
+import nike6 from '../images/nike/6.mp4'
 import samsung1 from '../images/samsung/1.png'
 import samsung2 from '../images/samsung/2.png'
 import samsung3 from '../images/samsung/3.jpg'
@@ -264,24 +270,28 @@ const getProjectDetails = (param) => {
       logos: [milagros, nike],
       assets: {
         a1: {
-          type: 'img',
-          src: adidas1
+          type: 'gif',
+          src: nike1
         },
         a2: {
           type: 'gif',
-          src: adidas2
+          src: nike2
         },
         a3: {
           type: 'gif',
-          src: adidas3
+          src: nike3
         },
         a4: {
           type: 'gif',
-          src: adidas4
+          src: nike4
         },
         a5: {
-          type: 'video',
-          src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+          type: 'gif',
+          src: nike5
+        },
+        a6: {
+          type: 'gif',
+          src: nike6
         },
       }
     }
