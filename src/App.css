@@ -360,7 +360,8 @@ li:nth-child(6){
 }
 
 .footer{
-  height: 150px;
+  margin-top: 30px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,6 +371,14 @@ li:nth-child(6){
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+.iconos{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .icono{
-  margin-right: 40px
+  /* margin-right: 40px; */
+  height: 20px;
 }

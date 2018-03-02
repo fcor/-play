@@ -95,15 +95,17 @@ const Reel = () =>
 
 const Footer = () =>
   <div className="footer">
-    <a className="icono" href="https://www.facebook.com/ColectivoMasPlay/" target="_blank"  rel="noopener noreferrer">
-      <img src={facebook} alt="fb" />
-    </a>
-    <a className="icono" href="https://www.instagram.com/mas.play/">
-      <img  src={instagram} alt="ig" target="_blank" rel="noopener noreferrer" />
-    </a>
-    <a className="icono" href="https://www.instagram.com/mas.play/">
-      <img src={vimeo} alt="vimeo" target="_blank" rel="noopener noreferrer"/>
-    </a>
+    <div className="iconos">
+      <a  href="https://www.facebook.com/ColectivoMasPlay/" target="_blank"  rel="noopener noreferrer">
+        <img className="icono" src={facebook} alt="fb" />
+      </a>
+      <a href="https://www.instagram.com/mas.play/">
+        <img className="icono"  src={instagram} alt="ig" target="_blank" rel="noopener noreferrer" />
+      </a>
+      <a  href="https://www.instagram.com/mas.play/">
+        <img className="icono" src={vimeo} alt="vimeo" target="_blank" rel="noopener noreferrer"/>
+      </a>
+    </div>
   </div>
 
 export default App;

@@ -636,15 +636,15 @@ const getProjectDetails = (param) => {
         },
         a8: {
           type: '360',
-          src: planoz8
+          src: 'https://imported-rose.surge.sh'
         },
         a9: {
           type: '360',
-          src: planoz9
+          src: 'https://husky-support.surge.sh'
         },
         a10: {
           type: '360',
-          src: planoz10
+          src: 'https://joyous-pin.surge.sh'
         },
         a11: {
           type: 'img',
