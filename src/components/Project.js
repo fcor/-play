@@ -90,7 +90,7 @@ const Assets = props =>
         } else if (item[1].type === '360') {
           return(
             <div key={item} className="asset-box">
-              <VRScene img={item[1].src}/>
+              <VRScene url={item[1].src}/>
             </div>
           )
         } else if (item[1].type === 'img') {

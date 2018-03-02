@@ -574,7 +574,7 @@ const getProjectDetails = (param) => {
         },
         a16: {
           type: '360',
-          src: rbp16
+          src: 'https://vacuous-ducks.surge.sh'
         },
         a17: {
           type: 'img',
@@ -582,11 +582,11 @@ const getProjectDetails = (param) => {
         },
         a18: {
           type: '360',
-          src: rbp18
+          src: 'https://didactic-support.surge.sh'
         },
         a19: {
           type: '360',
-          src: rbp19
+          src: 'https://infamous-cat.surge.sh'
         },
       }
     }
@@ -701,7 +701,7 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: '360',
-          src: cuerpos6
+          src: 'https://hospitable-attraction.surge.sh'
         },
         // a7: {
         //   type: '360',
@@ -793,11 +793,11 @@ const getProjectDetails = (param) => {
         },
         a9: {
           type: '360',
-          src: rbd9
+          src: 'https://spiffy-rain.surge.sh'
         },
         a10: {
           type: '360',
-          src: rbd10
+          src: 'https://utopian-governor.surge.sh'
         },
       }
     }
@@ -837,7 +837,7 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: '360',
-          src: freaky6
+          src: 'https://well-off-dolls.surge.sh'
         },
         a7: {
           type: 'video',
@@ -881,7 +881,7 @@ const getProjectDetails = (param) => {
         },
         a5: {
           type: '360',
-          src: samsung5
+          src: 'https://abortive-goose.surge.sh'
         },
         a6: {
           type: 'video',
