@@ -6,7 +6,9 @@ import Menu from './components/Menu'
 import Gifs from './components/Gifs'
 import VRScene from './components/VRScene'
 import Project from './components/Project'
-import palma from './images/palma.png'
+import facebook from './images/fb.png'
+import instagram from './images/ig.png'
+import vimeo from './images/vimeo.png'
 
 const routes = ["mundo",
                 "planoz",
@@ -48,32 +50,34 @@ class App extends Component {
   render() {
     const { lang } = this.state
     return (
-      <Router>
-        <div className="contenedor">
-          <Menu changeLang={this.handleLang} lang={lang}/>
-          <div className="contenido">
-            <Route render={({ location }) =>
-              <TransitionGroup exit={false}>
-                <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
+      <div>
+        <Router>
+          <div className="contenedor">
+            <Menu changeLang={this.handleLang} lang={lang}/>
+            <div className="contenido">
+              <Route render={({ location }) =>
+                <TransitionGroup exit={false}>
+                  <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
                   <Switch location={location}>
-                      <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
-                      <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
-                      <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
-                      <Route path="/360" render={() => <Gifs height={'1200px'} lang={lang} param="360"/>}/>
-                      <Route path="/about" component={About}/>
-                      <Route path="/reel" component={Reel}/>
-                      {routes.map((item) =>
-                        <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
-                      )}
-                      <Route render={() => <h1>Page not found</h1>} />
+                    <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
+                    <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
+                    <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
+                    <Route path="/360" render={() => <Gifs height={'1200px'} lang={lang} param="360"/>}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/reel" component={Reel}/>
+                    {routes.map((item) =>
+                      <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
+                    )}
+                    <Route render={() => <h1>Page not found</h1>} />
                   </Switch>
-                 </CSSTransition>
-               </TransitionGroup>
+                </CSSTransition>
+              </TransitionGroup>
             }/>
           </div>
-          <Footer />
         </div>
       </Router>
+      <Footer />
+      </div>
     )
   }
 }
@@ -91,7 +95,15 @@ const Reel = () =>
 
 const Footer = () =>
   <div className="footer">
-    <img src={palma} alt="footer" width="62"/>
+    <a className="icono" href="https://www.facebook.com/ColectivoMasPlay/" target="_blank"  rel="noopener noreferrer">
+      <img src={facebook} alt="fb" />
+    </a>
+    <a className="icono" href="https://www.instagram.com/mas.play/">
+      <img  src={instagram} alt="ig" target="_blank" rel="noopener noreferrer" />
+    </a>
+    <a className="icono" href="https://www.instagram.com/mas.play/">
+      <img src={vimeo} alt="vimeo" target="_blank" rel="noopener noreferrer"/>
+    </a>
   </div>
 
 export default App;
