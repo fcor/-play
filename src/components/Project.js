@@ -64,9 +64,13 @@ const TitleBox = ({ lang, titleEn, titleEs, subtitle, year, tagEn, tagEs }) =>{
 const Description = ({ lang, descEn, descEs }) => {
   const description = (lang) => lang ==='es' ? descEs : descEn
   return(
-    description(lang).split('\n').map( (item, i) =>
-      <p className="project-description" key={i}>{item}</p>
-    )
+    <div className="description-box">
+      {description(lang).split('\n').map( (item, i) =>
+        <p className='project-description' key={i}>
+          {item}
+        </p>
+        )}
+    </div>
   )
 }
 
