@@ -77,6 +77,10 @@ li:nth-child(6){
   /* margin-right: 30px; */
 }
 
+li:nth-child(-n +3) a{
+  font-size: 23px;
+}
+
 .contenedor{
   margin: 0 auto;
   width: 1400px;
@@ -179,6 +183,10 @@ li:nth-child(6){
   position: absolute;
 }
 
+.gif p {
+  line-height: .9;
+}
+
 .gif-box{
   position: relative;
   overflow: hidden;
@@ -202,6 +210,15 @@ li:nth-child(6){
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.gif-text.white.cuerpos{
+  align-items: center;
+}
+
+.gif-text.white.cuerpos .gif-title-box,
+.gif-text.white.cuerpos .gif-desc {
+  margin: 0;
 }
 
 .gif-box:hover .gif-text{
@@ -260,11 +277,11 @@ li:nth-child(6){
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 620px;
+  width: 600px;
 }
 
 .navigate{
-  margin-top: 20px;
+  margin: 5px 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,13 +319,18 @@ li:nth-child(6){
   margin-bottom: 15px;
 }
 
-.title-box h1{
+.title{
+  margin: 15px 0 0 0;
+  /* width: 320px; */
+  text-align: center;
+}
+
+.title h1{
   font-weight: normal;
   letter-spacing: 1px;
   font-size: 65px;
-  margin: 15px 0 0 0;
-  width: 320px;
-  text-align: center;
+  margin: 0;
+  line-height: .95;
 }
 
 .title-box h2{
@@ -333,6 +355,9 @@ li:nth-child(6){
   font-family: 'Base Medium';
   font-size: 13px;
   text-align: justify;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+  margin-top: 0;
 }
 
 .logos{
@@ -340,7 +365,7 @@ li:nth-child(6){
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 45px 0;
 }
 
 .logo{

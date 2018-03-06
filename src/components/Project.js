@@ -14,7 +14,6 @@ class Project extends React.Component {
 
     return (
       <div className="project-content">
-        <Navigate prev={project.prev} next={project.next} />
         <TitleBox lang={lang}
                   titleEn={project.titleEn}
                   titleEs={project.titleEs}
@@ -23,6 +22,7 @@ class Project extends React.Component {
                   tagEn={project.tagEn}
                   tagEs={project.tagEs}
         />
+        <Navigate prev={project.prev} next={project.next} />
         <Description lang={lang}
                      descEn={project.descEn}
                      descEs={project.descEs}
@@ -46,13 +46,20 @@ const Navigate = props =>
     </Link>
   </div>
 
-const TitleBox = ({ lang, titleEn, titleEs, subtitle, year, tagEn, tagEs }) =>
-  <div className="title-box">
-    <h1>{lang ==='es' ? titleEs : titleEn}</h1>
-    {subtitle && <h2>{subtitle}</h2>}
-    <p className="project-tag">{lang ==='es' ? tagEs : tagEn}</p>
-    <p className="project-year">{year}</p>
-  </div>
+const TitleBox = ({ lang, titleEn, titleEs, subtitle, year, tagEn, tagEs }) =>{
+  const title = lang => lang ==='es' ? titleEs : titleEn
+  return(
+    <div className="title-box">
+      <div className="title">
+        {title(lang).split('\n').map( (item, i) =>
+          <h1 key={i}>{item}</h1>
+        )}
+      </div>
+      <p className="project-tag">{lang ==='es' ? tagEs : tagEn}</p>
+      <p className="project-year">{year}</p>
+    </div>
+  )
+}
 
 const Description = ({ lang, descEn, descEs }) => {
   const description = (lang) => lang ==='es' ? descEs : descEn

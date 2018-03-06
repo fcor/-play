@@ -244,7 +244,7 @@ const gifs = (param) => {
       img: freaky,
       left: "130px",
       top: "1405px",
-      width: "230px",
+      width: "250px",
       rightR: "436px",
       topR: "876px",
       route: "freaky",

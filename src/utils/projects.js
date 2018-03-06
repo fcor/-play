@@ -35,7 +35,7 @@ import mundo6 from '../images/mundo/6.mp4'
 import mundo7 from '../images/mundo/7.jpg'
 import mundo8 from '../images/mundo/8.mp4'
 import mundo9 from '../images/mundo/9.mp4'
-import adidas1 from '../images/adidas/entrada.png'
+// import adidas1 from '../images/adidas/entrada.png'
 import adidas2 from '../images/adidas/adidas_interna1.mp4'
 import adidas3 from '../images/adidas/adidas_interna2.mp4'
 import adidas4 from '../images/adidas/adidas_interna3.mp4'
@@ -55,6 +55,7 @@ import sonar3 from '../images/sonar/3.mp4'
 import sonar4 from '../images/sonar/4.mp4'
 import sonar5 from '../images/sonar/5.png'
 import sonar6 from '../images/sonar/6.mp4'
+import sonar7 from '../images/sonar/7.mp4'
 import warm1 from '../images/warm/1.mp4'
 import warm2 from '../images/warm/2.mp4'
 import warm3 from '../images/warm/3.mp4'
@@ -144,8 +145,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'samsung',
       next: 'coca',
-      titleEn: 'An Observation of the End of the World',
-      titleEs: 'Una Observación al Fin del Mundo',
+      titleEn: 'An Observation \n of the End of the World',
+      titleEs: 'Una Observación \n al Fin del Mundo',
       subtitle: '',
       year: '2017',
       tagEs: 'Fulldome Experience',
@@ -196,8 +197,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'mundo',
       next: 'adidas',
-      titleEn: 'De la Coca a la Pimienta',
-      titleEs: 'De la Coca a la Pimienta',
+      titleEn: 'De la Coca  \n a la Pimienta',
+      titleEs: 'De la Coca \n a la Pimienta',
       subtitle: '',
       year: '2017',
       tagEs: 'Diseño de títulos | Motion Graphics',
@@ -222,10 +223,10 @@ const getProjectDetails = (param) => {
           type: 'gif',
           src: coca4
         },
-        a5: {
-          type: 'video',
-          src: '<iframe width="600" height="300" src="https://www.youtube.com/embed/HyHNuVaZJ-k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
-        },
+        // a5: {
+        //   type: 'video',
+        //   src: '<iframe width="600" height="300" src="https://www.youtube.com/embed/HyHNuVaZJ-k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+        // },
       }
     }
   } else if (param === 'adidas') {
@@ -242,9 +243,9 @@ const getProjectDetails = (param) => {
       descEn: `Motion graphics development for the Adidas Nemeziz campaign in Colombia. \n Production and direction: El Parche Films`,
       logos: [adidas],
       assets: {
-        a1: {
-          type: 'img',
-          src: adidas1
+        a5: {
+          type: 'gif',
+          src: adidas5
         },
         a2: {
           type: 'gif',
@@ -258,10 +259,6 @@ const getProjectDetails = (param) => {
           type: 'gif',
           src: adidas4
         },
-        a5: {
-          type: 'gif',
-          src: adidas5
-        },
         a6: {
           type: 'video',
           src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
@@ -272,8 +269,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'adidas',
       next: 'topologias',
-      titleEn: 'Nike Air Force Launch',
-      titleEs: 'Nike Lanzamiento Air Force',
+      titleEn: 'Nike \n Air Force Launch',
+      titleEs: 'Nike \n Lanzamiento Air Force',
       subtitle: '',
       year: '2017',
       tagEs: 'Mapping | Motion Graphics',
@@ -312,8 +309,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'nike',
       next: 'sonar',
-      titleEs: 'Topologías Urbanas',
-      titleEn: 'Urban Topologies',
+      titleEs: 'Topologías \n Urbanas',
+      titleEn: 'Urban \n Topologies',
       subtitle: '(Indiebox, Artec)',
       year: '2017',
       tagEs: 'Video Instalación | VR',
@@ -364,8 +361,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'topologias',
       next: 'warm',
-      titleEs: 'Sonar AV Experience',
-      titleEn: 'Sonar AV Experience',
+      titleEs: 'Sonar \n AV Experience',
+      titleEn: 'Sonar \n AV Experience',
       subtitle: '',
       year: '2017',
       tagEs: 'Video Instalación',
@@ -405,8 +402,12 @@ const getProjectDetails = (param) => {
           src: sonar5
         },
         a6: {
-          type: '',
+          type: 'gif',
           src: sonar6
+        },
+        a7: {
+          type: 'gif',
+          src: sonar7
         },
       }
     }
@@ -414,8 +415,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'sonar',
       next: 'moto',
-      titleEs: 'Sonar Warm Up',
-      titleEn: 'Sonar Warm Up',
+      titleEs: 'Sonar \n Warm Up',
+      titleEn: 'Sonar \n Warm Up',
       subtitle: '',
       year: '2015',
       tagEs: 'Mapping | Instalación',
@@ -446,8 +447,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'warm',
       next: 'redbullP',
-      titleEs: 'Moto Z2 Play Circuito de Arte',
-      titleEn: 'Moto Z2 Play Art Circuit',
+      titleEs: 'Moto Z2 Play \n Circuito de Arte',
+      titleEn: 'Moto Z2 Play \n Art Circuit',
       subtitle: '',
       year: '2017',
       tagEs: 'Video Instalación',
@@ -492,8 +493,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'moto',
       next: 'planoz',
-      titleEs: 'Redbull Parapenta',
-      titleEn: 'Redbull Paragliding',
+      titleEs: 'Redbull \n Parapenta',
+      titleEn: 'Redbull \n Paragliding',
       subtitle: '',
       year: '2017',
       tagEs: 'Video 360º',
@@ -721,7 +722,7 @@ const getProjectDetails = (param) => {
       tagEn: '360º Video',
       descEs: `Realización de video 360 para UberPool, la nueva plataforma de servicios de Uber. En esta plataforma varios usuarios utilizan un solo automóvil para realizar su recorrido. El video 360º se viralizó en redes sociales y podía ser visto en dispositivos de VR. Los usuarios observaron los beneficios de este nuevo servicio entre los cuales encontramos una mayor economía, formas de socialización, conservación del medio ambiente y, la experiencia de hacer parte de un innovador y excelente servicio.`,
       descEn: `Production and direction of a 360º video for UberPool, Uber’s most recent service platform, in which several users share the same car for each of their journeys. The 360º video became viral on social media and could be seen in VR devices. The users witnessed the benefits of UberPool, among them a more economic service, a more social environment, preservation of the environment and the experience of being a part of an innovative and excellent service.`,
-      logos: [uber],
+      logos: [uber, lapost],
       assets: {
         a1: {
           type: 'gif',
@@ -749,8 +750,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'uber',
       next: 'freaky',
-      titleEs: 'Deportistas RedBull',
-      titleEn: 'RedBull Athletes',
+      titleEs: 'Deportistas \n RedBull',
+      titleEn: 'RedBull \n Athletes',
       subtitle: '',
       year: '2016',
       tagEs: 'Video 360º',
@@ -805,8 +806,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'redbull',
       next: 'samsung',
-      titleEs: 'El Freaky ft. Mr Lexx & Cybertronics',
-      titleEn: 'El Freaky ft. Mr Lexx & Cybertronics',
+      titleEs: 'El Freaky ft. Mr Lexx \n & Cybertronics',
+      titleEn: 'El Freaky ft. Mr Lexx \n & Cybertronics',
       subtitle: '',
       year: '2015',
       tagEs: 'Video 360º',
@@ -849,8 +850,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'freaky',
       next: 'mundo',
-      titleEs: 'El Regalo del Mar Samsung',
-      titleEn: 'The Gift of the Sea Samsung',
+      titleEs: 'El Regalo del Mar \n Samsung',
+      titleEn: 'The Gift of the Sea \n Samsung',
       subtitle: '',
       year: '2015',
       tagEs: 'Video 360º',

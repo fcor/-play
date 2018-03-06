@@ -21,7 +21,7 @@ class Gif extends React.Component {
       <div className="gif" style={styles}>
         <div className="gif-box">
           <Link to={`/${gif.route}`}>
-            <div className={`gif-text ${gif.back ==='white' ? 'white' : ''}`}>
+            <div className={`gif-text ${gif.back ==='white' ? 'white' : ''} ${gif.route ==='cuerpos' ? 'cuerpos' : ''}`}>
               <div className="gif-title-box">
                 {title(lang).split('\n').map( (item, i) =>
                   <p className="gif-title" key={i}>{item}</p>
