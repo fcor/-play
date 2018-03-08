@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import LazyLoad from 'react-lazyload'
 import BouncingLoader from './BouncingLoader'
+
 
 class Iframe extends Component {
   constructor(props){
@@ -11,7 +13,6 @@ class Iframe extends Component {
 
   componentDidMount(){
     this.ifr.onload = () => {
-      console.log("Iframe loaded! ")
       this.setState({
         loading: false
       })

@@ -13,7 +13,6 @@ class Image extends Component {
   }
 
   handleLoad(){
-    console.log("Image loaded! ");
     this.setState({
       loading: false
     })
@@ -27,7 +26,7 @@ class Image extends Component {
         {loading &&
            <BouncingLoader />
         }
-        <LazyLoad offset={100} once>
+        <LazyLoad height='100%' offset={100} once>
           <img
             src={src}
             alt={alt}
