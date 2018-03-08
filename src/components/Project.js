@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VRScene from './VRScene'
+import Video from './Video'
+import Image from './Image'
+// import Lazyload from 'react-lazyload'
 import getProjectDetails from '../utils/projects'
 import asoleadora from '../images/asoleadora.gif'
 
@@ -87,9 +90,7 @@ const Assets = props =>
         if (item[1].type === 'gif') {
           return(
             <div key={item} className="asset-box">
-              <video width="600" preload="auto" loop="loop" autoPlay>
-                <source src={item[1].src} type="video/mp4" />
-              </video>
+              <Video src={item[1].src} width={"600"} />
             </div>
           )
         } else if (item[1].type === 'video') {
@@ -107,7 +108,7 @@ const Assets = props =>
         } else if (item[1].type === 'img') {
           return(
             <div key={item} className="asset-box">
-              <img src={item[1].src} alt="+play" width="600px"/>
+              <Image src={item[1].src} alt="+play" width={"600px"} />
             </div>
           )
         }

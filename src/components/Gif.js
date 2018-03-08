@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Video from './Video'
 import palmaBlack from '../images/palmaBlack.png'
 import palmaWhite from '../images/palmaWhite.png'
+import { CSSTransitionGroup } from 'react-transition-group'
+import Lazyload from 'react-lazyload'
 
 class Gif extends React.Component {
   render() {
@@ -30,14 +33,12 @@ class Gif extends React.Component {
               <p className="gif-desc">
                 {`${lang==='es' ? gif.desc : gif.descEN} `}
                 <span>
-                  <img src={gif.back ==='white' ? palmaBlack : palmaWhite} />
+                  <img src={gif.back ==='white' ? palmaBlack : palmaWhite} alt="p" />
                 </span>
                 {` ${gif.year}`}
               </p>
             </div>
-            <video width={gif.width} preload="auto" loop="loop" autoPlay>
-              <source src={gif.img} type="video/mp4" />
-            </video>
+            <Video width={gif.width} src={gif.img} />
           </Link>
         </div>
       </div>
