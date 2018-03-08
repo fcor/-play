@@ -5,7 +5,7 @@ import Video from './Video'
 import Image from './Image'
 // import Lazyload from 'react-lazyload'
 import getProjectDetails from '../utils/projects'
-import asoleadora from '../images/asoleadora.gif'
+import asoleadora from '../images/asoleadora.png'
 
 class Project extends React.Component {
   componentDidMount(){
@@ -43,7 +43,7 @@ const Navigate = props =>
     <Link to={`/${props.prev}`}>
       <p className="nav-button left" style={{marginRight:'10px'}}>Prev</p>
     </Link>
-    <img src={asoleadora} alt="sol" style={{marginTop:'6px'}} width="55px"/>
+    <img src={asoleadora} alt="sol" style={{marginTop:'0px'}} width="55px"/>
     <Link to={`/${props.next}`}>
       <p className="nav-button right" style={{marginLeft:'10px'}}>Next</p>
     </Link>
