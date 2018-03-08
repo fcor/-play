@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import Video from './Video'
 import palmaBlack from '../images/palmaBlack.png'
 import palmaWhite from '../images/palmaWhite.png'
-import { CSSTransitionGroup } from 'react-transition-group'
-import Lazyload from 'react-lazyload'
 
 class Gif extends React.Component {
   render() {

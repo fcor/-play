@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LazyLoad from 'react-lazyload'
 import BouncingLoader from './BouncingLoader'
 
 class Image extends Component {
@@ -26,14 +27,15 @@ class Image extends Component {
         {loading &&
            <BouncingLoader />
         }
-        <img
-          src={src}
-          alt={alt}
-          width={width}
-          onLoadCapture={this.handleLoad}
-          style={{ visibility : `${loading ? 'hidden' : 'visible'}`}}
-        />
-
+        <LazyLoad offset={100} once>
+          <img
+            src={src}
+            alt={alt}
+            width={width}
+            onLoadCapture={this.handleLoad}
+            style={{ visibility : `${loading ? 'hidden' : 'visible'}`}}
+          />
+      </LazyLoad>
       </div>
     )
   }

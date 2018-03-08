@@ -454,16 +454,19 @@ li:nth-child(-n +3) a{
 }
 
 .image{
-  margin: 15px 0;
+
   position: relative;
 }
 
 .video{
-  margin: 15px 0;
   position: relative;
 }
 
+.gif .video{
+  position: static;
+}
+
 .iframe-box{
-  margin: 15px 0;
+
   position: relative;
 }
