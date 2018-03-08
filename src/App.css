@@ -454,7 +454,6 @@ li:nth-child(-n +3) a{
 }
 
 .image{
-
   position: relative;
 }
 
@@ -467,6 +466,5 @@ li:nth-child(-n +3) a{
 }
 
 .iframe-box{
-
   position: relative;
 }

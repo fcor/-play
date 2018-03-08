@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import BouncingLoader from './BouncingLoader'
 import LazyLoad from 'react-lazyload'
 
-class Image extends Component {
+class Video extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -16,6 +16,7 @@ class Image extends Component {
     this.setState({
       loading: false
     })
+    this.props.onLoad()
   }
 
   render() {
@@ -43,4 +44,8 @@ class Image extends Component {
   }
 }
 
-export default Image
+Video.defaultProps = {
+  onLoad: () => {}
+};
+
+export default Video
