@@ -1,16 +1,9 @@
 import React from 'react'
-// import 'aframe'
+import Iframe from './Iframe'
 
 const VRScene = props =>
     <div className="vr-content">
-      <iframe className="iframe"
-        title="VR"
-        src={props.url}
-        width="600"
-        height="400"
-        allowFullScreen
-        allowvr="yes">
-      </iframe>
+      <Iframe src={props.url} width="600" height="400" />
     </div>
 
 export default VRScene

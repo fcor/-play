@@ -2,6 +2,9 @@ import React from 'react'
 import Gif from './Gif'
 import gifs from '../utils/gifs'
 
+
+
+
 const home = [  "redbullP",
                 "mundo",
                 "planoz",
@@ -55,7 +58,7 @@ const Gifs = ({ param, lang, height }) => {
   return(
     <div className="gifs" style={{height: height}}>
       {content.map((item) =>
-        <Gif param={param} key={item} gif={gifs(item)} lang={lang}/>
+        <Gif key={item} param={param} gif={gifs(item)} lang={lang}/>
       )}
     </div>
   )
