@@ -421,8 +421,10 @@ const getProjectDetails = (param) => {
       year: '2015',
       tagEs: 'Mapping | Instalación',
       tagEn: 'Mapping | Installation',
-      descEs: `Desarrollo de experiencias audiovisuales para el lanzamiento de la primera versión del Festival Sónar en Bogotá realizado en la Universidad de los Andes y en el Planetario de Bogotá.`,
-      descEn: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.`,
+      descEs: `Desarrollo de experiencias audiovisuales para el lanzamiento de la primera versión del Festival Sónar en Bogotá realizado en la Universidad de los Andes y en el Planetario de Bogotá.
+      Producción, diseño y desarrollo: \nSantiago Messier \nDaniel Morales \nArturo Betancourt \nPablo Ricaurte \nAlvaro Rodriguez Badel \nCarlos Serrano`,
+      descEn: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.
+                Production, design and development: \nSantiago Messier \nDaniel Morales \nArturo Betancourt \nPablo Ricaurte \nAlvaro Rodriguez Badel \nCarlos Serrano`,
       logos: [s2015],
       assets: {
         a1: {
