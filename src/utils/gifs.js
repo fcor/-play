@@ -11,7 +11,7 @@ import cuerpos from '../images/gifs/cuerpos.mp4'
 import redbull from '../images/gifs/redbull.mp4'
 import redbullp from '../images/gifs/redbullP.mp4'
 import warm from '../images/gifs/warm.mp4'
-import freaky from '../images/gifs/freaky.mp4'
+import freaky from '../images/gifs/freaky.mp4' 
 import samsung from '../images/gifs/samsung.mp4'
 
 const gifs = (param) => {
