@@ -1,14 +1,13 @@
 import mil from '../images/logos/1500.png'
 import adidas from '../images/logos/Adidas.png'
 import artec from '../images/logos/artec.png'
-// import baum from '../images/logos/baum.png'
-// import bud from '../images/logos/bud.png'
 import cda from '../images/logos/cda.png'
 import crepes from '../images/logos/crepes.png'
 import dat from '../images/logos/dat.png'
 import idartes from '../images/logos/idartes.png'
 import immer from '../images/logos/immer.png'
 import indie from '../images/logos/indie.png'
+import rino from '../images/logos/rino.png'
 import lapost from '../images/logos/lapost.png'
 import milagros from '../images/logos/milagros.png'
 import moto from '../images/logos/moto.png'
@@ -20,7 +19,6 @@ import s2015 from '../images/logos/s2015.png'
 import s2017 from '../images/logos/s2017.png'
 import samsung from '../images/logos/samsung.png'
 import uber from '../images/logos/uber.png'
-// import vice from '../images/logos/vice.png'
 import vs from '../images/logos/vs.png'
 import coca1 from '../images/coca/1.mp4'
 import coca2 from '../images/coca/2.mp4'
@@ -35,7 +33,6 @@ import mundo6 from '../images/mundo/66.mp4'
 import mundo7 from '../images/mundo/7.jpg'
 import mundo8 from '../images/mundo/88.mp4'
 import mundo9 from '../images/mundo/99.mp4'
-// import adidas1 from '../images/adidas/entrada.png'
 import adidas2 from '../images/adidas/adidas_interna1.mp4'
 import adidas3 from '../images/adidas/adidas_interna2.mp4'
 import adidas4 from '../images/adidas/adidas_interna3.mp4'
@@ -641,15 +638,15 @@ const getProjectDetails = (param) => {
         },
         a8: {
           type: '360',
-          src: 'https://imported-rose.surge.sh'
+          src: 'https://warm-flock.surge.sh'
         },
         a9: {
           type: '360',
-          src: 'https://husky-support.surge.sh'
+          src: 'https://complex-pets.surge.sh'
         },
         a10: {
           type: '360',
-          src: 'https://joyous-pin.surge.sh'
+          src: 'https://tremendous-teeth.surge.sh'
         },
         a11: {
           type: 'img',
@@ -763,7 +760,7 @@ const getProjectDetails = (param) => {
       tagEn: '360º Video',
       descEs: `Se realizaron una serie de Cápsulas de video 360 para redes sociales con los principales deportistas colombianos embajadores de Red Bull. Entre ellos podemos ver a la campeona olímpica Mariana Pajón, el reconocido  clavadista Orlando Duque y el motociclista Tatán Mejía realizando su rutina de entrenamiento.`,
       descEn: `A series of 360º video capsules were made for social networks with the main Colombian athlete Red Bull ambassadors. Among them are Olympic champion Mariana Pajón, world renowned diver Orlando Duque and motorcyclist Tatán Mejia performing their routine training.`,
-      logos: [rb],
+      logos: [rb, rino],
       assets: {
         a1: {
           type: 'gif',
@@ -799,11 +796,11 @@ const getProjectDetails = (param) => {
         },
         a9: {
           type: '360',
-          src: 'https://spiffy-rain.surge.sh'
+          src: 'https://ossified-hate.surge.sh'
         },
         a10: {
           type: '360',
-          src: 'https://utopian-governor.surge.sh'
+          src: 'https://swift-quill.surge.sh'
         },
       }
     }
@@ -845,7 +842,7 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: '360',
-          src: 'https://well-off-dolls.surge.sh'
+          src: 'https://damp-hot.surge.sh'
         },
         a7: {
           type: 'video',
@@ -869,7 +866,7 @@ const getProjectDetails = (param) => {
       descEn: `Production and direction of a 360º video for a case made by Samsung Colombia, Katherine can’t travel to the sea due to health issues. Samsung, through VR Gear gives Katherine a surprise and gives her a day at the beach. The video reached four million views on Youtube.
               Client: Samsung Colombia
               Producer: Rhayuela.`,
-      logos: [samsung, rayuela],
+      logos: [samsung, rayuela, rino],
       assets: {
         a1: {
           type: 'img',
@@ -889,7 +886,7 @@ const getProjectDetails = (param) => {
         },
         a5: {
           type: '360',
-          src: 'https://abortive-goose.surge.sh'
+          src: 'https://lame-ants.surge.sh'
         },
         a6: {
           type: 'video',
