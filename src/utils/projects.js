@@ -576,7 +576,7 @@ const getProjectDetails = (param) => {
         },
         a16: {
           type: '360',
-          src: 'https://vacuous-ducks.surge.sh'
+          src: 'https://brawny-rings.surge.sh'
         },
         a17: {
           type: 'img',
@@ -584,11 +584,11 @@ const getProjectDetails = (param) => {
         },
         a18: {
           type: '360',
-          src: 'https://didactic-support.surge.sh'
+          src: 'https://bent-toe.surge.sh'
         },
         a19: {
           type: '360',
-          src: 'https://infamous-cat.surge.sh'
+          src: 'https://closed-insurance.surge.sh'
         },
       }
     }
@@ -704,12 +704,12 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: '360',
-          src: 'https://hospitable-attraction.surge.sh'
+          src: 'https://wry-friend.surge.sh'
         },
-        // a7: {
-        //   type: '360',
-        //   src: cuerpos7
-        // },
+        a7: {
+          type: '360',
+          src: 'https://two-liquid.surge.sh'
+        },
       }
     }
   } else if (param === 'uber') {
