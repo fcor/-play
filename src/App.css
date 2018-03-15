@@ -212,13 +212,9 @@ li:nth-child(-n +3) a{
   flex-direction: column;
 }
 
-.gif-text.white.cuerpos{
-  align-items: center;
-}
-
 .gif-text.white.cuerpos .gif-title-box,
 .gif-text.white.cuerpos .gif-desc {
-  margin: 0;
+  margin: 0 0 8px 17px;
 }
 
 .gif-box:hover .gif-text{
