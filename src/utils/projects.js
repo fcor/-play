@@ -155,27 +155,27 @@ const getProjectDetails = (param) => {
       logos: [immer, idartes],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo6
         },
         a7: {
@@ -183,11 +183,11 @@ const getProjectDetails = (param) => {
           src: mundo7
         },
         a8: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo8
         },
         a9: {
-          type: 'gif',
+          type: 'mp4',
           src: mundo9
         },
       }
@@ -207,19 +207,19 @@ const getProjectDetails = (param) => {
       logos: [crepes],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: coca1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: coca2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: coca3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: coca4
         },
         // a5: {
@@ -243,19 +243,19 @@ const getProjectDetails = (param) => {
       logos: [adidas],
       assets: {
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: adidas5
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: adidas2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: adidas3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: adidas4
         },
         a6: {
@@ -279,27 +279,27 @@ const getProjectDetails = (param) => {
       logos: [milagros, nike],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: nike1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: nike2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: nike3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: nike4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: nike5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: nike6
         },
       }
@@ -319,27 +319,27 @@ const getProjectDetails = (param) => {
       logos: [artec, indie],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: topologias6
         },
         a7: {
@@ -381,19 +381,19 @@ const getProjectDetails = (param) => {
       logos: [s2017, dat ],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar4
         },
         a5: {
@@ -401,11 +401,11 @@ const getProjectDetails = (param) => {
           src: sonar5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar6
         },
         a7: {
-          type: 'gif',
+          type: 'mp4',
           src: sonar7
         },
       }
@@ -427,19 +427,19 @@ const getProjectDetails = (param) => {
       logos: [s2015],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: warm1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: warm2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: warm3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: warm4
         },
       }
@@ -461,27 +461,27 @@ const getProjectDetails = (param) => {
       logos: [moto, cda, milagros],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: moto1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: moto2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: moto3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: moto4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: moto5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: moto6
         },
         a7: {
@@ -507,23 +507,23 @@ const getProjectDetails = (param) => {
       logos: [rb],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp3
         },
         a20: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp20
         },
         a21: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp21
         },
         a4: {
@@ -531,19 +531,19 @@ const getProjectDetails = (param) => {
           src: rbp4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp6
         },
         a7: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp7
         },
         a8: {
-          type: 'gif',
+          type: 'mp4',
           src: rbp8
         },
         a9: {
@@ -609,7 +609,7 @@ const getProjectDetails = (param) => {
       logos: [moto, planoz, milagros],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz1
         },
         a2: {
@@ -617,23 +617,23 @@ const getProjectDetails = (param) => {
           src: planoz2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz6
         },
         a7: {
-          type: 'gif',
+          type: 'mp4',
           src: planoz7
         },
         a8: {
@@ -683,7 +683,7 @@ const getProjectDetails = (param) => {
       logos: [vs],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: cuerpos1
         },
         a2: {
@@ -727,15 +727,15 @@ const getProjectDetails = (param) => {
       logos: [uber, lapost],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: uber1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: uber2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: uber3
         },
         a4: {
@@ -763,35 +763,35 @@ const getProjectDetails = (param) => {
       logos: [rb, rino],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd5
         },
         a6: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd6
         },
         a7: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd7
         },
         a8: {
-          type: 'gif',
+          type: 'mp4',
           src: rbd8
         },
         a9: {
@@ -821,23 +821,23 @@ const getProjectDetails = (param) => {
       logos: [lapost, mil],
       assets: {
         a1: {
-          type: 'gif',
+          type: 'mp4',
           src: freaky1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: freaky2
         },
         a3: {
-          type: 'gif',
+          type: 'mp4',
           src: freaky3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: freaky4
         },
         a5: {
-          type: 'gif',
+          type: 'mp4',
           src: freaky5
         },
         a6: {
@@ -855,7 +855,7 @@ const getProjectDetails = (param) => {
       prev: 'freaky',
       next: 'mundo',
       titleEs: 'El Regalo del Mar \n Samsung',
-      titleEn: 'The Gift of the Sea \n Samsung',
+      titleEn: 'The mp4t of the Sea \n Samsung',
       subtitle: '',
       year: '2015',
       tagEs: 'Video 360º',
@@ -873,7 +873,7 @@ const getProjectDetails = (param) => {
           src: samsung1
         },
         a2: {
-          type: 'gif',
+          type: 'mp4',
           src: samsung2
         },
         a3: {
@@ -881,7 +881,7 @@ const getProjectDetails = (param) => {
           src: samsung3
         },
         a4: {
-          type: 'gif',
+          type: 'mp4',
           src: samsung4
         },
         a5: {

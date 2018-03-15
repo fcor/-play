@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import VRScene from './VRScene'
 import Video from './Video'
 import Image from './Image'
+import GifAsset from './GifAsset'
 // import Lazyload from 'react-lazyload'
 import getProjectDetails from '../utils/projects'
 import asoleadora from '../images/asoleadora.png'
@@ -87,7 +88,7 @@ const Logos = props =>
 const Assets = props =>
   <div className="assets">
     { Object.entries(props.assets).map( (item) => {
-        if (item[1].type === 'gif') {
+        if (item[1].type === 'mp4') {
           return(
             <div key={item} className="asset-box">
               <Video src={item[1].src} width={"600"} />
@@ -109,6 +110,12 @@ const Assets = props =>
           return(
             <div key={item} className="asset-box">
               <Image src={item[1].src} alt="+play" width={"600px"} />
+            </div>
+          )
+        } else if (item[1].type === 'img') {
+          return(
+            <div key={item} className="asset-box">
+              <GifAsset src={item[1].src} alt="+play" width={"600px"} />
             </div>
           )
         }
