@@ -78,10 +78,7 @@ import rbp12 from '../images/rbp/12.jpg'
 import rbp13 from '../images/rbp/13.jpg'
 import rbp14 from '../images/rbp/14.jpg'
 import rbp15 from '../images/rbp/15.jpg'
-import rbp16 from '../images/rbp/16.jpg'
 import rbp17 from '../images/rbp/17.jpg'
-import rbp18 from '../images/rbp/18.jpg'
-import rbp19 from '../images/rbp/19.jpg'
 import rbp20 from '../images/rbp/20.mp4'
 import rbp21 from '../images/rbp/21.mp4'
 import planoz1 from '../images/planoz/1.mp4'
@@ -91,9 +88,6 @@ import planoz4 from '../images/planoz/4.mp4'
 import planoz5 from '../images/planoz/5.mp4'
 import planoz6 from '../images/planoz/6.mp4'
 import planoz7 from '../images/planoz/7.mp4'
-import planoz8 from '../images/planoz/8.jpg'
-import planoz9 from '../images/planoz/9.jpg'
-import planoz10 from '../images/planoz/10.jpg'
 import planoz11 from '../images/planoz/11.jpg'
 import planoz12 from '../images/planoz/12.jpg'
 import planoz13 from '../images/planoz/13.jpg'
@@ -102,7 +96,6 @@ import cuerpos2 from '../images/cuerpos/2.jpg'
 import cuerpos3 from '../images/cuerpos/3.jpg'
 import cuerpos4 from '../images/cuerpos/4.jpg'
 import cuerpos5 from '../images/cuerpos/5.jpg'
-import cuerpos6 from '../images/cuerpos/6.jpg'
 import uber1 from '../images/uber/11.mp4'
 import uber2 from '../images/uber/2.mp4'
 import uber3 from '../images/uber/3.mp4'
@@ -116,14 +109,11 @@ import rbd5 from '../images/rbd/5.mp4'
 import rbd6 from '../images/rbd/6.mp4'
 import rbd7 from '../images/rbd/7.mp4'
 import rbd8 from '../images/rbd/8.mp4'
-import rbd9 from '../images/rbd/9.jpg'
-import rbd10 from '../images/rbd/10.jpg'
 import freaky1 from '../images/freaky/11.mp4'
 import freaky2 from '../images/freaky/2.mp4'
 import freaky3 from '../images/freaky/3.mp4'
 import freaky4 from '../images/freaky/4.mp4'
 import freaky5 from '../images/freaky/5.mp4'
-import freaky6 from '../images/freaky/6.jpg'
 import nike1 from '../images/nike/1.mp4'
 import nike2 from '../images/nike/2.mp4'
 import nike3 from '../images/nike/3.mp4'
@@ -134,7 +124,6 @@ import samsung1 from '../images/samsung/1.png'
 import samsung2 from '../images/samsung/2.mp4'
 import samsung3 from '../images/samsung/3.jpg'
 import samsung4 from '../images/samsung/4.mp4'
-import samsung5 from '../images/samsung/5.jpg'
 
 
 const getProjectDetails = (param) => {
@@ -269,7 +258,7 @@ const getProjectDetails = (param) => {
       prev: 'adidas',
       next: 'topologias',
       titleEn: 'Nike \n Air Force Launch',
-      titleEs: 'Nike \n Lanzamiento Air Force',
+      titleEs: 'Nike Lanzamiento \n Air Force',
       subtitle: '',
       year: '2017',
       tagEs: 'Mapping | Motion Graphics',
