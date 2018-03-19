@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import Media from "react-media"
 import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
@@ -50,36 +51,54 @@ class App extends Component {
     const { lang } = this.state
     return (
       <div>
-        <Router>
-          <div className="contenedor">
-            <Menu changeLang={this.handleLang} lang={lang}/>
-            <div className="contenido">
-              <Route render={({ location }) =>
-                <TransitionGroup exit={false}>
-                  <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
-                  <Switch location={location}>
-                    <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
-                    <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
-                    <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
-                    <Route path="/360" render={() => <Gifs height={'1200px'} lang={lang} param="360"/>}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/reel" component={Reel}/>
-                    {routes.map((item) =>
-                      <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
-                    )}
-                    <Route render={() => <h1>Page not found</h1>} />
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            }/>
-          </div>
-        </div>
-      </Router>
-      <Footer />
-      </div>
+        <Media
+          query="(min-width: 768px)"
+          render={() => <MasPlay lang={lang} handleLang={this.handleLang} />}
+        />
+
+        <Media
+          query="(min-width: 650px) and (max-width: 767px)"
+          render={() => <p> The document is between 650px and 767px wide. </p>}
+        />
+
+        <Media
+          query="(max-width: 649px)"
+          render={() => <p> The document is below 650px wide. </p>}
+        />
+    </div>
     )
   }
 }
+
+const MasPlay = ({ lang, handleLang }) =>
+<div>
+  <Router>
+    <div className="contenedor">
+      <Menu changeLang={handleLang} lang={lang}/>
+      <div className="contenido">
+        <Route render={({ location }) =>
+          <TransitionGroup exit={false}>
+            <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
+              <Switch location={location}>
+                <Route exact path="/" render={() => <Gifs height={'1750px'} lang={lang} param="home"/>} />
+                <Route path="/motion" render={() => <Gifs height={'600px'}  lang={lang} param="motion"/>} />
+                <Route path="/space" render={() => <Gifs height={'600px'} lang={lang} param="space"/>}/>
+                <Route path="/360" render={() => <Gifs height={'1200px'} lang={lang} param="360"/>}/>
+                <Route path="/about" component={About}/>
+                <Route path="/reel" component={Reel}/>
+                {routes.map((item) =>
+                  <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
+                )}
+                <Route render={() => <h1>Page not found</h1>} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        }/>
+      </div>
+    </div>
+  </Router>
+  <Footer />
+</div>
 
 const About = () =>
   <div className="about-box">
