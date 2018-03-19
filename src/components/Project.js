@@ -67,12 +67,49 @@ const TitleBox = ({ lang, titleEn, titleEs, subtitle, year, tagEn, tagEs }) =>{
 
 const Description = ({ lang, descEn, descEs }) => {
   const description = (lang) => lang ==='es' ? descEs : descEn
+  const words = ['Dirección de arte:',
+                 'Dirección:',
+                 'Animación 3D:',
+                 'Animación 2D:',
+                 'Edición y Finalización:',
+                 'Música:',
+                 'Direction:',
+                 'Art Direction:',
+                 '3D Animation:',
+                 '2D Animation:',
+                 'Editing:',
+                 'Music:',
+                 'Producción, diseño y desarrollo:',
+                 'Production, design and development:',
+                 'Productora:',
+                 'Producer:',
+                 'Productores:',
+                 'Directores:',
+                 'Fotografia:',
+                 'Producers:',
+                 'Directors',
+                 'Photography:',
+                 'Producción:',
+                 'Productor:',
+                 'Cámara:',
+                 'Dirección de arte y vestuario:',
+                 'Producción Musical:',
+                 'Mix & Master:',
+                 'Production:',
+                 'Producers:',
+                 'Camera:',
+                 'Musical Producers:',
+                 'Mix & Master:',
+                 'Client'
+               ]
+  const reg = new RegExp('(' + words.join('|') + ')', 'ig')
   return(
     <div className="description-box">
       {description(lang).split('\n').map( (item, i) =>
-        <p className='project-description' key={i}>
-          {item}
-        </p>
+        <p className='project-description' key={i}
+          dangerouslySetInnerHTML={{__html: item.replace(reg, '<b>$1</b>')}} />
+          // {item}
+        // </p>
         )}
     </div>
   )

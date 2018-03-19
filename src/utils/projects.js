@@ -410,9 +410,9 @@ const getProjectDetails = (param) => {
       tagEs: 'Mapping | Instalación',
       tagEn: 'Mapping | Installation',
       descEs: `Desarrollo de experiencias audiovisuales para el lanzamiento de la primera versión del Festival Sónar en Bogotá realizado en la Universidad de los Andes y en el Planetario de Bogotá.
-      Producción, diseño y desarrollo: \nSantiago Messier \nDaniel Morales \nArturo Betancourt \nPablo Ricaurte \nAlvaro Rodriguez Badel \nCarlos Serrano`,
+      Producción, diseño y desarrollo: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
       descEn: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.
-                Production, design and development: \nSantiago Messier \nDaniel Morales \nArturo Betancourt \nPablo Ricaurte \nAlvaro Rodriguez Badel \nCarlos Serrano`,
+                Production, design and development: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
       logos: [s2015],
       assets: {
         a1: {
@@ -665,10 +665,9 @@ const getProjectDetails = (param) => {
       year: '2015',
       tagEs: 'Cortometraje 360º',
       tagEn: '360º Short Film',
-      descEs: `Tumaco es un pequeño pueblo en la frontera entre Colombia y Ecuador, uno de los rincones mas apartados del país lo cual lo convierte en lugar estratégico para la exportación de cocaina. Ahi viven  “Don Alvaro” y “Don Segundo”, dos nativos que por circunstancias distintas se encuentran incapacitados pero que aseguran que el mar es su segunda casa. Alvaro recibió un disparo en la parte baja de la columna, sufrió una lesión grave en su espalda lo cual le impidió caminar por varios años. Segundo, por otro lado tuvo un accidente en el campo cuando trataba de casar su almuerzo con un arma hechiza, dejándolo ciego. Segundo y Alvaro salen todos los días a buscar  su alimento en el mar. \n Productores: Duvan Duque \n Directores: Carlos Serrano y Alvaro Rodriguez Badel \n Fotografía: Jorge Gallardo \n Selección oficial en Trends VR de Ventana Sur, Buenos aires \n Selección oficial en IndieBox, Bogotá`,
+      descEs: `Tumaco es un pequeño pueblo en la frontera entre Colombia y Ecuador, uno de los rincones mas apartados del país lo cual lo convierte en lugar estratégico para la exportación de cocaina. Ahi viven  “Don Alvaro” y “Don Segundo”, dos nativos que por circunstancias distintas se encuentran incapacitados pero que aseguran que el mar es su segunda casa. Alvaro recibió un disparo en la parte baja de la columna, sufrió una lesión grave en su espalda lo cual le impidió caminar por varios años. Segundo, por otro lado tuvo un accidente en el campo cuando trataba de casar su almuerzo con un arma hechiza, dejándolo ciego. Segundo y Alvaro salen todos los días a buscar  su alimento en el mar. \n Productores: Duvan Duque. Directores: Carlos Serrano y Alvaro Rodriguez Badel. Fotografia: Jorge Gallardo. Selección oficial en Trends VR de Ventana Sur, Buenos aires. Selección oficial en IndieBox, Bogotá`,
       descEn: `Tumaco is a small rural town in the border between Colombia and Ecuador. Being one of the most secluded corners in the country, it has become a strategic place for cocaine export. There live“Don Alvaro” and “Don Segundo”, two locals who for different circumstances find themselves disabled, but assure the sea is their second home. Alvaro was shot in his lower back, precluding him from walking for several years. Segundo, on the other hand, had an accident in the field as he was trying to hunt his lunch with a make-shift gun, leaving him blind. Segundo and Alvaro go out every day to fetch their meals in the sea.
-      Producers: Duvan Duque \n Directors: Carlos Serrano and Alvaro Rodriguez Badel \n Photography: Jorge Gallardo \n Short film selected in the first Virtual Reality producers encounter of Ventana Sur Buenos Aires.
-      Short film selected in the first Virtual Reality producers encounter of IndieBox in Bogota.`,
+      Producers: Duvan Duque.  Directors: Carlos Serrano and Alvaro Rodriguez Badel. Photography: Jorge Gallardo. Short film selected in the first Virtual Reality producers encounter of Ventana Sur Buenos Aires. Short film selected in the first Virtual Reality producers encounter of IndieBox in Bogota.`,
       logos: [vs],
       assets: {
         a1: {
@@ -804,9 +803,9 @@ const getProjectDetails = (param) => {
       tagEs: 'Video 360º',
       tagEn: '360º Video',
       descEs: `En el 2015 nos aventuramos a realizar el primer videoclip en 360 hecho en Colombia junto al Freaky Colectivo, LaPost y 1500 Episodios. Con un soporte para 6 cámaras Gopro que fue impreso en 3D y un rodaje de casi 18 horas seguidas logramos producir este video musical en un momento donde el video 360 apenas estaba apareciendo en Colombia.
-                Producción: 1500 Episodios y La Post \n Productor: Nicolas Katime \n Dirección: Wanda Quintero \n Cámara: Alvaro Rodriguez y Carlos Serrano \n Dirección de arte y vestuario: La bonita \n Producción Musical: El Freaky ­ Benny B ­ Cybertronics \n Mix & Master: Franky El Médico`,
+                Producción: 1500 Episodios y La Post. Productor: Nicolas Katime. Dirección: Wanda Quintero. Cámara: Alvaro Rodriguez y Carlos Serrano. Dirección de arte y vestuario: La bonita. Producción Musical: El Freaky ­ Benny B ­ Cybertronics. Mix & Master: Franky El Médico.`,
       descEn: `Production for the first 360 music video made in Colombia with the Freaky Collective, LaPost y 1500 Episodios. With a 3d printer Rig for Gopro cameras and a full 18 hrs shooting we managed to produce the first 360 music video in Colombia.
-                Production: 1500 Episodios y La Post \n Producers: Nicolas Katime \n Direction: Wanda Quintero \n Camera: Alvaro Rodriguez y Carlos Serrano \n Art Direction: La bonita \n Musical Producers: El Freaky ­ Benny B ­ Cybertronics \n Mix & Master: Franky El Médico`,
+                Production: 1500 Episodios y La Post. Producers: Nicolas Katime. Direction: Wanda Quintero. Camera: Alvaro Rodriguez y Carlos Serrano. Art Direction: La bonita. Musical Producers: El Freaky ­ Benny B ­ Cybertronics. Mix & Master: Franky El Médico.`,
       logos: [lapost, mil],
       assets: {
         a1: {
