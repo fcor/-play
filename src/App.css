@@ -30,6 +30,10 @@ a:hover{
   color: #00EBF2;
 }
 
+.navbar.mobile a:hover{
+  color: black;
+}
+
 .selected{
   color: #00EBF2;
 }
