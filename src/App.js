@@ -6,9 +6,7 @@ import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
 import Project from './components/Project'
-import facebook from './images/fb.png'
-import instagram from './images/ig.png'
-import vimeo from './images/vimeo.png'
+import Icons from './components/Icons'
 
 const routes = ["mundo",
                 "planoz",
@@ -122,17 +120,7 @@ const Reel = () =>
 
 const Footer = () =>
   <div className="footer">
-    <div className="iconos">
-      <a  href="https://www.facebook.com/ColectivoMasPlay/" target="_blank"  rel="noopener noreferrer">
-        <img className="icono" src={facebook} alt="fb" />
-      </a>
-      <a href="https://www.instagram.com/mas.play/" target="_blank" rel="noopener noreferrer">
-        <img className="icono"  src={instagram} alt="ig" />
-      </a>
-      <a href="https://www.instagram.com/mas.play/" target="_blank" rel="noopener noreferrer">
-        <img className="icono" src={vimeo} alt="vimeo" />
-      </a>
-    </div>
+    <Icons version="desktop" />
   </div>
 
 export default App;

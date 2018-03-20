@@ -1,5 +1,8 @@
 import React from 'react'
 import LangBox from './LangBox'
+import Navbar from './Navbar'
+import Icons from './Icons'
+import palmaNav from '../images/palmaNav.gif'
 
 class Hamburger extends React.Component {
   constructor(props){
@@ -38,12 +41,23 @@ class Hamburger extends React.Component {
             <div className={`bar-menu b3 ${animation}`}></div>
           </div>
         </div>
-        <div className={`menu-responsive-box ${active ? 'active' : ''}`}>
-          <LangBox lang={lang} changeLang={changeLang} version="mobile" />
-        </div>
-        </div>
+        <SideMenu active={active} lang={lang} changeLang={changeLang} />
+      </div>
     )
   }
 }
+
+const SideMenu = ({ active, lang, changeLang }) =>
+  <div className={`menu-responsive-box ${active ? 'active' : ''}`}>
+    <LangBox lang={lang} changeLang={changeLang} version="mobile" />
+    <div className="side-content">
+      <img src={palmaNav} alt="palma" width="25px"/>
+      <Navbar version="mobile" />
+      <Icons version="mobile"/>
+    </div>
+    <div className="side-footer">
+      WWW.MUCHOMASPLAY.COM
+    </div>
+  </div>
 
 export default Hamburger

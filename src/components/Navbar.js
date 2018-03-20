@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import palmaNav from '../images/palmaNav.gif'
 
-const Navbar = () => {
+const Navbar = ({ version }) => {
   const motion = ["mundo",
                   "coca",
                   "adidas",
@@ -49,41 +49,61 @@ const Navbar = () => {
     }
   }
 
+  let basicProps = {}
+  if (version === 'desktop') {
+    basicProps.activeClassName = 'selected'
+  }
+
+  let motionMatchProps = {}
+  let installationMatchProps = {}
+  let vrMatchProps = {}
+  if (version === 'desktop') {
+    motionMatchProps.isActive = motionMatch
+    installationMatchProps.isActive = installationMatch
+    vrMatchProps.isActive = vrMatch
+  }
+
+  const motionProps = {...basicProps, ...motionMatchProps}
+  const installationProps = {...basicProps, ...installationMatchProps}
+  const vrProps = {...basicProps, ...vrMatchProps}
+
   return(
-    <div className="navbar">
+    <div className={`navbar ${version === 'mobile' ? 'mobile' : ''}`}>
       <ul>
         <li>
-          <NavLink activeClassName="selected"
-                   to='/motion'
-                   isActive={motionMatch}>
+          <NavLink to='/motion' {...motionProps}>
             Motion
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="selected"
-                   to='/space'
-                   isActive={installationMatch}>
+          <NavLink to='/space' {...installationProps}>
             Space
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="selected"
-                   to='/360'
-                   isActive={vrMatch}>
+          <NavLink to='/360' {...vrProps}>
             360°|VR
           </NavLink>
         </li>
+        {version === "desktop" &&
+            <li>
+              <img src={palmaNav} alt="palma" width="25px"/>
+            </li>
+        }
         <li>
-          <img src={palmaNav} alt="palma" width="25px"/>
-        </li>
-        <li>
-          <NavLink activeClassName="selected" to='/reel'>
-            <PoolNav>REEL</PoolNav>
+          <NavLink to='/reel' {...basicProps}>
+            {version === "desktop"
+              ? <PoolNav>REEL</PoolNav>
+              : 'Reel'
+            }
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="selected" to='/about'>
-            <PoolNav>ABOUT</PoolNav>
+          <NavLink to='/about' {...basicProps}>
+          {version === "desktop"
+            ? <PoolNav>ABOUT</PoolNav>
+            : 'About'
+          }
           </NavLink>
         </li>
       </ul>

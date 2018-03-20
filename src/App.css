@@ -54,6 +54,16 @@ path{
   width: 620px;
 }
 
+.navbar.mobile{
+  margin: 50px 0;
+}
+
+.navbar.mobile ul{
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+}
+
 li{
   display: flex;
   align-items: center;
@@ -79,6 +89,15 @@ li:nth-child(6){
 
 li:nth-child(-n +3) a{
   font-size: 23px;
+}
+
+.navbar.mobile li {
+  margin: 2.5px 0;
+}
+
+.navbar.mobile a{
+  font-size: 34px;
+  letter-spacing: 3px;
 }
 
 .overlay{
@@ -135,7 +154,7 @@ li:nth-child(-n +3) a{
 
 .menu-responsive-box{
   height: 100vh;
-  width: 60vw;
+  width: 75vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -144,6 +163,8 @@ li:nth-child(-n +3) a{
   transition: 0.5s;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9dff+0,d1d4d6+73,d1d4d6+73,d1d4d6+73,b1bec9+81,42eded+100 */
   background: #ff9dff; /* Old browsers */
   background: -moz-linear-gradient(top, #ff9dff 0%, #d1d4d6 73%, #d1d4d6 73%, #d1d4d6 73%, #b1bec9 81%, #42eded 100%); /* FF3.6-15 */
@@ -154,6 +175,22 @@ li:nth-child(-n +3) a{
 
 .menu-responsive-box.active{
   right: 0;
+}
+
+.side-content{
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 150px; */
+}
+
+.side-footer{
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-size: 14px
 }
 
 .hamburger-menu{
@@ -302,7 +339,7 @@ li:nth-child(-n +3) a{
 }
 
 .lang-text.mobile{
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -589,6 +626,17 @@ li:nth-child(-n +3) a{
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.iconos.mobile{
+  width: 150px;
+}
+
+.iconos.mobile a{
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icono{

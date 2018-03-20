@@ -11,7 +11,7 @@ const Menu = ({changeLang, lang, version, handleOverlay}) => {
         <div className="menu">
           <LangBox lang={lang} changeLang={changeLang} version="desktop"/>
           <LogoBox logo={logo} width="180px" className="logo-desktop"/>
-          <Navbar />
+          <Navbar version="desktop" />
         </div>
        )
      } else {
