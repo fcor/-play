@@ -21,6 +21,7 @@ class Hamburger extends React.Component {
     this.props.handleOverlay()
   }
 
+
   render() {
     const { lang, changeLang } = this.props
     const { active } = this.state
@@ -41,18 +42,18 @@ class Hamburger extends React.Component {
             <div className={`bar-menu b3 ${animation}`}></div>
           </div>
         </div>
-        <SideMenu active={active} lang={lang} changeLang={changeLang} />
+        <SideMenu active={active} lang={lang} changeLang={changeLang} onClickMobile={this.handleClick} />
       </div>
     )
   }
 }
 
-const SideMenu = ({ active, lang, changeLang }) =>
+const SideMenu = ({ active, lang, changeLang, onClickMobile }) =>
   <div className={`menu-responsive-box ${active ? 'active' : ''}`}>
     <LangBox lang={lang} changeLang={changeLang} version="mobile" />
     <div className="side-content">
       <img src={palmaNav} alt="palma" width="25px"/>
-      <Navbar version="mobile" />
+      <Navbar version="mobile" onClick={onClickMobile}/>
       <Icons version="mobile"/>
     </div>
     <div className="side-footer">

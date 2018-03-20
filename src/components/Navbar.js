@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import palmaNav from '../images/palmaNav.gif'
 
-const Navbar = ({ version }) => {
+const Navbar = ({ version, onClick }) => {
   const motion = ["mundo",
                   "coca",
                   "adidas",
@@ -67,20 +67,25 @@ const Navbar = ({ version }) => {
   const installationProps = {...basicProps, ...installationMatchProps}
   const vrProps = {...basicProps, ...vrMatchProps}
 
+  let clickProps= {}
+  if (version === 'mobile') {
+    clickProps.onClick = onClick
+  }
+
   return(
     <div className={`navbar ${version === 'mobile' ? 'mobile' : ''}`}>
       <ul>
-        <li>
+        <li {...clickProps}>
           <NavLink to='/motion' {...motionProps}>
             Motion
           </NavLink>
         </li>
-        <li>
+        <li {...clickProps}>
           <NavLink to='/space' {...installationProps}>
             Space
           </NavLink>
         </li>
-        <li>
+        <li {...clickProps}>
           <NavLink to='/360' {...vrProps}>
             360°|VR
           </NavLink>
@@ -90,7 +95,7 @@ const Navbar = ({ version }) => {
               <img src={palmaNav} alt="palma" width="25px"/>
             </li>
         }
-        <li>
+        <li {...clickProps}>
           <NavLink to='/reel' {...basicProps}>
             {version === "desktop"
               ? <PoolNav>REEL</PoolNav>
@@ -98,7 +103,7 @@ const Navbar = ({ version }) => {
             }
           </NavLink>
         </li>
-        <li>
+        <li {...clickProps}>
           <NavLink to='/about' {...basicProps}>
           {version === "desktop"
             ? <PoolNav>ABOUT</PoolNav>
