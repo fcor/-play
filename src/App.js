@@ -53,7 +53,7 @@ class App extends Component {
       <div>
         <Media
           query="(min-width: 768px)"
-          render={() => <MasPlay lang={lang} handleLang={this.handleLang} />}
+          render={() => <MasPlay lang={lang} handleLang={this.handleLang} version="desktop" />}
         />
 
         <Media
@@ -63,18 +63,18 @@ class App extends Component {
 
         <Media
           query="(max-width: 649px)"
-          render={() => <p> The document is below 650px wide. </p>}
+          render={() => <MasPlay lang={lang} handleLang={this.handleLang} version="mobile" />}
         />
     </div>
     )
   }
 }
 
-const MasPlay = ({ lang, handleLang }) =>
+const MasPlay = ({ lang, handleLang, version }) =>
 <div>
   <Router>
-    <div className="contenedor">
-      <Menu changeLang={handleLang} lang={lang}/>
+    <div className={`contenedor ${(version === 'desktop') ? '' : 'mobile' }`}>
+      <Menu changeLang={handleLang} lang={lang} version={version}/>
       <div className="contenido">
         <Route render={({ location }) =>
           <TransitionGroup exit={false}>

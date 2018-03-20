@@ -89,6 +89,11 @@ li:nth-child(-n +3) a{
   min-height: 100vh;
 }
 
+.contenedor.mobile{
+  width: 75vw;
+  border: 1px solid red;
+}
+
 .menu{
   /* border: 1px solid blue; */
   display: flex;
@@ -98,6 +103,147 @@ li:nth-child(-n +3) a{
   padding-top: 40px;
   font-family: 'Chalet Cologne';
   position: relative;
+}
+
+.menu-responsive{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  font-family: 'Chalet Cologne';
+  /* position: relative; */
+  border: 1px solid blue;
+}
+
+.menu-responsive-box{
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  background-color: #F44436;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-responsive-box.active{
+  right: 0;
+}
+
+.hamburger-menu{
+  /* width: 50px; */
+  position: relative;
+  /* right: 0; */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  transition: all .5s;
+}
+
+.bar-menu{
+  width: 25px;
+  height: 3px;
+  background: #FF9DFF;
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+.b1.active{
+  animation: bar1in .5s forwards;
+}
+.b2.active{
+  animation: bar2in .5s forwards;
+}
+.b3.active{
+  animation: bar3in .5s forwards;
+}
+
+.b1.inactive{
+  animation: bar1out .5s forwards;
+}
+.b2.inactive{
+  animation: bar2out .5s forwards;
+}
+.b3.inactive{
+  animation: bar3out .5s forwards;
+}
+
+@keyframes bar1in{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(7px);
+  }
+  100%{
+    transform: translateY(7px) rotate(45deg);
+    background: black;
+  }
+}
+
+@keyframes bar1out{
+  0%{
+    transform: translateY(7px) rotate(45deg);
+    background: black;
+  }
+  50%{
+    transform: translateY(7px);
+  }
+  100%{
+    transform: translateY(0);
+    background: #FF9DFF;
+  }
+}
+
+@keyframes bar2in{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes bar2out{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes bar3in{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-7px);
+  }
+  100%{
+    transform: translateY(-7px) rotate(-45deg);
+    background: black;
+  }
+}
+
+@keyframes bar3out{
+  0%{
+    transform: translateY(-7px) rotate(-45deg);
+    background: black;
+  }
+  50%{
+    transform: translateY(-7px);
+  }
+  100%{
+    transform: translateY(0);
+    background: #FF9DFF;
+  }
 }
 
 .lang-box{
@@ -151,7 +297,7 @@ li:nth-child(-n +3) a{
   font-size: 14px;
 }
 
-.logo-box{
+.logo-desktop{
   margin-bottom: 50px;
 }
 
