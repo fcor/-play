@@ -32,8 +32,10 @@ class App extends Component {
     super(props)
     this.state = {
       lang: 'es',
+      overlay: false
     }
     this.handleLang = this.handleLang.bind(this)
+    this.handleOverlay = this.handleOverlay.bind(this)
   }
 
   handleLang(newLang){
@@ -47,10 +49,17 @@ class App extends Component {
     })
   }
 
+  handleOverlay(overlay){
+    this.setState(
+      ({overlay}) => ({overlay: !overlay}),
+    )
+  }
+
   render() {
-    const { lang } = this.state
+    const { lang, overlay } = this.state
     return (
       <div>
+        <div className={`overlay ${overlay ? 'active' : ''}`}> </div>
         <Media
           query="(min-width: 768px)"
           render={() => <MasPlay lang={lang} handleLang={this.handleLang} version="desktop" />}
@@ -63,18 +72,18 @@ class App extends Component {
 
         <Media
           query="(max-width: 649px)"
-          render={() => <MasPlay lang={lang} handleLang={this.handleLang} version="mobile" />}
+          render={() => <MasPlay lang={lang} handleLang={this.handleLang} handleOverlay={this.handleOverlay} version="mobile" />}
         />
     </div>
     )
   }
 }
 
-const MasPlay = ({ lang, handleLang, version }) =>
+const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
 <div>
   <Router>
     <div className={`contenedor ${(version === 'desktop') ? '' : 'mobile' }`}>
-      <Menu changeLang={handleLang} lang={lang} version={version}/>
+      <Menu changeLang={handleLang} lang={lang} version={version} handleOverlay={handleOverlay}/>
       <div className="contenido">
         <Route render={({ location }) =>
           <TransitionGroup exit={false}>

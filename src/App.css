@@ -81,6 +81,24 @@ li:nth-child(-n +3) a{
   font-size: 23px;
 }
 
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.overlay.active{
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
 .contenedor{
   margin: 0 auto;
   width: 1400px;
@@ -117,16 +135,21 @@ li:nth-child(-n +3) a{
 
 .menu-responsive-box{
   height: 100vh;
-  width: 30vw;
+  width: 60vw;
   position: fixed;
   z-index: 1;
   top: 0;
   right: -100%;
-  background-color: #F44436;
   overflow-x: hidden;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9dff+0,d1d4d6+73,d1d4d6+73,d1d4d6+73,b1bec9+81,42eded+100 */
+  background: #ff9dff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff9dff 0%, #d1d4d6 73%, #d1d4d6 73%, #d1d4d6 73%, #b1bec9 81%, #42eded 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff9dff 0%,#d1d4d6 73%,#d1d4d6 73%,#d1d4d6 73%,#b1bec9 81%,#42eded 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff9dff 0%,#d1d4d6 73%,#d1d4d6 73%,#d1d4d6 73%,#b1bec9 81%,#42eded 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9dff', endColorstr='#42eded',GradientType=0 ); /* IE6-9 */
 }
 
 .menu-responsive-box.active{
@@ -144,6 +167,11 @@ li:nth-child(-n +3) a{
   flex-direction: column;
   z-index: 2;
   transition: all .5s;
+  /* cursor: pointer; */
+}
+
+.hamburger-menu.active{
+  transform: translate(7.5vw, -23px);
 }
 
 .bar-menu{
@@ -257,6 +285,12 @@ li:nth-child(-n +3) a{
   top: 40%;
 }
 
+.lang-box.mobile{
+  left: 4vw;
+  top: 4vw;
+  width: 55px;
+}
+
 .lang-text{
   margin: 3px 3px 0 3px;
   font-family: 'Chalet Cologne';
@@ -265,6 +299,11 @@ li:nth-child(-n +3) a{
   font-size: 15px;
   color: #4C4C4C;
   cursor: pointer;
+}
+
+.lang-text.mobile{
+  font-size: 20px;
+  color: #000;
 }
 
 .lang{

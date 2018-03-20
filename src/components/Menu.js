@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import Navbar from './Navbar'
 import LangBox from './LangBox'
-import Hamburguer from './Hamburguer'
+import Hamburger from './Hamburger'
 
-const Menu = ({changeLang, lang, version}) => {
+const Menu = ({changeLang, lang, version, handleOverlay}) => {
      if (version === "desktop") {
        return(
         <div className="menu">
-          <LangBox lang={lang} changeLang={changeLang}/>
+          <LangBox lang={lang} changeLang={changeLang} version="desktop"/>
           <LogoBox logo={logo} width="180px" className="logo-desktop"/>
           <Navbar />
         </div>
@@ -18,7 +18,7 @@ const Menu = ({changeLang, lang, version}) => {
        return(
          <div className="menu-responsive">
            <LogoBox logo={logo} width="100px" />
-           <Hamburguer />
+           <Hamburger lang={lang} changeLang={changeLang} handleOverlay={handleOverlay} />
          </div>
        )
      }

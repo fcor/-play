@@ -1,6 +1,7 @@
 import React from 'react'
+import LangBox from './LangBox'
 
-class Hamburguer extends React.Component {
+class Hamburger extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -14,9 +15,11 @@ class Hamburguer extends React.Component {
     this.setState(
       ({active}) => ({active: !active}),
     )
+    this.props.handleOverlay()
   }
 
   render() {
+    const { lang, changeLang } = this.props
     const { active } = this.state
     let animation
     if (active === null) {
@@ -28,7 +31,7 @@ class Hamburguer extends React.Component {
     }
     return(
       <div>
-        <div className="hamburger-menu" onClick={this.handleClick}>
+        <div className={`hamburger-menu ${active ? 'active' : ''}`} onClick={this.handleClick}>
           <div>
             <div className={`bar-menu b1 ${animation}`}></div>
             <div className={`bar-menu b2 ${animation}`}></div>
@@ -36,11 +39,11 @@ class Hamburguer extends React.Component {
           </div>
         </div>
         <div className={`menu-responsive-box ${active ? 'active' : ''}`}>
-          Hola!
+          <LangBox lang={lang} changeLang={changeLang} version="mobile" />
         </div>
         </div>
     )
   }
 }
 
-export default Hamburguer
+export default Hamburger
