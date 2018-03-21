@@ -37,6 +37,9 @@ class Video extends Component {
             preload="auto"
             loop="loop"
             autoPlay
+            muted
+            playsInline
+            // webkit-playsinline
             onLoadedDataCapture={this.handleLoad}
             style={style}
             >
