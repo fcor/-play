@@ -22,6 +22,10 @@ class Video extends Component {
   render() {
     const { src, width } = this.props
     const { loading } = this.state
+    const style = {
+      width: width,
+      visibility : `${loading ? 'hidden' : 'visible'}`
+    }
     return(
       <div className="video">
         {loading &&
@@ -29,12 +33,12 @@ class Video extends Component {
         }
         <LazyLoad height='100%' offset={100} once>
           <video
-            width={width}
+            // width={width}
             preload="auto"
             loop="loop"
             autoPlay
             onLoadedDataCapture={this.handleLoad}
-            style={{ visibility : `${loading ? 'hidden' : 'visible'}`}}
+            style={style}
             >
             <source src={src} type="video/mp4" />
           </video>

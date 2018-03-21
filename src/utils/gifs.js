@@ -11,7 +11,7 @@ import cuerpos from '../images/gifs/cuerpos.mp4'
 import redbull from '../images/gifs/redbull.mp4'
 import redbullp from '../images/gifs/redbullP.mp4'
 import warm from '../images/gifs/warm.mp4'
-import freaky from '../images/gifs/freaky.mp4' 
+import freaky from '../images/gifs/freaky.mp4'
 import samsung from '../images/gifs/samsung.mp4'
 
 const gifs = (param) => {
@@ -29,7 +29,8 @@ const gifs = (param) => {
       titleEn: "An Observation of the End of the World",
       year: "2017",
       desc: "Fulldome Experience",
-      descEN: "Fulldome Experience"
+      descEN: "Fulldome Experience",
+      shape : 'square'
     }
   } else if (param === 'planoz') {
     return{
@@ -45,7 +46,8 @@ const gifs = (param) => {
       titleEn: "Moto Z \n Plain Z",
       year: "2016",
       desc: "Video 360º | Tour VIrtual",
-      descEN: "360º Video | Virtual Tour"
+      descEN: "360º Video | Virtual Tour",
+      shape : 'square'
     }
   } else if (param === 'topologias') {
     return{
@@ -62,7 +64,8 @@ const gifs = (param) => {
                 Topologies`,
       year: "2017",
       desc: "Video Instalación | VR",
-      descEN: "Video Installation | VR"
+      descEN: "Video Installation | VR",
+      shape : 'rect'
     }
   } else if (param === 'moto') {
     return{
@@ -78,7 +81,8 @@ const gifs = (param) => {
       titleEn: "Moto Z2 Play",
       year: "2017",
       desc: "Video Instalación",
-      descEN: "Video Installation"
+      descEN: "Video Installation",
+      shape : 'square'
     }
   } else if (param === 'adidas') {
     return{
@@ -86,7 +90,7 @@ const gifs = (param) => {
       img: adidas,
       right: "90px",
       top: "1032px",
-      width: "250",
+      width: "250px",
       rightR: "70px",
       topR: "120px",
       route: "adidas",
@@ -94,7 +98,8 @@ const gifs = (param) => {
       titleEn: "Adidas \n Nemeziz",
       year: "2017",
       desc: "Motion Graphics | Diseño",
-      descEN: "Motion Graphics | Design"
+      descEN: "Motion Graphics | Design",
+      shape : 'square'
     }
   } else if (param === 'sonar') {
     return{
@@ -104,13 +109,14 @@ const gifs = (param) => {
       top: "425px",
       rightR: "551px",
       topR: "330px",
-      width: "300",
+      width: "300px",
       route: "sonar",
       title: "Sonar AV \n Experience",
       titleEn: "Sonar \n AV Experience",
       year: "2017",
       desc: "Video Instalación",
-      descEN: "Video Installation"
+      descEN: "Video Installation",
+      shape : 'rect'
     }
   } else if (param === 'uber') {
     return{
@@ -126,7 +132,8 @@ const gifs = (param) => {
       titleEn: "UberPool",
       year: "2015",
       desc: "Video 360º",
-      descEN: "360º Video"
+      descEN: "360º Video",
+      shape : 'rect'
     }
   } else if (param === 'nike') {
     return{
@@ -142,7 +149,8 @@ const gifs = (param) => {
       titleEn: "Nike Air Force Launch",
       year: "2017",
       desc: "Mapping | Motion Graphics",
-      descEN: "Mapping | Motion Graphics"
+      descEN: "Mapping | Motion Graphics",
+      shape : 'rect'
     }
   } else if (param === 'coca') {
     return{
@@ -152,13 +160,14 @@ const gifs = (param) => {
       top: "950px",
       rightR: "551px",
       topR: "40px",
-      width: "320",
+      width: "320px",
       route: "coca",
       title: "De la Coca \n a la Pimienta",
       titleEn: "De la Coca \n a la Pimienta",
       year: "2017",
       desc: "Diseño de títulos | Motion Graphics",
-      descEN: "Main Title Design | Motion Graphics"
+      descEN: "Main Title Design | Motion Graphics",
+      shape : 'rect'
     }
   } else if (param === 'cuerpos') {
     return{
@@ -173,7 +182,8 @@ const gifs = (param) => {
       titleEn: "Water Bodies",
       year: "2015",
       desc: "Cortometraje 360º",
-      descEN: "360º Short Film"
+      descEN: "360º Short Film",
+      shape : 'square'
     }
   } else if (param === 'redbull') {
     return{
@@ -189,7 +199,8 @@ const gifs = (param) => {
       titleEn: "RedBull Athletes",
       year: "2017",
       desc: "Video 360º",
-      descEN: "360º Video"
+      descEN: "360º Video",
+      shape : 'rect'
     }
   } else if (param === 'redbullP') {
     return{
@@ -205,7 +216,8 @@ const gifs = (param) => {
       titleEn: "Redbull Paragliding",
       year: "2017",
       desc: "Video 360º",
-      descEN: "360º Video"
+      descEN: "360º Video",
+      shape : 'rect'
     }
   } else if (param === 'warm') {
     return{
@@ -220,7 +232,8 @@ const gifs = (param) => {
       titleEn: "Sonar \n Warm Up",
       year: "2015",
       desc: "Mapping | Instalación",
-      descEN: "Mapping | Installation"
+      descEN: "Mapping | Installation",
+      shape : 'square'
     }
   } else if (param === 'samsung') {
     return{
@@ -236,7 +249,8 @@ const gifs = (param) => {
       titleEn: "The Gift of the Sea \n Samsung",
       year: "2015",
       desc: "Video 360º",
-      descEN: "360º Video"
+      descEN: "360º Video",
+      shape : 'rect'
     }
   }  else if (param === 'freaky') {
     return{
@@ -252,7 +266,8 @@ const gifs = (param) => {
       titleEn: "El Freaky ft. Mr Lexx & Cybertronics",
       year: "2015",
       desc: "Video 360º",
-      descEN: "360º Video"
+      descEN: "360º Video",
+      shape : 'square'
     }
   }
 }

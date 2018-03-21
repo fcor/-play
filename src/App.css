@@ -131,8 +131,8 @@ li:nth-child(-n +3) a{
 }
 
 .contenedor.mobile{
-  width: 75vw;
-  border: 1px solid red;
+  width: 80vw;
+  /* border: 1px solid red; */
 }
 
 .menu{
@@ -153,7 +153,7 @@ li:nth-child(-n +3) a{
   height: 100px;
   font-family: 'Chalet Cologne';
   /* position: relative; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .menu-responsive-box{
@@ -212,7 +212,7 @@ li:nth-child(-n +3) a{
 }
 
 .hamburger-menu.active{
-  transform: translate(7.5vw, -23px);
+  transform: translate(5vw, -23px);
 }
 
 .bar-menu{
@@ -400,13 +400,8 @@ li:nth-child(-n +3) a{
   flex: 1 0 auto;
 }
 
-.gifs{
-  position: relative;
-  /* height: 2000px; */
-}
-
-.gif{
-  position: absolute;
+.gif.mobile{
+  margin-bottom: calc(5vw - 5px);
 }
 
 .gif p {
@@ -428,6 +423,19 @@ li:nth-child(-n +3) a{
   height: calc(100% - 4.5px);
   transition: .4s;
   font-family: 'Chalet Cologne'
+}
+
+/* Acá debe ir el degradado */
+.gif-text.mobile{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+69,070707+100&0+69,0.63+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 69%, rgba(7,7,7,0.63) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 69%,rgba(7,7,7,0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 69%,rgba(7,7,7,0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a1070707',GradientType=0 ); /* IE6-9 */
+  opacity: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .gif-text.white {
@@ -452,17 +460,29 @@ li:nth-child(-n +3) a{
   margin: 10px 0 10px 15px;
 }
 
+.gif-title-box.mobile{
+  margin: 0 0 0 8px;
+}
+
 .gif-title{
   font-size: 51px;
   /* margin: 15px 0 10px 18px; */
   margin: 0;
   /* font-weight: bold; */
 }
+.gif-title.mobile{
+  font-size: 15px;
+}
 
 .gif-desc{
   font-size: 15px;
   letter-spacing: 3px;
   margin: 0px 0 10px 15px;
+}
+
+.gif-year{
+  font-size: 12px;
+  margin: 0 0 8px 8px;
 }
 
 .border{
