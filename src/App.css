@@ -522,6 +522,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   width: 600px;
 }
 
+.project-content{
+  width: 80vw;
+}
+
 .navigate{
   margin: 5px 0 20px 0;
   display: flex;
@@ -538,6 +542,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   font-weight: normal;
   cursor: pointer;
   transition: .4s;
+}
+
+.nav-button.mobile{
+  font-size: 14px;
 }
 
 .nav-button:hover{
@@ -575,6 +583,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   line-height: .95;
 }
 
+.title.mobile h1{
+  font-size: 45px;
+}
+
 .title-box h2{
   font-weight: normal;
   letter-spacing: 1px;
@@ -587,10 +599,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   /* color: #4C4C4C; */
 }
 
+.project-year.mobile{
+  font-size: 13px;
+}
+
 .project-tag{
   font-size: 16px;
   margin: 5px 0 0 0;
   letter-spacing: 1px;
+}
+
+.project-tag.mobile{
+  font-size: 14px;
 }
 
 .description-box{
@@ -607,6 +627,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.5;
   margin-top: 0;
+}
+
+.project-description.mobile{
+  font-size: 11px;
 }
 
 .logos{

@@ -19,8 +19,12 @@ class Image extends Component {
   }
 
   render() {
-    const { src, width, alt } = this.props
+    const { src, width, alt, version } = this.props
     const { loading } = this.state
+    const style = {
+      width: width,
+      visibility : `${loading ? 'hidden' : 'visible'}`
+    }
     return(
       <div className="image">
         {loading &&
@@ -30,9 +34,8 @@ class Image extends Component {
           <img
             src={src}
             alt={alt}
-            width={width}
             onLoadCapture={this.handleLoad}
-            style={{ visibility : `${loading ? 'hidden' : 'visible'}`}}
+            style={style}
           />
       </LazyLoad>
       </div>

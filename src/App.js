@@ -94,7 +94,7 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
                 <Route path="/about" component={About}/>
                 <Route path="/reel" component={Reel}/>
                 {routes.map((item) =>
-                  <Route key={item} path={`/${item}`} render={() => <Project param={item} lang={lang}/>}/>
+                  <Route key={item} path={`/${item}`} render={() => <Project param={item} version={version} lang={lang}/>}/>
                 )}
                 <Route render={() => <h1>Page not found</h1>} />
               </Switch>
