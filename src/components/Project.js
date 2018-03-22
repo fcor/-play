@@ -34,7 +34,7 @@ class Project extends React.Component {
                      version={version}
         />
         <Assets assets={project.assets} version={version} />
-        <Logos assets={project.logos} />
+        <Logos assets={project.logos} version={version} />
         <Navigate prev={project.prev} next={project.next} />
       </div>
     )
@@ -122,7 +122,11 @@ const Description = ({ lang, descEn, descEs, version }) => {
 const Logos = props =>
   <div className="logos">
     {props.assets.map((item)=>
-      <img className="logo" src={item} key={item} alt="logo" />
+      <img className="logo"
+           width={`${props.version === 'mobile' ? '50%' : '100%'}`}
+           src={item}
+           key={item}
+           alt="logo" />
     )}
   </div>
 
