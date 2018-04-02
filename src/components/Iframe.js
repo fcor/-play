@@ -19,16 +19,28 @@ class Iframe extends Component {
   }
 
   render() {
-    const { src, version } = this.props
+    const { src, version, content } = this.props
     const { loading } = this.state
     let width, height
-    if (version === 'desktop') {
-      width = "600"
-      height = "400"
-    } else if (version === 'mobile') {
-      const ww = window.innerWidth
-      width = `${0.8*ww}`
-      height = `${width/1.5}`
+
+    if (content === 'vr') {
+      if (version === 'desktop') {
+        width = "600"
+        height = "400"
+      } else if (version === 'mobile') {
+        const ww = window.innerWidth
+        width = `${0.8*ww}`
+        height = `${width/1.5}`
+      }
+    } else if (content === 'video') {
+      if (version === 'desktop') {
+        width = "600"
+        height = "337"
+      } else if (version === 'mobile') {
+        const ww = window.innerWidth
+        width = `${0.8*ww}`
+        height = `${width/1.77}`
+      }
     }
     return(
       <div className="iframe-box">

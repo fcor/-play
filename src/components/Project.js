@@ -4,6 +4,7 @@ import VRScene from './VRScene'
 import Video from './Video'
 import Image from './Image'
 import GifAsset from './GifAsset'
+import Iframe from './Iframe'
 // import Lazyload from 'react-lazyload'
 import getProjectDetails from '../utils/projects'
 import asoleadora from '../images/asoleadora.png'
@@ -149,7 +150,8 @@ const Assets = props => {
           } else if (item[1].type === 'video') {
             return(
               <div key={item} className="asset-box">
-                <div dangerouslySetInnerHTML={{__html:item[1].src}} />
+                {/* <div dangerouslySetInnerHTML={{__html:item[1].src}} /> */}
+                <Iframe src={item[1].src} version={props.version} content="video" />
               </div>
             )
           } else if (item[1].type === '360') {
