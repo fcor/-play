@@ -59,13 +59,13 @@ class App extends Component {
       <div>
         <div className={`overlay ${overlay ? 'active' : ''}`}> </div>
         <Media
-          query="(min-width: 768px)"
+          query="(min-width: 770px)"
           render={() => <MasPlay lang={lang} handleLang={this.handleLang} version="desktop" />}
         />
 
         <Media
-          query="(min-width: 650px) and (max-width: 767px)"
-          render={() => <p> The document is between 650px and 767px wide. </p>}
+          query="(min-width: 650px) and (max-width: 769px)"
+          render={() => <MasPlay lang={lang} handleLang={this.handleLang} handleOverlay={this.handleOverlay} version="mobile" />}
         />
 
         <Media

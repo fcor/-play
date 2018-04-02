@@ -19,8 +19,17 @@ class Iframe extends Component {
   }
 
   render() {
-    const { src, width, height } = this.props
+    const { src, version } = this.props
     const { loading } = this.state
+    let width, height
+    if (version === 'desktop') {
+      width = "600"
+      height = "400"
+    } else if (version === 'mobile') {
+      const ww = window.innerWidth
+      width = `${0.8*ww}`
+      height = `${width/1.5}`
+    }
     return(
       <div className="iframe-box">
         {loading &&

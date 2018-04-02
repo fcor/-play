@@ -499,11 +499,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   transition: opacity 250ms ease-in;
 }
 
-.vr-content{
-  height: 400px;
-  width: 600px;
-}
-
 .iframe{
   display: block;
   border: 0;
@@ -522,7 +517,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   width: 600px;
 }
 
-.project-content{
+.project-content.mobile{
   width: 80vw;
 }
 
