@@ -249,7 +249,7 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: 'video',
-          src: '<iframe src="https://player.vimeo.com/video/233831588" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+          src: 'https://player.vimeo.com/video/233831588'
         },
       }
     }
@@ -475,7 +475,7 @@ const getProjectDetails = (param) => {
         },
         a7: {
           type: 'video',
-          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/ixi5oW_iJM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+          src: 'https://www.youtube.com/embed/ixi5oW_iJM8'
         },
       }
     }
@@ -651,7 +651,7 @@ const getProjectDetails = (param) => {
         },
         a14: {
           type: 'video',
-          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/5E8HBVZWKtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+          src: 'https://www.youtube.com/embed/5E8HBVZWKtM'
         }
       }
     }
@@ -834,7 +834,7 @@ const getProjectDetails = (param) => {
         },
         a7: {
           type: 'video',
-          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/xBVVJ1aCOks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+          src: 'https://www.youtube.com/embed/xBVVJ1aCOks'
         },
       }
     }
@@ -878,7 +878,7 @@ const getProjectDetails = (param) => {
         },
         a6: {
           type: 'video',
-          src: '<iframe width="600" height="337" src="https://www.youtube.com/embed/h2Fp9ZzIAUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+          src: 'https://www.youtube.com/embed/h2Fp9ZzIAUw'
         },
       }
     }

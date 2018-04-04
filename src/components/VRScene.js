@@ -2,8 +2,8 @@ import React from 'react'
 import Iframe from './Iframe'
 
 const VRScene = props =>
-    <div className="vr-content">
-      <Iframe src={props.url} width="600" height="400" />
+    <div >
+      <Iframe src={props.url} version={props.version} content="vr" />
     </div>
 
 export default VRScene
