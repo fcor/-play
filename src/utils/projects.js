@@ -519,10 +519,10 @@ const getProjectDetails = (param) => {
           type: 'img',
           src: rbp4
         },
-        a5: {
-          type: 'mp4',
-          src: rbp5
-        },
+        // a5: {
+        //   type: 'mp4',
+        //   src: rbp5
+        // },
         a6: {
           type: 'mp4',
           src: rbp6
@@ -531,10 +531,10 @@ const getProjectDetails = (param) => {
           type: 'mp4',
           src: rbp7
         },
-        a8: {
-          type: 'mp4',
-          src: rbp8
-        },
+        // a8: {
+        //   type: 'mp4',
+        //   src: rbp8
+        // },
         a9: {
           type: 'img',
           src: rbp9

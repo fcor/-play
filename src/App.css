@@ -131,7 +131,7 @@ li:nth-child(-n +3) a{
   width: 1400px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 84vh;
 }
 
 .contenedor.mobile{
@@ -743,4 +743,14 @@ li:nth-child(-n +3) a{
 
 .iframe-box{
   position: relative;
+}
+
+.coming-soon{
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Chalet Cologne';
+  font-size: 45px;
 }

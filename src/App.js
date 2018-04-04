@@ -109,18 +109,23 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
 
 const About = () =>
   <div className="about-box">
-    About component
+    <ComingSoon />
     {/* <VRScene img={city} /> */}
   </div>
 
 const Reel = () =>
   <div>
-    Reel component
+    <ComingSoon />
   </div>
 
 const Footer = () =>
   <div className="footer">
     <Icons version="desktop" />
   </div>
+
+const ComingSoon = () =>
+<div className="coming-soon">
+  Coming Soon!
+</div>
 
 export default App;
