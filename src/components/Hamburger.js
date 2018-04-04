@@ -19,8 +19,8 @@ class Hamburger extends React.Component {
       ({active}) => ({active: !active}),
     )
     this.props.handleOverlay()
+    document.body.classList.toggle('no-scroll');
   }
-
 
   render() {
     const { lang, changeLang } = this.props
