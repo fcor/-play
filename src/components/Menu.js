@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import logo from '../images/+play.png'
 import Navbar from './Navbar'
 import LangBox from './LangBox'
@@ -17,13 +17,79 @@ const Menu = ({changeLang, lang, version, handleOverlay}) => {
      } else {
        return(
          <div className="menu-responsive">
-           <LogoBox logo={logo} width="100px" />
            <Hamburger lang={lang} changeLang={changeLang} handleOverlay={handleOverlay} />
+           <LogoBox logo={logo} width="140px" />
+           <Nav />
          </div>
        )
      }
 }
 
+const Nav = () => {
+  const motion = ["mundo",
+                  "coca",
+                  "adidas",
+                  "nike",
+                ]
+  const space = ["topologias",
+                        "sonar",
+                        "warm",
+                        "moto",
+                      ]
+  const vr = ["redbullP",
+              "planoz",
+              "cuerpos",
+              "uber",
+              "redbull",
+              "freaky",
+              "samsung",
+            ]
+  const tagMatch = ( match, location, tag ) => {
+    if (match) {
+      return true
+    } else if( tag === 'motion') {
+      const url = location.pathname.slice(1)
+      return motion.includes(url)
+    } else if( tag === 'space') {
+      const url = location.pathname.slice(1)
+      return space.includes(url)
+    } else if( tag === 'vr') {
+      const url = location.pathname.slice(1)
+      return vr.includes(url)
+    }
+  }
+  return(
+    <div className="plain-navbar">
+      <ul>
+        <li>
+          <NavLink to='/motion'
+                   activeClassName = 'selected'
+                   isActive = {(match, location) => tagMatch(match, location, 'motion')}
+                   >
+            Motion
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/space'
+                   activeClassName = 'selected'
+                   isActive = {(match, location) => tagMatch(match, location, 'space')}
+                   >
+            Space
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/360'
+                   activeClassName = 'selected'
+                   isActive = {(match, location) => tagMatch(match, location, 'vr')}
+                  >
+            360°|VR
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+
+  )
+}
 
 const LogoBox = ({ logo, width, className }) =>
   <div className={className}>

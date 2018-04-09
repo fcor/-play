@@ -108,6 +108,24 @@ li:nth-child(-n +3) a{
   letter-spacing: 3px;
 }
 
+.plain-navbar{
+  width: 80vw;
+  font-size: 14px;
+}
+
+.plain-navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0;
+  margin: 30px 0 50px 0;
+}
+
+.plain-navbar li{
+  margin: 0;
+}
+
 .overlay{
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -151,10 +169,12 @@ li:nth-child(-n +3) a{
 }
 
 .menu-responsive{
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100px;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100px; */
   font-family: 'Chalet Cologne';
   /* position: relative; */
   /* border: 1px solid blue; */
@@ -166,7 +186,7 @@ li:nth-child(-n +3) a{
   position: fixed;
   z-index: 1;
   top: 0;
-  right: -100%;
+  left: -100%;
   overflow-x: hidden;
   transition: 0.5s;
   display: flex;
@@ -182,7 +202,7 @@ li:nth-child(-n +3) a{
 }
 
 .menu-responsive-box.active{
-  right: 0;
+  left: 0;
 }
 
 .side-content{
@@ -201,6 +221,10 @@ li:nth-child(-n +3) a{
   font-size: 14px
 }
 
+.hamburger-align{
+  margin-right: auto;
+}
+
 .hamburger-menu{
   /* width: 50px; */
   position: relative;
@@ -211,18 +235,18 @@ li:nth-child(-n +3) a{
   align-items: center;
   flex-direction: column;
   z-index: 2;
-  transition: all .5s;
+  transition: all .5s ease;
   /* cursor: pointer; */
 }
 
 .hamburger-menu.active{
-  transform: translate(5vw, -23px);
+  transform: translate(55vw, -14px);
 }
 
 .bar-menu{
   width: 25px;
   height: 3px;
-  background: #FF9DFF;
+  background: black;
   border-radius: 10px;
   margin: 4px 0;
 }
@@ -256,21 +280,21 @@ li:nth-child(-n +3) a{
   }
   100%{
     transform: translateY(7px) rotate(45deg);
-    background: black;
+    /* background: black; */
   }
 }
 
 @keyframes bar1out{
   0%{
     transform: translateY(7px) rotate(45deg);
-    background: black;
+    /* background: black; */
   }
   50%{
     transform: translateY(7px);
   }
   100%{
     transform: translateY(0);
-    background: #FF9DFF;
+    /* background: black; */
   }
 }
 
@@ -301,21 +325,21 @@ li:nth-child(-n +3) a{
   }
   100%{
     transform: translateY(-7px) rotate(-45deg);
-    background: black;
+    /* background: black; */
   }
 }
 
 @keyframes bar3out{
   0%{
     transform: translateY(-7px) rotate(-45deg);
-    background: black;
+    /* background: black; */
   }
   50%{
     transform: translateY(-7px);
   }
   100%{
     transform: translateY(0);
-    background: #FF9DFF;
+    /* background: #FF9DFF; */
   }
 }
 
@@ -332,7 +356,7 @@ li:nth-child(-n +3) a{
 
 .lang-box.mobile{
   left: 4vw;
-  top: 4vw;
+  top: 5vw;
   width: 55px;
 }
 

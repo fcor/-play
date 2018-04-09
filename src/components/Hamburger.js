@@ -34,7 +34,7 @@ class Hamburger extends React.Component {
       animation = 'inactive'
     }
     return(
-      <div>
+      <div className="hamburger-align">
         <div className={`hamburger-menu ${active ? 'active' : ''}`} onClick={this.handleClick}>
           <div>
             <div className={`bar-menu b1 ${animation}`}></div>
