@@ -19,21 +19,21 @@ const home = [  "redbullP",
                 "freaky",
               ]
 
-const homeMobile = [  "uber",
-                      "adidas",
-                      "moto",
-                      "samsung",
-                      "planoz",
-                      "cuerpos",
-                      "redbullP",
+const homeMobile = [  "redbullP",
                       "mundo",
-                      "freaky",
-                      "nike",
+                      "planoz",
                       "topologias",
-                      "coca",
-                      "warm",
+                      "moto",
+                      "cuerpos",
                       "sonar",
+                      "nike",
                       "redbull",
+                      "coca",
+                      "adidas",
+                      "warm",
+                      "uber",
+                      "freaky",
+                      "samsung",
                     ]
 
 const motion = ["mundo",
@@ -103,11 +103,11 @@ const Gifs = ({ param, lang, height, version }) => {
     styles = {
       // height: height,
       display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'space-between',
+      // flexWrap: 'wrap',
+      justifyContent: 'center',
       // alignContent: 'center'
-      // alignItems: 'center',
-      // flexDirection: 'column'
+      alignItems: 'center',
+      flexDirection: 'column'
     }
   }
 

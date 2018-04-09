@@ -13,12 +13,28 @@ import redbullp from '../images/gifs/redbullP.mp4'
 import warm from '../images/gifs/warm.mp4'
 import freaky from '../images/gifs/freaky.mp4'
 import samsung from '../images/gifs/samsung.mp4'
+import adidasMobile from '../images/movil/adidas.png'
+import motoMobile from '../images/movil/moto.png'
+import mundoMobile from '../images/movil/mundo.mp4'
+import planozMobile from '../images/movil/planoz.jpg'
+import sonarMobile from '../images/movil/sonar.jpg'
+import topologiasMobile from '../images/movil/topologias.mp4'
+import uberMobile from '../images/movil/uber.jpg'
+import nikeMobile from '../images/movil/nike.mp4'
+import cocaMobile from '../images/movil/coca.png'
+import cuerposMobile from '../images/movil/cuerpos.png'
+import redbullMobile from '../images/movil/redbull.jpg'
+import redbullpMobile from '../images/movil/redbullp.jpg'
+import warmMobile from '../images/movil/warm.mp4'
+import freakyMobile from '../images/movil/freaky.png'
+import samsungMobile from '../images/movil/samsung.png'
 
 const gifs = (param) => {
   if (param === 'mundo') {
     return{
       back: 'white',
       img: mundo,
+      imgMov: mundoMobile,
       left: "63px",
       top: "80px",
       leftR: "70px",
@@ -30,12 +46,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Fulldome Experience",
       descEN: "Fulldome Experience",
-      shape : 'square'
+      shape : 'square',
+      type: 'video',
     }
   } else if (param === 'planoz') {
     return{
       back: 'black',
       img: planoz,
+      imgMov: planozMobile,
       right: "563px",
       top: "330px",
       rightR: "214px",
@@ -47,12 +65,14 @@ const gifs = (param) => {
       year: "2016",
       desc: "Video 360º | Tour VIrtual",
       descEN: "360º Video | Virtual Tour",
-      shape : 'square'
+      shape : 'square',
+      type: 'img',
     }
   } else if (param === 'topologias') {
     return{
       back: 'white',
       img: topologias,
+      imgMov: topologiasMobile,
       left: "0px",
       top: "430px",
       rightR: "470px",
@@ -65,12 +85,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Video Instalación | VR",
       descEN: "Video Installation | VR",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'video',
     }
   } else if (param === 'moto') {
     return{
       back: 'black',
       img: moto,
+      imgMov: motoMobile,
       right: "63px",
       top: "119px",
       leftR: "70px",
@@ -82,12 +104,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Video Instalación",
       descEN: "Video Installation",
-      shape : 'square'
+      shape : 'square',
+      type: 'img',
     }
   } else if (param === 'adidas') {
     return{
       back: 'black',
       img: adidas,
+      imgMov: adidasMobile,
       right: "90px",
       top: "1032px",
       width: "250px",
@@ -99,12 +123,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Motion Graphics | Diseño",
       descEN: "Motion Graphics | Design",
-      shape : 'square'
+      shape : 'square',
+      type: 'img',
     }
   } else if (param === 'sonar') {
     return{
       back: 'black',
       img: sonar,
+      imgMov: sonarMobile,
       right: "60px",
       top: "425px",
       rightR: "551px",
@@ -116,12 +142,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Video Instalación",
       descEN: "Video Installation",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   } else if (param === 'uber') {
     return{
       back: 'black',
       img: uber,
+      imgMov: uberMobile,
       left: "10px",
       top: "1060px",
       width: "400px",
@@ -133,12 +161,14 @@ const gifs = (param) => {
       year: "2015",
       desc: "Video 360º",
       descEN: "360º Video",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   } else if (param === 'nike') {
     return{
       back: 'white',
       img: nike,
+      imgMov: nikeMobile,
       left: "20px",
       top: "780px",
       width: "350px",
@@ -150,12 +180,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Mapping | Motion Graphics",
       descEN: "Mapping | Motion Graphics",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'video',
     }
   } else if (param === 'coca') {
     return{
       back: 'white',
       img: coca,
+      imgMov: cocaMobile,
       left: "580px",
       top: "950px",
       rightR: "551px",
@@ -167,12 +199,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Diseño de títulos | Motion Graphics",
       descEN: "Main Title Design | Motion Graphics",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   } else if (param === 'cuerpos') {
     return{
       back: 'white',
       img: cuerpos,
+      imgMov: cuerposMobile,
       right: "80px",
       top: "681px",
       leftR: "100px",
@@ -183,12 +217,14 @@ const gifs = (param) => {
       year: "2015",
       desc: "Cortometraje 360º",
       descEN: "360º Short Film",
-      shape : 'square'
+      shape : 'square',
+      type: 'img',
     }
   } else if (param === 'redbull') {
     return{
       back: 'black',
       img: redbull,
+      imgMov: redbullMobile,
       left: "452px",
       top: "733px",
       width: "500px",
@@ -200,12 +236,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Video 360º",
       descEN: "360º Video",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   } else if (param === 'redbullP') {
     return{
       back: 'black',
       img: redbullp,
+      imgMov: redbullpMobile,
       left: "452px",
       top: "60px",
       leftR: "430px",
@@ -217,12 +255,14 @@ const gifs = (param) => {
       year: "2017",
       desc: "Video 360º",
       descEN: "360º Video",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   } else if (param === 'warm') {
     return{
       back: 'white',
       img: warm,
+      imgMov: warmMobile,
       right: "100px",
       top: "1380px",
       rightR: "70px",
@@ -233,12 +273,14 @@ const gifs = (param) => {
       year: "2015",
       desc: "Mapping | Instalación",
       descEN: "Mapping | Installation",
-      shape : 'square'
+      shape : 'square',
+      type: 'video',
     }
   } else if (param === 'samsung') {
     return{
       back: 'black',
       img: samsung,
+      imgMov: samsungMobile,
       left: "557px",
       top: "1260px",
       width: "380px",
@@ -250,12 +292,14 @@ const gifs = (param) => {
       year: "2015",
       desc: "Video 360º",
       descEN: "360º Video",
-      shape : 'rect'
+      shape : 'rect',
+      type: 'img',
     }
   }  else if (param === 'freaky') {
     return{
       back: 'black',
       img: freaky,
+      imgMov: freakyMobile,
       left: "130px",
       top: "1405px",
       width: "250px",
@@ -267,7 +311,8 @@ const gifs = (param) => {
       year: "2015",
       desc: "Video 360º",
       descEN: "360º Video",
-      shape : 'square'
+      shape : 'square',
+      type: 'img',
     }
   }
 }

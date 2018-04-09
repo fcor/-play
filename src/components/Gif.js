@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Video from './Video'
+import Image from './Image'
 import palmaBlack from '../images/palmaBlack.png'
 import palmaWhite from '../images/palmaWhite.png'
 
@@ -43,10 +44,33 @@ class Gif extends React.Component {
       }
       styles = {...absolute, ...position}
     } else if (version === 'mobile') {
-      if (gif.shape === 'square') {
-        mobileWidth = '37.5vw'
-      } else if (gif.shape === 'rect') {
-        mobileWidth = '80vw'
+      // if (gif.shape === 'square') {
+      //   mobileWidth = '37.5vw'
+      // } else if (gif.shape === 'rect') {
+      //   mobileWidth = '80vw'
+      // }
+      mobileWidth = '80vw'
+    }
+
+    let media
+
+    if (version === 'desktop') {
+      media = <Video width={gif.width}
+                     src={gif.img}
+                     onLoad={this.handleLoad}
+              />
+    } else if (version === 'mobile') {
+      if (gif.type === 'video') {
+        media = <Video width={mobileWidth}
+                       src={gif.imgMov}
+                       onLoad={this.handleLoad}
+                />
+      } else {
+        media = <Image width={mobileWidth}
+                       src={gif.imgMov}
+                       alt="img"
+                       version="mobile"
+                />
       }
     }
 
@@ -57,10 +81,8 @@ class Gif extends React.Component {
             {!loading &&
               <GifText lang={lang} gif={gif} version={version}/>
             }
-            <Video width={`${version === 'desktop' ? gif.width : mobileWidth }`}
-                   src={gif.img}
-                   onLoad={this.handleLoad}
-            />
+            {media}
+
           </Link>
         </div>
       </div>
