@@ -457,7 +457,7 @@ li:nth-child(-n +3) a{
 .gif-text.mobile{
   opacity: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-direction: column;
   z-index: 1;
 }
@@ -472,6 +472,10 @@ li:nth-child(-n +3) a{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.gif-text.white.mobile {
+  justify-content: flex-start;
 }
 
 .gif-text.white.cuerpos .gif-title-box,
@@ -489,7 +493,7 @@ li:nth-child(-n +3) a{
 }
 
 .gif-title-box.mobile{
-  margin: 0 0 0 8px;
+  margin: 15px 0 5px 15px;
 }
 
 .gif-title{
@@ -499,18 +503,23 @@ li:nth-child(-n +3) a{
   /* font-weight: bold; */
 }
 .gif-title.mobile{
-  font-size: 15px;
+  font-size: 35px;
 }
 
 .gif-desc{
   font-size: 15px;
   letter-spacing: 3px;
-  margin: 0px 0 10px 15px;
+  margin: 0 0 10px 15px;
 }
 
 .gif-year{
-  font-size: 12px;
-  margin: 0 0 8px 8px;
+  font-size: 18px;
+  margin: 0 0 5px 15px;
+}
+
+.gif-desc-mobile{
+  margin: 0 0 0 15px;
+  font-size: 14px;
 }
 
 .border{

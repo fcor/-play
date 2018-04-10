@@ -122,7 +122,10 @@ const GifText = ({ lang, gif, version, isTouched }) => {
         </p>
       }
       {version === 'mobile' &&
-        <p className="gif-year">{gif.year}</p>
+        <div>
+          <p className="gif-year">{gif.year}</p>
+          <p className="gif-desc-mobile">{`${lang==='es' ? gif.desc : gif.descEN} `}</p>
+        </div>
       }
     </div>
   )
