@@ -9,10 +9,12 @@ class Gif extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      loading: true
+      loading: true,
+      isTouched: false
     }
 
     this.handleLoad = this.handleLoad.bind(this)
+    this.handleTouch = this.handleTouch.bind(this)
   }
 
   handleLoad(){
@@ -21,9 +23,16 @@ class Gif extends React.Component {
     })
   }
 
+  handleTouch(e){
+    // e.preventDefault()
+    this.setState(
+      ({isTouched}) => ({isTouched: !isTouched}),
+    )
+  }
+
   render() {
     const { gif, lang, param, version } = this.props
-    const { loading } = this.state
+    const { loading, isTouched } = this.state
 
     let styles = {}
     let mobileWidth
@@ -70,19 +79,19 @@ class Gif extends React.Component {
                        src={gif.imgMov}
                        alt="img"
                        version="mobile"
+                       onLoad={this.handleLoad}
                 />
       }
     }
 
     return(
       <div className={`gif ${version === 'mobile' ? 'mobile' : ''}`} style={styles}>
-        <div className="gif-box">
+        <div className="gif-box" onTouchStart={this.handleTouch} onTouchEnd={this.handleTouch}>
           <Link to={`/${gif.route}`}>
             {!loading &&
-              <GifText lang={lang} gif={gif} version={version}/>
+              <GifText lang={lang} gif={gif} version={version} isTouched={isTouched}/>
             }
             {media}
-
           </Link>
         </div>
       </div>
@@ -90,12 +99,13 @@ class Gif extends React.Component {
   }
 }
 
-const GifText = ({ lang, gif, version }) => {
+const GifText = ({ lang, gif, version, isTouched }) => {
   const title = lang => lang ==='es' ? gif.title : gif.titleEn
   return (
-    <div className={`gif-text ${(version === 'desktop' && gif.back) ==='white' ? 'white' : ''}
+    <div className={`gif-text ${(gif.back) ==='white' ? 'white' : ''}
                               ${gif.route ==='cuerpos' ? 'cuerpos' : ''}
-                              ${version === 'mobile' ? 'mobile' : ''}`
+                              ${version === 'mobile' ? 'mobile' : ''}
+                              ${isTouched ? 'touched' : ''}`
                             }>
       <div className={`gif-title-box ${version === 'mobile' ? 'mobile' : ''}`}>
         {title(lang).split('\n').map( (item, i) =>

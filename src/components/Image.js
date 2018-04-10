@@ -16,6 +16,7 @@ class Image extends Component {
     this.setState({
       loading: false
     })
+    this.props.onLoad()
   }
 
   render() {
@@ -42,5 +43,9 @@ class Image extends Component {
     )
   }
 }
+
+Image.defaultProps = {
+  onLoad: () => {}
+};
 
 export default Image
