@@ -7,6 +7,8 @@ import Menu from './components/Menu'
 import Gifs from './components/Gifs'
 import Project from './components/Project'
 import Icons from './components/Icons'
+import ComingSoon from './components/ComingSoon'
+import About from './components/About'
 
 const routes = ["mundo",
                 "planoz",
@@ -91,7 +93,7 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
                 <Route path="/motion" render={() => <Gifs version={version} height={'600px'}  lang={lang} param="motion"/>} />
                 <Route path="/space" render={() => <Gifs version={version} height={'600px'} lang={lang} param="space"/>}/>
                 <Route path="/360" render={() => <Gifs version={version} height={'1200px'} lang={lang} param="360"/>}/>
-                <Route path="/about" component={About}/>
+                <Route path="/about" render={() => <About version={version}/>} />
                 <Route path="/reel" component={Reel}/>
                 {routes.map((item) =>
                   <Route key={item} path={`/${item}`} render={() => <Project param={item} version={version} lang={lang}/>}/>
@@ -107,12 +109,6 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
   <Footer />
 </div>
 
-const About = () =>
-  <div className="about-box">
-    <ComingSoon />
-    {/* <VRScene img={city} /> */}
-  </div>
-
 const Reel = () =>
   <div>
     <ComingSoon />
@@ -123,9 +119,5 @@ const Footer = () =>
     <Icons version="desktop" />
   </div>
 
-const ComingSoon = () =>
-<div className="coming-soon">
-  Coming Soon!
-</div>
 
 export default App;

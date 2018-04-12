@@ -540,8 +540,88 @@ li:nth-child(-n +3) a{
   border: 0;
 }
 
-.about-box{
-  /* height: 700px; */
+.about-text.mobile{
+  font-family: 'Base Medium';
+  font-size: 11px;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.contact-box{
+  font-family: 'Base Medium';
+  /* border: 1px solid red; */
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  font-size: 8px;
+
+}
+
+.text-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text-box p {
+  background-color: black;
+  color: white;
+  font-family: 'Chalet Cologne';
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0 4px;
+}
+
+.contact-section-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-section-1{
+  width: 25vw;
+}
+.contact-subsection:nth-of-type(1){
+  /* border: 1px solid blue; */
+  width: 32vw;
+  border-right: 1px solid black;
+}
+
+.contact-subsection:nth-of-type(2) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 23vw;
+}
+
+.contact-text{
+  margin-top: 0;
+}
+
+.contact-text:nth-child(3){
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .contact-box{
+    flex-direction: column;
+  }
+
+  .contact-subsection:nth-of-type(1){
+    width: 38vw;
+  }
+
+  .contact-subsection:nth-of-type(2) {
+    width: 27vw;
+  }
+
+  .contact-section-2{
+    margin-top: 10px;
+  }
 }
 
 .project-content{
