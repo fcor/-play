@@ -1,7 +1,5 @@
 import React from 'react'
 import ComingSoon from './ComingSoon'
-import Video from './Video'
-import about from '../images/about.mp4'
 
 const About = (props) => {
   const width = '100vw'

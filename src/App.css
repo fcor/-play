@@ -768,7 +768,14 @@ li:nth-child(-n +3) a{
   /* width: 400px; */
 }
 
+.footer-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .footer{
+  width: 100%;
   margin-top: 30px;
   height: 100px;
   display: flex;
@@ -778,6 +785,10 @@ li:nth-child(-n +3) a{
   background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(255,255,255,0) 67%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(255,255,255,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.footer.about-mob{
+  margin-top: 0;
 }
 
 .iconos{

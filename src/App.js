@@ -6,9 +6,9 @@ import './App.css'
 import Menu from './components/Menu'
 import Gifs from './components/Gifs'
 import Project from './components/Project'
-import Icons from './components/Icons'
 import ComingSoon from './components/ComingSoon'
 import About from './components/About'
+import Footer from './components/Footer'
 
 const routes = ["mundo",
                 "planoz",
@@ -80,43 +80,43 @@ class App extends Component {
 }
 
 const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
-<div>
   <Router>
-    <div className={`contenedor ${(version === 'desktop') ? '' : 'mobile' }`}>
-      <Menu changeLang={handleLang} lang={lang} version={version} handleOverlay={handleOverlay}/>
-      <div className="contenido">
-        <Route render={({ location }) =>
-          <TransitionGroup exit={false}>
-            <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
-              <Switch location={location}>
-                <Route exact path="/" render={() => <Gifs version={version} height={'1750px'} lang={lang} param="home"/>} />
-                <Route path="/motion" render={() => <Gifs version={version} height={'600px'}  lang={lang} param="motion"/>} />
-                <Route path="/space" render={() => <Gifs version={version} height={'600px'} lang={lang} param="space"/>}/>
-                <Route path="/360" render={() => <Gifs version={version} height={'1200px'} lang={lang} param="360"/>}/>
-                <Route path="/about" render={() => <About version={version}/>} />
-                <Route path="/reel" component={Reel}/>
-                {routes.map((item) =>
-                  <Route key={item} path={`/${item}`} render={() => <Project param={item} version={version} lang={lang}/>}/>
-                )}
-                <Route render={() => <h1>Page not found</h1>} />
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
-        }/>
+    <div>
+      <div className={`contenedor ${(version === 'desktop') ? '' : 'mobile' }`}>
+        <Menu changeLang={handleLang} lang={lang} version={version} handleOverlay={handleOverlay}/>
+        <div className="contenido">
+          <Route render={({ location }) =>
+            <TransitionGroup exit={false}>
+              <CSSTransition key={location.pathname.split('/')[1]} timeout={250} classNames="fade">
+                <Switch location={location}>
+                  <Route exact path="/" render={() => <Gifs version={version} height={'1750px'} lang={lang} param="home"/>} />
+                  <Route path="/motion" render={() => <Gifs version={version} height={'600px'}  lang={lang} param="motion"/>} />
+                  <Route path="/space" render={() => <Gifs version={version} height={'600px'} lang={lang} param="space"/>}/>
+                  <Route path="/360" render={() => <Gifs version={version} height={'1200px'} lang={lang} param="360"/>}/>
+                  <Route path="/about" render={() => <About version={version}/>} />
+                  <Route path="/reel" component={Reel}/>
+                  {routes.map((item) =>
+                    <Route key={item} path={`/${item}`} render={() => <Project param={item} version={version} lang={lang}/>}/>
+                  )}
+                  <Route render={() => <h1>Page not found</h1>} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          }/>
+        </div>
       </div>
+      <Route render={ (props) => {
+        console.log(props.location.pathname);
+        return (
+          <Footer location={props.location.pathname} version={version} />
+        )
+      }} />
     </div>
   </Router>
-  <Footer />
-</div>
 
 const Reel = () =>
   <div>
     <ComingSoon />
-  </div>
-
-const Footer = () =>
-  <div className="footer">
-    <Icons version="desktop" />
   </div>
 
 
