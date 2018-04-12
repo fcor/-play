@@ -17,6 +17,16 @@ class Project extends React.Component {
     const { param, lang, version } = this.props
     const project = getProjectDetails(param)
 
+    let assets
+    let description
+    if (version === 'desktop') {
+      assets = project.assets
+      description = lang ==='es' ? project.descEs : project.descEn
+    } else {
+      assets = project.assetsMobile
+      description = lang ==='es' ? project.descEsMob : project.descEnMob
+    }
+
     return (
       <div className={`project-content ${version === 'mobile' ? 'mobile' : ''}`}>
         <TitleBox lang={lang}
@@ -29,12 +39,10 @@ class Project extends React.Component {
                   version={version}
         />
         <Navigate prev={project.prev} next={project.next} version={version} />
-        <Description lang={lang}
-                     descEn={project.descEn}
-                     descEs={project.descEs}
+        <Description description={description}
                      version={version}
         />
-        <Assets assets={project.assets} version={version} />
+        <Assets assets={assets} version={version} />
         <Logos assets={project.logos} version={version} />
         <Navigate prev={project.prev} next={project.next} />
       </div>
@@ -70,8 +78,7 @@ const TitleBox = ({ lang, titleEn, titleEs, subtitle, year, tagEn, tagEs, versio
   )
 }
 
-const Description = ({ lang, descEn, descEs, version }) => {
-  const description = (lang) => lang ==='es' ? descEs : descEn
+const Description = ({ description, version }) => {
   const words = ['Dirección de arte:',
                  'Dirección:',
                  'Animación 3D:',
@@ -110,7 +117,7 @@ const Description = ({ lang, descEn, descEs, version }) => {
   const reg = new RegExp('(' + words.join('|') + ')', 'ig')
   return(
     <div className="description-box">
-      {description(lang).split('\n').map( (item, i) =>
+      {description.split('\n').map( (item, i) =>
         <p className={`project-description ${version === 'mobile' ? 'mobile' : ''}`} key={i}
           dangerouslySetInnerHTML={{__html: item.replace(reg, '<b>$1</b>')}} />
           // {item}

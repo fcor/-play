@@ -37,6 +37,9 @@ import adidas2 from '../images/adidas/adidas_interna1.mp4'
 import adidas3 from '../images/adidas/adidas_interna2.mp4'
 import adidas4 from '../images/adidas/adidas_interna3.mp4'
 import adidas5 from '../images/adidas/adidas_interna_nemesis.mp4'
+import adidas1Mob from '../images/adidas/1.png'
+import adidas2Mob from '../images/adidas/2.mp4'
+import adidas3Mob from '../images/adidas/3.mp4'
 import topologias1 from '../images/topologias/1.mp4'
 import topologias2 from '../images/topologias/2.mp4'
 import topologias3 from '../images/topologias/3.mp4'
@@ -229,6 +232,8 @@ const getProjectDetails = (param) => {
       tagEn: 'Motion Graphics | Design',
       descEs: `Desarrollo de motion graphics para la campaña de Adidas Nemeziz en Colombia. \n Producción y Realización: El Parche Films`,
       descEn: `Motion graphics development for the Adidas Nemeziz campaign in Colombia. \n Production and direction: El Parche Films`,
+      descEsMob: `Desarrollo de motion graphics para la campaña de Adidas Nemeziz en Colombia. \n Producción y Realización: El Parche Films`,
+      descEnMob: `Motion graphics development for the Adidas Nemeziz campaign in Colombia. \n Production and direction: El Parche Films`,
       logos: [adidas],
       assets: {
         a5: {
@@ -246,6 +251,24 @@ const getProjectDetails = (param) => {
         a4: {
           type: 'mp4',
           src: adidas4
+        },
+        a6: {
+          type: 'video',
+          src: 'https://player.vimeo.com/video/233831588'
+        },
+      },
+      assetsMobile: {
+        a2: {
+          type: 'img',
+          src: adidas1Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: adidas2Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: adidas3Mob
         },
         a6: {
           type: 'video',
