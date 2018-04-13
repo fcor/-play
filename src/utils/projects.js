@@ -97,6 +97,12 @@ import planoz7 from '../images/planoz/7.mp4'
 import planoz11 from '../images/planoz/11.jpg'
 import planoz12 from '../images/planoz/12.jpg'
 import planoz13 from '../images/planoz/13.jpg'
+import planoz1Mob from '../images/planoz/1Mob.mp4'
+import planoz2Mob from '../images/planoz/2Mob.jpg'
+import planoz3Mob from '../images/planoz/3Mob.jpg'
+import planoz4Mob from '../images/planoz/4Mob.jpg'
+import planoz5Mob from '../images/planoz/5Mob.jpg'
+import planoz6Mob from '../images/planoz/6Mob.jpg'
 import cuerpos1 from '../images/cuerpos/1.mp4'
 import cuerpos2 from '../images/cuerpos/2.jpg'
 import cuerpos3 from '../images/cuerpos/3.jpg'
@@ -644,6 +650,8 @@ const getProjectDetails = (param) => {
               Para impulsar el alcance de su lanzamiento, +PLAY registró el recorrido de la obra y lo resumió en un tour virtual para 360º. Así, cualquier persona puede disfrutar la obra desde su celular y experimentar lo que solo pocos tuvieron el privilegio de vivir.`,
       descEn: `Amidst the launch of their Moto Z cell phone, Motorola and the Milagros agency coproduced a play directed by Laura Villegas, inside the heritage Muro Antiguo house. A play for an exclusive 60 people audience, in which the characteristics of the new cell phone would be highlighted, along with its various accessories which enhance its technological capacity.
               To impulse the reach of the its launch, +PLAY registered the play’s course and summarized it in a 360º virtual tour. That way, anyone can enjoy the play from their cell phone and experience what a few privileged were able to in person.`,
+      descEnMob: 'Amidst the launch of their Moto Z cell phone, Motorola and the Milagros agency coproduced a play directed by Laura Villegas, inside the heritage Muro Antiguo house. A play for an exclusive 60 people audience, in which the characteristics of the new cell phone would be highlighted, along with its various accessories which enhance its technological capacity. \n To impulse the reach of the its launch, +PLAY registered the play’s course and summarized it in a 360º virtual tour. That way, anyone can enjoy the play from their cell phone and experience what a few privileged were able to in person.',
+      descEsMob: 'En el marco de lanzamiento de su celular Moto Z, la marca Motorola de mano de la agencia Milagros co­produjeron una obra de teatro dirigida por Laura Villegas, dentro de la casa patrimonial El Muro Antiguo. Una obra de teatro dirigida a un público exclusivo de 60 personas en la cual se resaltaría las características del nuevo celular, junto con sus diferentes accesorios que potencian sus capacidades tecnológicas. \n Para impulsar el alcance de su lanzamiento, +PLAY registró el  recorrido de la obra y lo resumió en un tour virtual para 360º. Así, cualquier persona puede disfrutar la obra desde su celular y experimentar lo que solo pocos tuvieron el privilegio de vivir.',
       logos: [moto, planoz, milagros],
       assets: {
         a1: {
@@ -699,6 +707,36 @@ const getProjectDetails = (param) => {
           src: planoz13
         },
         a14: {
+          type: 'video',
+          src: 'https://www.youtube.com/embed/5E8HBVZWKtM'
+        }
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: planoz1Mob
+        },
+        a2: {
+          type: 'img',
+          src: planoz2Mob
+        },
+        a3: {
+          type: 'img',
+          src: planoz3Mob
+        },
+        a4: {
+          type: 'img',
+          src: planoz4Mob
+        },
+        a5: {
+          type: 'img',
+          src: planoz5Mob
+        },
+        a6: {
+          type: 'img',
+          src: planoz6Mob
+        },
+        a7: {
           type: 'video',
           src: 'https://www.youtube.com/embed/5E8HBVZWKtM'
         }
