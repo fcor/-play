@@ -142,6 +142,10 @@ import uber2 from '../images/uber/2.mp4'
 import uber3 from '../images/uber/3.mp4'
 import uber4 from '../images/uber/4.jpg'
 import uber5 from '../images/uber/5.jpg'
+import uber1Mob from '../images/uber/1Mob.jpg'
+import uber2Mob from '../images/uber/2Mob.mp4'
+import uber3Mob from '../images/uber/3Mob.mp4'
+import uber4Mob from '../images/uber/4Mob.jpg'
 import rbd1 from '../images/rbd/1.mp4'
 import rbd2 from '../images/rbd/2.mp4'
 import rbd3 from '../images/rbd/3.mp4'
@@ -1014,6 +1018,8 @@ const getProjectDetails = (param) => {
       tagEn: '360º Video',
       descEs: `Realización de video 360 para UberPool, la nueva plataforma de servicios de Uber. En esta plataforma varios usuarios utilizan un solo automóvil para realizar su recorrido. El video 360º se viralizó en redes sociales y podía ser visto en dispositivos de VR. Los usuarios observaron los beneficios de este nuevo servicio entre los cuales encontramos una mayor economía, formas de socialización, conservación del medio ambiente y, la experiencia de hacer parte de un innovador y excelente servicio.`,
       descEn: `Production and direction of a 360º video for UberPool, Uber’s most recent service platform, in which several users share the same car for each of their journeys. The 360º video became viral on social media and could be seen in VR devices. The users witnessed the benefits of UberPool, among them a more economic service, a more social environment, preservation of the environment and the experience of being a part of an innovative and excellent service.`,
+      descEsMob: `Realización de video 360 para UberPool, la nueva plataforma de servicios de Uber. En esta plataforma varios usuarios utilizan un solo automóvil para realizar su recorrido. El video 360º se viralizó en redes sociales y podía ser visto en dispositivos de VR. Los usuarios observaron los beneficios de este nuevo servicio entre los cuales encontramos una mayor economía, formas de socialización, conservación del medio ambiente y, la experiencia de hacer parte de un innovador y excelente servicio.`,
+      descEnMob: `Production and direction of a 360º video for UberPool, Uber’s most recent service platform, in which several users share the same car for each of their journeys. The 360º video became viral on social media and could be seen in VR devices. The users witnessed the benefits of UberPool, among them a more economic service, a more social environment, preservation of the environment and the experience of being a part of an innovative and excellent service.`,
       logos: [uber, lapost],
       assets: {
         a1: {
@@ -1035,6 +1041,24 @@ const getProjectDetails = (param) => {
         a5: {
           type: 'img',
           src: uber5
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'img',
+          src: uber1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: uber2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: uber3Mob
+        },
+        a4: {
+          type: 'img',
+          src: uber4Mob
         },
       }
     }
