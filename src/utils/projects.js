@@ -24,6 +24,9 @@ import coca1 from '../images/coca/1.mp4'
 import coca2 from '../images/coca/2.mp4'
 import coca3 from '../images/coca/3.mp4'
 import coca4 from '../images/coca/4.mp4'
+import coca1Mob from '../images/coca/1Mob.jpg'
+import coca2Mob from '../images/coca/2Mob.mp4'
+import coca3Mob from '../images/coca/3Mob.mp4'
 import mundo1 from '../images/mundo/11.mp4'
 import mundo2 from '../images/mundo/22.mp4'
 import mundo3 from '../images/mundo/33.mp4'
@@ -200,6 +203,8 @@ const getProjectDetails = (param) => {
       tagEn: 'Main Title Design | Motion Graphics',
       descEs: `Desarrollo, conceptualización y diseño de títulos animados para el documental “De la Coca a la Pimienta” producido por Crepes & Waffles.`,
       descEn: `Development, conception and design of the animated titles for the documentary “FromCoke to Pepper”, produced by Crepes & Waffles.`,
+      descEsMob: `Desarrollo, conceptualización y diseño de títulos animados para el documental “De la Coca a la Pimienta” producido por Crepes & Waffles.`,
+      descEnMob: `Development, conception and design of the animated titles for the documentary “FromCoke to Pepper”, produced by Crepes & Waffles.`,
       logos: [crepes],
       assets: {
         a1: {
@@ -217,6 +222,20 @@ const getProjectDetails = (param) => {
         a4: {
           type: 'mp4',
           src: coca4
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'img',
+          src: coca1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: coca2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: coca3Mob
         },
         // a5: {
         //   type: 'video',
