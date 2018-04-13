@@ -69,6 +69,12 @@ import moto3 from '../images/moto/3.mp4'
 import moto4 from '../images/moto/4.mp4'
 import moto5 from '../images/moto/5.mp4'
 import moto6 from '../images/moto/6.mp4'
+import moto1Mob from '../images/moto/1Mob.jpg'
+import moto2Mob from '../images/moto/2Mob.mp4'
+import moto3Mob from '../images/moto/3Mob.mp4'
+import moto4Mob from '../images/moto/4Mob.mp4'
+import moto5Mob from '../images/moto/5Mob.jpg'
+import moto6Mob from '../images/moto/6Mob.jpg'
 import rbp1 from '../images/rbp/1.mp4'
 import rbp2 from '../images/rbp/2.mp4'
 import rbp3 from '../images/rbp/3.mp4'
@@ -502,6 +508,8 @@ const getProjectDetails = (param) => {
               Para la instalación se utilizó el Moto Mod Proyector, con el cual se generaron dos espacios de interacción que fueron recorridos por el público invitado.`,
       descEn: `Production and direction for an audiovisual installation in the Liberia gallery, one of the main contemporary art galleries in Bogotá. The piece was made for the Moto Art Circuit Z2 as a part of the launch of Motorola’s latest cellphone, the only one in the market with interchangeable Mods®.
               The Moto Mod Proyector was used for the installation, with which two interaction spaces were created and the invited public was able to course through them.`,
+      descEsMob: 'Realización de una instalación audiovisual en la galería Liberia, una de las principales galerias de arte contemporáneo en Bogotá. La obra se realizó para el Circuito de Arte Moto Z2 como parte del lanzamiento del último celular de Motorola, el único celular del mercado con Mods® intercambiables. Para la instalación se utilizó el Moto Mod Proyector, con el cual se generaron dos espacios de interacción que fueron recorridos por el público invitado.',
+      descEnMob: 'Production and direction for an audiovisual installation in the Liberia gallery, one of the main contemporary art galleries in Bogotá. The piece was made for the Moto Art Circuit Z2 as a part of the launch of Motorola’s latest cellphone, the only one in the market with interchangeable Mods®. The Moto Mod Proyector was used for the installation, with which two interaction spaces were created and the invited public was able to course through them.',
       logos: [moto, cda, milagros],
       assets: {
         a1: {
@@ -527,6 +535,36 @@ const getProjectDetails = (param) => {
         a6: {
           type: 'mp4',
           src: moto6
+        },
+        a7: {
+          type: 'video',
+          src: 'https://www.youtube.com/embed/ixi5oW_iJM8'
+        },
+      },
+      assetsMobile:{
+        a1: {
+          type: 'img',
+          src: moto1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: moto2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: moto3Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: moto4Mob
+        },
+        a5: {
+          type: 'img',
+          src: moto5Mob
+        },
+        a6: {
+          type: 'img',
+          src: moto6Mob
         },
         a7: {
           type: 'video',
