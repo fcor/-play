@@ -131,6 +131,12 @@ import rbd5 from '../images/rbd/5.mp4'
 import rbd6 from '../images/rbd/6.mp4'
 import rbd7 from '../images/rbd/7.mp4'
 import rbd8 from '../images/rbd/8.mp4'
+import rbd1Mob from '../images/rbd/1Mob.mp4'
+import rbd2Mob from '../images/rbd/2Mob.mp4'
+import rbd3Mob from '../images/rbd/3Mob.jpg'
+import rbd4Mob from '../images/rbd/4Mob.jpg'
+import rbd5Mob from '../images/rbd/5Mob.jpg'
+import rbd6Mob from '../images/rbd/6Mob.jpg'
 import freaky1 from '../images/freaky/11.mp4'
 import freaky2 from '../images/freaky/2.mp4'
 import freaky3 from '../images/freaky/3.mp4'
@@ -916,7 +922,9 @@ const getProjectDetails = (param) => {
       tagEs: 'Video 360º',
       tagEn: '360º Video',
       descEs: `Se realizaron una serie de Cápsulas de video 360 para redes sociales con los principales deportistas colombianos embajadores de Red Bull. Entre ellos podemos ver a la campeona olímpica Mariana Pajón, el reconocido  clavadista Orlando Duque y el motociclista Tatán Mejía realizando su rutina de entrenamiento.`,
-      descEn: `A series of 360º video capsules were made for social networks with the main Colombian athlete Red Bull ambassadors. Among them are Olympic champion Mariana Pajón, world renowned diver Orlando Duque and motorcyclist Tatán Mejia performing their routine training.`,
+      descEn: `A series of 360º video capsules were made for social networks with the main Colombian athlete Red Bull ambassadors. Among them are Olympic champion Mariana Pajón, world renowned diver Orlando Duque and motorcyclist Tatán Mejia performing their training routine.`,
+      descEsMob: `Se realizaron una serie de Cápsulas de video 360 para redes sociales con los principales deportistas colombianos embajadores de Red Bull. Entre ellos podemos ver a la campeona olímpica Mariana Pajón, el reconocido  clavadista Orlando Duque y el motociclista Tatán Mejía realizando su rutina de entrenamiento.`,
+      descEnMob: `A series of 360º video capsules were made for social networks with the main Colombian athlete Red Bull ambassadors. Among them are Olympic champion Mariana Pajón, world renowned diver Orlando Duque and motorcyclist Tatán Mejia performing their training routine.`,
       logos: [rb, rino],
       assets: {
         a1: {
@@ -958,6 +966,32 @@ const getProjectDetails = (param) => {
         a10: {
           type: '360',
           src: 'https://swift-quill.surge.sh'
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: rbd1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: rbd2Mob
+        },
+        a3: {
+          type: 'img',
+          src: rbd3Mob
+        },
+        a4: {
+          type: 'img',
+          src: rbd4Mob
+        },
+        a5: {
+          type: 'img',
+          src: rbd5Mob
+        },
+        a6: {
+          type: 'img',
+          src: rbd6Mob
         },
       }
     }
