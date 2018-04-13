@@ -93,6 +93,13 @@ import rbp15 from '../images/rbp/15.jpg'
 import rbp17 from '../images/rbp/17.jpg'
 import rbp20 from '../images/rbp/20.mp4'
 import rbp21 from '../images/rbp/21.mp4'
+import rbp1Mob from '../images/rbp/1Mob.mp4'
+import rbp2Mob from '../images/rbp/2Mob.jpg'
+import rbp3Mob from '../images/rbp/3Mob.mp4'
+import rbp4Mob from '../images/rbp/4Mob.mp4'
+import rbp5Mob from '../images/rbp/5Mob.mp4'
+import rbp6Mob from '../images/rbp/6Mob.jpg'
+import rbp7Mob from '../images/rbp/7Mob.jpg'
 import planoz1 from '../images/planoz/1.mp4'
 import planoz2 from '../images/planoz/2.jpg'
 import planoz3 from '../images/planoz/3.mp4'
@@ -616,6 +623,8 @@ const getProjectDetails = (param) => {
               Productora: 1500 Episodios`,
       descEn: `A group made up of three professional Red Bull paragliders, a 360º recording team with over 32 cameras, native indigenous locals and top level hikers joined forces to be able to break the world record for the longest paragliding flight. It took seven days climbing Santa Marta’s Sierra Nevada to achieve it as well as document it in a virtual reality experience.
               Producer: 1500 Episodios`,
+      descEsMob: `Un grupo conformado por tres parapentistas expertos de RedBull, un equipo de grabación 360º con mas de 32 cámaras, indigenas nativos y montañistas del mas alto nivel se juntaron para romper el récord mundial de planeo mas largo en parapente. Fueron siete días subiendo la Sierra Nevada de Santa Marta para lograr el objetivo y documentarlo en una experiencia de realidad virtual.`,
+      descEnMob: `A group made up of three professional Red Bull paragliders, a 360º recording team with over 32 cameras, native indigenous locals and top level hikers joined forces to be able to break the world record for the longest paragliding flight. It took seven days climbing Santa Marta’s Sierra Nevada to achieve it as well as document it in a virtual reality experience.`,
       logos: [rb],
       assets: {
         a1: {
@@ -701,6 +710,36 @@ const getProjectDetails = (param) => {
         a19: {
           type: '360',
           src: 'https://closed-insurance.surge.sh'
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: rbp1Mob
+        },
+        a2: {
+          type: 'img',
+          src: rbp2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: rbp3Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: rbp4Mob
+        },
+        a5: {
+          type: 'mp4',
+          src: rbp5Mob
+        },
+        a6: {
+          type: 'img',
+          src: rbp6Mob
+        },
+        a7: {
+          type: 'img',
+          src: rbp7Mob
         },
       }
     }
