@@ -166,6 +166,10 @@ import samsung1 from '../images/samsung/1.png'
 import samsung2 from '../images/samsung/2.mp4'
 import samsung3 from '../images/samsung/3.jpg'
 import samsung4 from '../images/samsung/4.mp4'
+import samsung1Mob from '../images/samsung/1Mob.png'
+import samsung2Mob from '../images/samsung/2Mob.mp4'
+import samsung3Mob from '../images/samsung/3Mob.mp4'
+import samsung4Mob from '../images/samsung/4Mob.jpg'
 
 
 const getProjectDetails = (param) => {
@@ -1109,7 +1113,7 @@ const getProjectDetails = (param) => {
       prev: 'freaky',
       next: 'mundo',
       titleEs: 'El Regalo del Mar \n Samsung',
-      titleEn: 'The mp4t of the Sea \n Samsung',
+      titleEn: 'The gift of the Sea \n Samsung',
       subtitle: '',
       year: '2015',
       tagEs: 'Video 360º',
@@ -1118,6 +1122,12 @@ const getProjectDetails = (param) => {
                 Cliente: Samsung Colombia
                 Productora: Rhayuela.`,
       descEn: `Production and direction of a 360º video for a case made by Samsung Colombia, Katherine can’t travel to the sea due to health issues. Samsung, through VR Gear gives Katherine a surprise and gives her a day at the beach. The video reached four million views on Youtube.
+              Client: Samsung Colombia
+              Producer: Rhayuela.`,
+      descEsMob: `Realización de video 360º para un caso realizado por Samsung Colombia. Katherine no puede viajar al mar por problemas de salud. Samsung, a través del Gear VR  permite que Katherine se lleve una sorpresa al tener un día en la playa. El video del caso supero las cuatro millones de reproducciones en youtube.
+                Cliente: Samsung Colombia
+                Productora: Rhayuela.`,
+      descEnMob: `Production and direction of a 360º video for a case made by Samsung Colombia, Katherine can’t travel to the sea due to health issues. Samsung, through VR Gear gives Katherine a surprise and gives her a day at the beach. The video reached four million views on Youtube.
               Client: Samsung Colombia
               Producer: Rhayuela.`,
       logos: [samsung, rayuela, rino],
@@ -1143,6 +1153,28 @@ const getProjectDetails = (param) => {
           src: 'https://lame-ants.surge.sh'
         },
         a6: {
+          type: 'video',
+          src: 'https://www.youtube.com/embed/h2Fp9ZzIAUw'
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'img',
+          src: samsung1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: samsung2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: samsung3Mob
+        },
+        a4: {
+          type: 'img',
+          src: samsung4Mob
+        },
+        a5: {
           type: 'video',
           src: 'https://www.youtube.com/embed/h2Fp9ZzIAUw'
         },
