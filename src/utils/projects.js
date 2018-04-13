@@ -99,6 +99,10 @@ import cuerpos2 from '../images/cuerpos/2.jpg'
 import cuerpos3 from '../images/cuerpos/3.jpg'
 import cuerpos4 from '../images/cuerpos/4.jpg'
 import cuerpos5 from '../images/cuerpos/5.jpg'
+import cuerpos1Mob from '../images/cuerpos/1.mp4'
+import cuerpos2Mob from '../images/cuerpos/2.jpg'
+import cuerpos3Mob from '../images/cuerpos/3.jpg'
+import cuerpos4Mob from '../images/cuerpos/4.jpg'
 import uber1 from '../images/uber/11.mp4'
 import uber2 from '../images/uber/2.mp4'
 import uber3 from '../images/uber/3.mp4'
@@ -691,6 +695,8 @@ const getProjectDetails = (param) => {
       descEs: `Tumaco es un pequeño pueblo en la frontera entre Colombia y Ecuador, uno de los rincones mas apartados del país lo cual lo convierte en lugar estratégico para la exportación de cocaina. Ahi viven  “Don Alvaro” y “Don Segundo”, dos nativos que por circunstancias distintas se encuentran incapacitados pero que aseguran que el mar es su segunda casa. Alvaro recibió un disparo en la parte baja de la columna, sufrió una lesión grave en su espalda lo cual le impidió caminar por varios años. Segundo, por otro lado tuvo un accidente en el campo cuando trataba de casar su almuerzo con un arma hechiza, dejándolo ciego. Segundo y Alvaro salen todos los días a buscar  su alimento en el mar. \n Productores: Duvan Duque. Directores: Carlos Serrano y Alvaro Rodriguez Badel. Fotografia: Jorge Gallardo. Selección oficial en Trends VR de Ventana Sur, Buenos aires. Selección oficial en IndieBox, Bogotá`,
       descEn: `Tumaco is a small rural town in the border between Colombia and Ecuador. Being one of the most secluded corners in the country, it has become a strategic place for cocaine export. There live“Don Alvaro” and “Don Segundo”, two locals who for different circumstances find themselves disabled, but assure the sea is their second home. Alvaro was shot in his lower back, precluding him from walking for several years. Segundo, on the other hand, had an accident in the field as he was trying to hunt his lunch with a make-shift gun, leaving him blind. Segundo and Alvaro go out every day to fetch their meals in the sea.
       Producers: Duvan Duque.  Directors: Carlos Serrano and Alvaro Rodriguez Badel. Photography: Jorge Gallardo. Short film selected in the first Virtual Reality producers encounter of Ventana Sur Buenos Aires. Short film selected in the first Virtual Reality producers encounter of IndieBox in Bogota.`,
+      descEsMob: 'Productores: Duvan Duque. Directores: Carlos Serrano y Alvaro Rodriguez Badel. Fotografia: Jorge Gallardo. Selección oficial en Trends VR de Ventana Sur, Buenos aires. Selección oficial en IndieBox, Bogotá',
+      descEnMob: 'Producers: Duvan Duque.  Directors: Carlos Serrano and Alvaro Rodriguez Badel. Photography: Jorge Gallardo. Short film selected in the first Virtual Reality producers encounter of Ventana Sur Buenos Aires. Short film selected in the first Virtual Reality producers encounter of IndieBox in Bogota.',
       logos: [vs],
       assets: {
         a1: {
@@ -720,6 +726,24 @@ const getProjectDetails = (param) => {
         a7: {
           type: '360',
           src: 'https://two-liquid.surge.sh'
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: cuerpos1Mob
+        },
+        a2: {
+          type: 'img',
+          src: cuerpos2Mob
+        },
+        a3: {
+          type: 'img',
+          src: cuerpos3Mob
+        },
+        a4: {
+          type: 'img',
+          src: cuerpos4Mob
         },
       }
     }
