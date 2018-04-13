@@ -145,6 +145,10 @@ import nike3 from '../images/nike/3.mp4'
 import nike4 from '../images/nike/4.mp4'
 import nike5 from '../images/nike/5.mp4'
 import nike6 from '../images/nike/6.mp4'
+import nike1Mob from '../images/nike/1Mob.jpg'
+import nike2Mob from '../images/nike/2Mob.mp4'
+import nike3Mob from '../images/nike/3Mob.mp4'
+import nike4Mob from '../images/nike/4Mob.mp4'
 import samsung1 from '../images/samsung/1.png'
 import samsung2 from '../images/samsung/2.mp4'
 import samsung3 from '../images/samsung/3.jpg'
@@ -326,6 +330,8 @@ const getProjectDetails = (param) => {
       tagEn: 'Mapping | Motion Graphics',
       descEs: `Animación y realización de mapping para el relanzamiento de la tienda Nike en la Calle 82 producido por la agencia Milagros. El mapping se realizó sobre el Swoosh que hay en la fachada del local. Se le dió vida al Swoosh a partir de animaciones texturales y llenas de color que hacían referencia a los valores de la marca.`,
       descEn: `Animation and direction of a mapping for the relaunch of the Nike store located in the 82ndstreet in Bogota, produced by the Milagros agency. The mapping was projected over theSwoosh logo placed on the façade of the store. The Swoosh was given life with texturedanimations filled with several colors and prints, referencing the brands values.`,
+      descEsMob: `Animación y realización de mapping para el relanzamiento de la tienda Nike en la Calle 82 producido por la agencia Milagros. El mapping se realizó sobre el Swoosh que hay en la fachada del local. Se le dió vida al Swoosh a partir de animaciones texturales y llenas de color que hacían referencia a los valores de la marca.`,
+      descEnMob: `Animation and direction of a mapping for the relaunch of the Nike store located in the 82ndstreet in Bogota, produced by the Milagros agency. The mapping was projected over theSwoosh logo placed on the façade of the store. The Swoosh was given life with texturedanimations filled with several colors and prints, referencing the brands values.`,
       logos: [milagros, nike],
       assets: {
         a1: {
@@ -351,6 +357,24 @@ const getProjectDetails = (param) => {
         a6: {
           type: 'mp4',
           src: nike6
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'img',
+          src: nike1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: nike2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: nike3Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: nike4Mob
         },
       }
     }
