@@ -52,6 +52,10 @@ import topologias6 from '../images/topologias/6.mp4'
 import topologias7 from '../images/topologias/7.jpg'
 import topologias8 from '../images/topologias/8.jpg'
 import topologias9 from '../images/topologias/9.jpg'
+import topologias1Mob from '../images/topologias/1Mob.jpg'
+import topologias2Mob from '../images/topologias/2Mob.mp4'
+import topologias3Mob from '../images/topologias/3Mob.mp4'
+import topologias4Mob from '../images/topologias/4Mob.mp4'
 import sonar1 from '../images/sonar/1.mp4'
 import sonar2 from '../images/sonar/2.mp4'
 import sonar3 from '../images/sonar/3.mp4'
@@ -415,6 +419,8 @@ const getProjectDetails = (param) => {
       tagEn: 'Video Installation | VR',
       descEs: `Desarrollo de una experiencia de VR e instalación audiovisual que hace un homenaje aBogotá, a su arquitectura y a su urbanismo. Escaneamos en 3D varios elementos que componen este universo urbano y luego construimos una especie de barrio bogotano digital en el que alterábamos las escalas de los elementos escaneados. \n Realizado en un comienzo para Artec 2015 y expuesto en Indiebox en el Monumento de los Heroes.`,
       descEn: `Development of a VR experience and an audiovisual installation paying tribute to Bogotá,its architecture and its urbanism. We scanned in 3D several elements which make a partof this urban universe and then we constructed a sort of digital Bogotá neighborhood inwhich we altered the scales of the scanned elements. \n Made initially for 2015 Artec and exhibited in Indiebox at the Heroes Monument.`,
+      descEsMob: `Desarrollo de una experiencia de VR e instalación audiovisual que hace un homenaje aBogotá, a su arquitectura y a su urbanismo. Escaneamos en 3D varios elementos que componen este universo urbano y luego construimos una especie de barrio bogotano digital en el que alterábamos las escalas de los elementos escaneados. \n Realizado en un comienzo para Artec 2015 y expuesto en Indiebox en el Monumento de los Heroes.`,
+      descEnMob: `Development of a VR experience and an audiovisual installation paying tribute to Bogotá,its architecture and its urbanism. We scanned in 3D several elements which make a partof this urban universe and then we constructed a sort of digital Bogotá neighborhood inwhich we altered the scales of the scanned elements. \n Made initially for 2015 Artec and exhibited in Indiebox at the Heroes Monument.`,
       logos: [artec, indie],
       assets: {
         a1: {
@@ -453,6 +459,24 @@ const getProjectDetails = (param) => {
           type: 'img',
           src: topologias9
         }
+      },
+      assetsMobile: {
+        a1: {
+          type: 'img',
+          src: topologias1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: topologias2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: topologias3Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: topologias4Mob
+        },
       }
     }
   }  else if (param === 'sonar') {
