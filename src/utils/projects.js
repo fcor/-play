@@ -124,6 +124,9 @@ import freaky2 from '../images/freaky/2.mp4'
 import freaky3 from '../images/freaky/3.mp4'
 import freaky4 from '../images/freaky/4.mp4'
 import freaky5 from '../images/freaky/5.mp4'
+import freaky1Mob from '../images/freaky/1Mob.mp4'
+import freaky2Mob from '../images/freaky/2Mob.mp4'
+import freaky3Mob from '../images/freaky/3Mob.mp4'
 import nike1 from '../images/nike/1.mp4'
 import nike2 from '../images/nike/2.mp4'
 import nike3 from '../images/nike/3.mp4'
@@ -870,8 +873,10 @@ const getProjectDetails = (param) => {
       tagEn: '360º Video',
       descEs: `En el 2015 nos aventuramos a realizar el primer videoclip en 360 hecho en Colombia junto al Freaky Colectivo, LaPost y 1500 Episodios. Con un soporte para 6 cámaras Gopro que fue impreso en 3D y un rodaje de casi 18 horas seguidas logramos producir este video musical en un momento donde el video 360 apenas estaba apareciendo en Colombia.
                 Producción: 1500 Episodios y La Post. Productor: Nicolas Katime. Dirección: Wanda Quintero. Cámara: Alvaro Rodriguez y Carlos Serrano. Dirección de arte y vestuario: La bonita. Producción Musical: El Freaky ­ Benny B ­ Cybertronics. Mix & Master: Franky El Médico.`,
-      descEn: `Production for the first 360 music video made in Colombia with the Freaky Collective, LaPost y 1500 Episodios. With a 3d printer Rig for Gopro cameras and a full 18 hrs shooting we managed to produce the first 360 music video in Colombia.
+      descEn: `Production for the first 360 music video made in Colombia with the Freaky Collective, LaPost and 1500 Episodios. With a 3d printer Rig for Gopro cameras and a full 18 hrs shooting we managed to produce the first 360 music video in Colombia.
                 Production: 1500 Episodios y La Post. Producers: Nicolas Katime. Direction: Wanda Quintero. Camera: Alvaro Rodriguez y Carlos Serrano. Art Direction: La bonita. Musical Producers: El Freaky ­ Benny B ­ Cybertronics. Mix & Master: Franky El Médico.`,
+      descEsMob: 'Producción del primer videoclip en 360 hecho en Colombia junto al Freaky Colectivo, LaPost y 1500 Episodios.',
+      descEnMob: 'Production for the first 360 music video made in Colombia with the Freaky Collective, LaPost and 1500 Episodios.',
       logos: [lapost, mil],
       assets: {
         a1: {
@@ -893,6 +898,28 @@ const getProjectDetails = (param) => {
         a5: {
           type: 'mp4',
           src: freaky5
+        },
+        a6: {
+          type: '360',
+          src: 'https://damp-hot.surge.sh'
+        },
+        a7: {
+          type: 'video',
+          src: 'https://www.youtube.com/embed/xBVVJ1aCOks'
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: freaky1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: freaky2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: freaky3Mob
         },
         a6: {
           type: '360',
