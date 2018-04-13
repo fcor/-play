@@ -68,6 +68,9 @@ import warm1 from '../images/warm/1.mp4'
 import warm2 from '../images/warm/2.mp4'
 import warm3 from '../images/warm/3.mp4'
 import warm4 from '../images/warm/4.mp4'
+import warm1Mob from '../images/warm/1Mob.mp4'
+import warm2Mob from '../images/warm/2Mob.mp4'
+import warm3Mob from '../images/warm/3Mob.mp4'
 import moto1 from '../images/moto/1.mp4'
 import moto2 from '../images/moto/2.mp4'
 import moto3 from '../images/moto/3.mp4'
@@ -554,6 +557,10 @@ const getProjectDetails = (param) => {
       Producción, diseño y desarrollo: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
       descEn: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.
                 Production, design and development: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
+      descEsMob: `Desarrollo de experiencias audiovisuales para el lanzamiento de la primera versión del Festival Sónar en Bogotá realizado en la Universidad de los Andes y en el Planetario de Bogotá.
+      Producción, diseño y desarrollo: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
+      descEnMob: `Audiovisual experience development for the launch of the first edition of the Sonar Festival in Bogotá, made by the Andes University and the Bogotá Planetarium.
+                Production, design and development: Santiago Messier Daniel Morales Arturo Betancourt Pablo Ricaurte Alvaro Rodriguez Badel Carlos Serrano`,
       logos: [s2015],
       assets: {
         a1: {
@@ -571,6 +578,20 @@ const getProjectDetails = (param) => {
         a4: {
           type: 'mp4',
           src: warm4
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: warm1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: warm2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: warm3Mob
         },
       }
     }
