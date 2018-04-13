@@ -59,6 +59,11 @@ import sonar4 from '../images/sonar/4.mp4'
 import sonar5 from '../images/sonar/5.png'
 import sonar6 from '../images/sonar/6.mp4'
 import sonar7 from '../images/sonar/7.mp4'
+import sonar1Mob from '../images/sonar/1Mob.mp4'
+import sonar2Mob from '../images/sonar/2Mob.mp4'
+import sonar3Mob from '../images/sonar/3Mob.mp4'
+import sonar4Mob from '../images/sonar/4Mob.mp4'
+import sonar5Mob from '../images/sonar/5Mob.png'
 import warm1 from '../images/warm/1.mp4'
 import warm2 from '../images/warm/2.mp4'
 import warm3 from '../images/warm/3.mp4'
@@ -469,6 +474,18 @@ const getProjectDetails = (param) => {
                2. A person's usual or preferred surroundings.
                3. Constructed space in which man lives.
                Exhibited in the Sónar AV Experience in Bogotá y the DAT fair.`,
+      descEsMob: `Realización de una instalación audiovisual que busca reinterpretar los espacios físicos y alterar la manera como los percibimos. La obra consiste de un espacio completamente  oscuro, que a partir de humo, crea un lienzo de tres dimensiones. Una proyección  va llevando al espectador por varios espacios físicos-efímeros, modelados a travez de la luz. La musica compuesta por Juan Mattos termina de darle vida a estos espacios de luz.
+               Habitat:
+               1. lugar de condiciones apropiadas para que viva un organismo, especie o comunidad animal o vegetal.
+               2. Ambiente particularmente adecuado a los gustos y necesidades personales de alguien.
+               3. Espacio construido en el que vive el hombre.
+               Expuesta en el Sónar AV Experience de Bogotá y la feria DAT.`,
+      descEnMob: `Production and direction of an audiovisual installation which attempted to reinterpret physical spaces and the way we perceive them. The piece consisted of a pitch-black space, which by the means of light and smoke, creates a three dimensional canvas. A projection takes the spectator through several physical-ephemeral spaces, modeled through light. The music, composed by Juan Mattos, completes the process of giving these light spaces life.
+               Habitat:
+               1. The natural home or environment of an animal, plant, or other organism.
+               2. A person's usual or preferred surroundings.
+               3. Constructed space in which man lives.
+               Exhibited in the Sónar AV Experience in Bogotá y the DAT fair.`,
       logos: [s2017, dat ],
       assets: {
         a1: {
@@ -498,6 +515,28 @@ const getProjectDetails = (param) => {
         a7: {
           type: 'mp4',
           src: sonar7
+        },
+      },
+      assetsMobile: {
+        a1: {
+          type: 'mp4',
+          src: sonar1Mob
+        },
+        a2: {
+          type: 'mp4',
+          src: sonar2Mob
+        },
+        a3: {
+          type: 'mp4',
+          src: sonar3Mob
+        },
+        a4: {
+          type: 'mp4',
+          src: sonar4Mob
+        },
+        a5: {
+          type: 'img',
+          src: sonar5Mob
         },
       }
     }
