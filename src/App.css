@@ -223,7 +223,7 @@ li:nth-child(-n +3) a{
 
 .hamburger-menu{
   /* width: 50px; */
-  position: relative;
+  position: fixed;
   /* right: 0; */
   height: 50px;
   display: flex;
@@ -235,16 +235,42 @@ li:nth-child(-n +3) a{
   /* cursor: pointer; */
 }
 
+/* fixed hamburger menu */
+.hamburger-box{
+  position: fixed;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.logo-mobile{
+  margin-top: 60px;
+}
+
 .hamburger-menu.active{
   transform: translate(55vw, -14px);
 }
 
+.hamburger-menu.active .hamburger-box{
+  background-color: transparent;
+}
+
 .bar-menu{
-  width: 25px;
+  /* width: 25px; */
+  /* margin: 4px 0; */
+  /* Fixed hamburger menu */
+  width: 20px;
+  margin: 2px 0;
+  /*  */
   height: 3px;
   background: black;
   border-radius: 10px;
-  margin: 4px 0;
 }
 
 .b1.active{

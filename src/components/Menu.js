@@ -18,7 +18,7 @@ const Menu = ({changeLang, lang, version, handleOverlay}) => {
        return(
          <div className="menu-responsive">
            <Hamburger lang={lang} changeLang={changeLang} handleOverlay={handleOverlay} />
-           <LogoBox logo={logo} width="140px" />
+           <LogoBox logo={logo} width="140px" className="logo-mobile" />
            <Nav />
          </div>
        )

@@ -35,7 +35,7 @@ class Hamburger extends React.Component {
     return(
       <div className="hamburger-align">
         <div className={`hamburger-menu ${active ? 'active' : ''}`} onClick={this.handleClick}>
-          <div>
+          <div className="hamburger-box">
             <div className={`bar-menu b1 ${animation}`}></div>
             <div className={`bar-menu b2 ${animation}`}></div>
             <div className={`bar-menu b3 ${animation}`}></div>
