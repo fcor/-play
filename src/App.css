@@ -903,3 +903,9 @@ li:nth-child(-n +3) a{
   font-family: 'Chalet Cologne';
   font-size: 45px;
 }
+
+@media screen and (max-width: 767px){
+  .coming-soon{
+    padding-top: 90px;
+  }
+}
