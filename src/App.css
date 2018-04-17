@@ -254,7 +254,7 @@ li:nth-child(-n +3) a{
 }
 
 .hamburger-menu.active{
-  transform: translate(55vw, -14px);
+  transform: translate(55vw, -17px);
 }
 
 .hamburger-menu.active .hamburger-box{
@@ -778,8 +778,19 @@ li:nth-child(-n +3) a{
   margin: 40px 0 45px 0;
 }
 
+.logos.mobile{
+  /* border: 1px solid red; */
+  /* flex-wrap: wrap; */
+}
+
+
 .logo{
   margin: 0 15px;
+}
+
+.logos.mobile .logo{
+  width: 30%;
+  margin: 0px 5px;
 }
 
 .assets{

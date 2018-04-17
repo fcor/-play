@@ -29,7 +29,8 @@ class Image extends Component {
     return(
       <div className="image">
         {loading &&
-           <BouncingLoader />
+           // <BouncingLoader />
+           null
         }
         <LazyLoad height='100%' offset={100} once>
           <img

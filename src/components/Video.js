@@ -29,7 +29,8 @@ class Video extends Component {
     return(
       <div className="video">
         {loading &&
-           <BouncingLoader />
+           // <BouncingLoader />
+           null
         }
         <LazyLoad height='100%' offset={100} once>
           <video

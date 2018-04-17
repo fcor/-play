@@ -16,6 +16,8 @@
   },
   "scripts": {
     "deploy": "npm run build && firebase deploy",
+    "serve": "npm run build && serve ./build",
+    "surge": "npm run build && surge ./build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -45,7 +45,8 @@ class Iframe extends Component {
     return(
       <div className="iframe-box">
         {loading &&
-           <BouncingLoader />
+           // <BouncingLoader />
+           null
         }
         <iframe className="iframe"
           title="VR"

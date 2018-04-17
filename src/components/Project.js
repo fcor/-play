@@ -128,7 +128,7 @@ const Description = ({ description, version }) => {
 }
 
 const Logos = props =>
-  <div className="logos">
+  <div className={`logos ${props.version === 'mobile' ? 'mobile' : ''}`}>
     {props.assets.map((item)=>
       <img className="logo"
            width={`${props.version === 'mobile' ? '50%' : '100%'}`}
