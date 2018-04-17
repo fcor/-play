@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import LazyLoad from 'react-lazyload'
-import BouncingLoader from './BouncingLoader'
+// import BouncingLoader from './BouncingLoader'
 
 class Image extends Component {
   constructor(props){
@@ -20,7 +20,7 @@ class Image extends Component {
   }
 
   render() {
-    const { src, width, alt, version } = this.props
+    const { src, width, alt } = this.props
     const { loading } = this.state
     const style = {
       width: width,

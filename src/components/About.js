@@ -2,7 +2,6 @@ import React from 'react'
 import ComingSoon from './ComingSoon'
 
 const About = (props) => {
-  const width = '100vw'
   if (props.version === 'desktop') {
     return <ComingSoon />
   }

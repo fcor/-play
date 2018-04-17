@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BouncingLoader from './BouncingLoader'
+// import BouncingLoader from './BouncingLoader'
 import LazyLoad from 'react-lazyload'
 
 class Video extends Component {

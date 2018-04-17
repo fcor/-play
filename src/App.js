@@ -106,7 +106,7 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
         </div>
       </div>
       <Route render={ (props) => {
-        console.log(props.location.pathname);
+        // console.log(props.location.pathname);
         return (
           <Footer location={props.location.pathname} version={version} />
         )

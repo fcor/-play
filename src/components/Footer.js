@@ -1,6 +1,6 @@
 import React from 'react'
-import Video from './Video'
-import about from '../images/about.mp4'
+// import Video from './Video'
+// import about from '../images/about.mp4'
 import about2 from '../images/outputBR4.mp4'
 import Icons from './Icons'
 

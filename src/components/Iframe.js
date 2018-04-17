@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BouncingLoader from './BouncingLoader'
+// import BouncingLoader from './BouncingLoader'
 
 
 class Iframe extends Component {

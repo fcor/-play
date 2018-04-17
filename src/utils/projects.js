@@ -98,10 +98,10 @@ import rbp1 from '../images/rbp/1.mp4'
 import rbp2 from '../images/rbp/2.mp4'
 import rbp3 from '../images/rbp/3.mp4'
 import rbp4 from '../images/rbp/4.jpg'
-import rbp5 from '../images/rbp/5.mp4'
+// import rbp5 from '../images/rbp/5.mp4'
 import rbp6 from '../images/rbp/6.mp4'
 import rbp7 from '../images/rbp/7.mp4'
-import rbp8 from '../images/rbp/8.mp4'
+// import rbp8 from '../images/rbp/8.mp4'
 import rbp9 from '../images/rbp/9.jpg'
 import rbp10 from '../images/rbp/10.jpg'
 import rbp11 from '../images/rbp/11.jpg'
@@ -1228,6 +1228,10 @@ const getProjectDetails = (param) => {
           src: 'https://damp-hot.surge.sh'
         },
         a7: {
+          type: '360',
+          src: 'https://stiff-judge.surge.sh'
+        },
+        a8: {
           type: 'video',
           src: 'https://www.youtube.com/embed/xBVVJ1aCOks'
         },
