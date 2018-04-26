@@ -503,10 +503,6 @@ li:nth-child(-n +3) a{
   justify-content: flex-start;
 }
 
-.gif-text.white.cuerpos .gif-title-box,
-.gif-text.white.cuerpos .gif-desc {
-  margin: 0 0 8px 17px;
-}
 
 .gif-box:hover .gif-text{
   /* right: 0; */
@@ -521,6 +517,10 @@ li:nth-child(-n +3) a{
   margin: 15px 0 5px 15px;
 }
 
+.cuerpos .gif-title-box.mobile{
+  margin: 95px 0 5px 20px;
+}
+
 .gif-title{
   font-size: 51px;
   /* margin: 15px 0 10px 18px; */
@@ -533,8 +533,12 @@ li:nth-child(-n +3) a{
 
 .gif-desc{
   font-size: 15px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin: 0 0 10px 15px;
+}
+
+.white .gif-desc{
+  letter-spacing: 2px;
 }
 
 .gif-year{
@@ -542,9 +546,17 @@ li:nth-child(-n +3) a{
   margin: 0 0 5px 15px;
 }
 
+.cuerpos .gif-year{
+  margin: 0 0 5px 20px;
+}
+
 .gif-desc-mobile{
   margin: 0 0 0 15px;
   font-size: 14px;
+}
+
+.cuerpos .gif-desc-mobile{
+  margin: 0 0 0 20px;
 }
 
 .border{

@@ -338,8 +338,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'coca',
       next: 'nike',
-      titleEn: 'Adidas Nemeziz',
-      titleEs: 'Adidas Nemeziz',
+      titleEn: 'Adidas \n Nemeziz',
+      titleEs: 'Adidas \n Nemeziz',
       subtitle: '',
       year: '2017',
       tagEs: 'Motion Graphics | Diseño',
@@ -878,8 +878,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'redbullP',
       next: 'cuerpos',
-      titleEs: 'Moto Z Plano Z',
-      titleEn: 'Moto Z Plain Z',
+      titleEs: 'Moto Z \n Plano Z',
+      titleEn: 'Moto Z \n Plain Z',
       subtitle: '',
       year: '2016',
       tagEs: 'Video 360º | Tour Virtual',
@@ -984,8 +984,8 @@ const getProjectDetails = (param) => {
     return {
       prev: 'planoz',
       next: 'uber',
-      titleEs: 'Cuerpos de Agua',
-      titleEn: 'Water Bodies',
+      titleEs: 'Cuerpos \n de Agua',
+      titleEn: 'Water \n Bodies',
       subtitle: '',
       year: '2015',
       tagEs: 'Cortometraje 360º',
