@@ -115,7 +115,7 @@ const MasPlay = ({ lang, handleLang, version, handleOverlay }) =>
   </Router>
 
 const Reel = () =>
-  <div>
+  <div style={{height: 'calc(84vh - 240px)'}}>
     <ComingSoon />
   </div>
 

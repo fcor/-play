@@ -31,7 +31,7 @@ import mundo1 from '../images/mundo/11.mp4'
 import mundo2 from '../images/mundo/22.mp4'
 import mundo3 from '../images/mundo/33.mp4'
 import mundo4 from '../images/mundo/44.mp4'
-import mundo5 from '../images/mundo/5.mp4'
+// import mundo5 from '../images/mundo/5.mp4'
 import mundo6 from '../images/mundo/66.mp4'
 import mundo7 from '../images/mundo/7.jpg'
 import mundo8 from '../images/mundo/8.mp4'
@@ -230,10 +230,10 @@ const getProjectDetails = (param) => {
           type: 'mp4',
           src: mundo4
         },
-        a5: {
-          type: 'mp4',
-          src: mundo5
-        },
+        // a5: {
+        //   type: 'mp4',
+        //   src: mundo5
+        // },
         a6: {
           type: 'mp4',
           src: mundo6
